@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<serie>
+		<serie_name>Game of Thrones</serie_name>
+		<genre>Fantasy</genre>
+		<genre>Serial drama</genre>
+		<Rating>95</Rating>
+		<number_of_seasons>6</number_of_seasons>
+		<cast>Emilia Clarke</cast>
+		<cast>Sophie Turner</cast>
+		<cast>Kit Harington</cast>
+		<cast>Maisie Williams</cast>
+		<cast>Lena Headey</cast>
+		<musical_theme>Tema de Game of Thrones</musical_theme>
+		<authors>George R. R. Martin</authors>
+		<authors>David Benioff</authors>
+		<authors>D. B. Weiss</authors>
+		<authors>Bryan Cogman</authors>
+		<authors>Jane Espenson</authors>
+		<authors>Vanessa Taylor</authors>
+		<authors>Dave Hill</authors>
+		<number_of_episodes>60</number_of_episodes>
+		<network>HBO</network>
+		<first_episode>17 April 2011</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>How to Get Away with Murder</serie_name>
+		<genre>Legal drama</genre>
+		<genre>Mystery</genre>
+		<genre>Thriller</genre>
+		<Rating>90</Rating>
+		<number_of_seasons>3</number_of_seasons>
+		<cast>Viola Davis</cast>
+		<cast>Alfred Enoch</cast>
+		<cast>Jack Falahee</cast>
+		<cast>Charlie Weber</cast>
+		<cast>Karla Souza</cast>
+		<cast>Aja Naomi King</cast>
+		<cast>Matt McGorry</cast>
+		<cast>Liza Weil</cast>
+		<musical_theme>Photek</musical_theme>
+		<authors>Peter Nowalk</authors>
+		<number_of_episodes>45</number_of_episodes>
+		<network>ABC</network>
+		<first_episode>25 September 2014</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>Suits</serie_name>
+		<genre>Legal Drama</genre>
+		<Rating>86</Rating>
+		<number_of_seasons>6</number_of_seasons>
+		<cast>Meghan Markle</cast>
+		<cast>Gabriel Macht</cast>
+		<cast>Patrick J. Adams</cast>
+		<cast>Sarah Rafferty</cast>
+		<musical_theme>Greenback Boogie</musical_theme>
+		<authors>Aaron Korsh</authors>
+		<number_of_episodes>91</number_of_episodes>
+		<network>USA Network</network>
+		<first_episode>23 June 2011</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>Sherlock</serie_name>
+		<genre>Crime drama</genre>
+		<Rating>86</Rating>
+		<number_of_seasons>4</number_of_seasons>
+		<cast>>Mark Gatiss</cast>
+		<cast>Benedict Cumberbatch</cast>
+		<cast>Martin Freeman</cast>
+		<cast>Amanda Abbington</cast>
+		<cast>Louise Brealey</cast>
+		<musical_theme>Sherlock Theme Song</musical_theme>
+		<authors>Mark Gatiss</authors>
+		<authors>Steven Moffat</authors>
+		<authors>Stephen Thompson</authors>
+		<number_of_episodes>13</number_of_episodes>
+		<network>BBC</network>
+		<first_episode>25 July 2010</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>Modern Family</serie_name>
+		<genre>Sitcom</genre>
+		<genre>Mockumentary</genre>
+		<Rating>85</Rating>
+		<number_of_seasons>8</number_of_seasons>
+		<cast>Sofía Vergara</cast>
+		<cast>Julie Bowen</cast>
+		<cast>Ariel Winter</cast>
+		<cast>Sarah Hyland</cast>
+		<cast>Ed O'Neill</cast>
+		<cast>>Rico Rodrigues</cast>
+		<cast>Ty Burrel</cast>
+		<musical_theme>Modern Family Theme Song</musical_theme>
+		<authors> Christopher Lloyd</authors>
+		<authors>Steven Levitan</authors>
+		<authors>Danny Zuker</authors>
+		<number_of_episodes>180</number_of_episodes>
+		<network>ABC</network>
+		<first_episode>23 September 2009</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>Narcos</serie_name>
+		<genre>Crime thriller</genre>
+		<genre>Biographical</genre>
+		<Rating>84</Rating>
+		<number_of_seasons>2</number_of_seasons>
+		<cast>Wagner Moura</cast>
+		<cast>Pedro Pascal</cast>
+		<cast>Boyd Holbrook</cast>
+		<cast>Paulina Gaitán</cast>
+		<cast>Joanna Christie</cast>
+		<cast>>Maurice Compte</cast>
+		<cast>Stephanie Sigman</cast>
+		<cast>Ana de la Reguera</cast>
+		<cast>Diogo Cataño</cast>
+		<cast>Manolo Cardona</cast>
+		<cast>André Mattos</cast>
+		<cast>Roberto Urbina</cast>
+		<cast>Leynar Gomez</cast>
+		<musical_theme>"Tuyo"</musical_theme>
+		<authors>Chris Brancato</authors>
+		<authors>Carlo Bernard</authors>
+		<authors>Doug Miro</authors>
+		<number_of_episodes>20</number_of_episodes>
+		<network>Netflix</network>
+		<first_episode>28 August 2015</first_episode>
+		<languages>English</languages>
+		<languages>Spanish</languages>
+	</serie>
+	<serie>
+		<serie_name>Sex and the City</serie_name>
+		<genre>Romantic comedy</genre>
+		<genre>Comedy drama</genre>
+		<genre>Sex comedy</genre>
+		<Rating></Rating>
+		<number_of_seasons>6</number_of_seasons>
+		<cast>Sarah Jessica Parker</cast>
+		<cast>Kim Cattrall</cast>
+		<cast>Kristin Davis</cast>
+		<cast>Cynthia Nixon</cast>
+		<cast>Chris Noth</cast>
+		<cast>>John Corbett</cast>
+		<cast>Willie Garson</cast>
+		<cast>David Eisenberg</cast>
+		<cast>Jason Lewis</cast>
+		<cast>Evan Handler</cast>
+		<cast>Mario Cantone</cast>
+		<cast>Kyle MacLachlan</cast>
+		<cast>Mikhail Baryshnikov</cast>
+		<cast>James Remar</cast>
+		<cast>Lynn Cohen</cast>
+		<cast>Blair Underwood</cast>
+		<cast>Ron Livingston</cast>
+		<cast>Bridget Moynahan</cast>
+		<cast>Ben Weber</cast>
+		<cast>Frances Sterenhagen</cast>
+		<cast>Sean Palmer</cast>
+		<musical_theme>Sex and the City Theme</musical_theme>
+		<authors>Darren Star</authors>
+		<number_of_episodes>94</number_of_episodes>
+		<network>HBO Original Programming</network>
+		<first_episode>6 June 1998</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>Breaking Bad</serie_name>
+		<genre>Crime drama</genre>
+		<genre>Thriller</genre>
+		<genre>Contemporary Western</genre>
+		<genre>Black Comedy</genre>
+		<Rating>95</Rating>
+		<number_of_seasons>5</number_of_seasons>
+		<cast>Bryan Cranston</cast>
+		<cast>Aaron Paul</cast>
+		<cast>Anna Gunn</cast>
+		<cast>RJ Mitte</cast>
+		<cast>Dean Norris</cast>
+		<cast>Betsy Brandt</cast>
+		<cast>Bob Odenkirk</cast>
+		<cast>Jonathan Banks</cast>
+		<cast>Giancarlo Esposito</cast>
+		<cast>Jesse Plemons</cast>
+		<cast>Laura Fraser</cast>
+		<cast>Steven Michael Quezada</cast>
+		<cast>Christopher Cousins</cast>
+		<cast>Raymond Cruz</cast>
+		<cast>Krysten Ritter</cast>
+		<cast>Marius Stan</cast>
+		<cast>Matt L. Jones</cast>
+		<cast>Charles Baker</cast>
+		<musical_theme>Breaking Bad Theme</musical_theme>
+		<authors>Vince Gilligan</authors>
+		<number_of_episodes>62</number_of_episodes>
+		<network>Sony Picture Television</network>
+		<first_episode>20 January 2008</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>Gossip Girl</serie_name>
+		<genre>Teen drama</genre>
+		<Rating></Rating>
+		<number_of_seasons>6</number_of_seasons>
+		<cast>Blake Lively</cast>
+		<cast>Leighton Meester</cast>
+		<cast>Penn Badgley</cast>
+		<cast>Chace Crawford</cast>
+		<cast>Taylor Momsen</cast>
+		<cast>Ed Westwick</cast>
+		<cast>Kelly Rutherford</cast>
+		<cast>Matthew Settle</cast>
+		<cast>Jessica Szohr</cast>
+		<cast>Kaylee DeFer</cast>
+		<musical_theme>"Steps of The Met"</musical_theme>
+		<authors>Josh Schwartz</authors>
+		<authors>Stephanie Savage</authors>
+		<number_of_episodes>121</number_of_episodes>
+		<network>The CW</network>
+		<first_episode>19 September 2007</first_episode>
+		<languages>English</languages>
+	</serie>
+	<serie>
+		<serie_name>House of Cards</serie_name>
+		<genre>Political drama</genre>
+		<Rating>84</Rating>
+		<number_of_seasons>4</number_of_seasons>
+		<cast>Kevin Spacey</cast>
+		<cast>Robin Wright</cast>
+		<cast>Kate Mara</cast>
+		<cast>Corey Stoll</cast>
+		<cast>Michael Kelly</cast>
+		<cast>Sakina Jaffrey</cast>
+		<cast>Kristen Connolly</cast>
+		<cast>Sebastian Arcelus</cast>
+		<cast>Michel Gill</cast>
+		<cast>Nathan Darrow</cast>
+		<cast>Rachel Brosnahan</cast>
+		<cast>Constance Zimmer</cast>
+		<cast>Mahershala Ali</cast>
+		<cast>Elizabeth Norment</cast>
+		<cast>Sandrine Holt</cast>
+		<cast>Jayne Atkinson</cast>
+		<cast>Molly Parker</cast>
+		<cast>Gerald McRaney</cast>
+		<cast>Jimmi Simpson</cast>
+		<cast>Elizabeth Marvel</cast>
+		<cast>Derek Cecil</cast>
+		<cast>Mozhan Marno</cast>
+		<cast>Paul Sparks</cast>
+		<cast>Neve Campbell</cast>
+		<cast>Joel Kinnaman</cast>
+		<musical_theme>House of Cards Theme</musical_theme>
+		<authors>Beau Willimon</authors>
+		<number_of_episodes>52</number_of_episodes>
+		<network>The CW</network>
+		<first_episode>1 February 2013</first_episode>
+		<languages>English</languages>
+	</serie>
+</Project>
