@@ -20,30 +20,37 @@ public class MenuSelector {
 		System.out.println("");
 		System.out.println("Selecione a opção que pretende: ");
 		int opcao=0;
-		boolean opcao_certa=false;
-		while (!opcao_certa)
-		{
-			scan.next();
-			if (!scan.hasNextInt())
-			{
-			System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-			}
-			else{
-				opcao=scan.nextInt();
-				if (opcao<1 || opcao >8)
-				{
-				
-					System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
-			
-				}
-				else
-				{
-					opcao_certa=true;
-				}
 		
+		
+		
+		
+		boolean opcao_certa=true;
+		
+		
+		while(opcao_certa)
+		{
+			while (!scan.hasNextInt())
+			{
+				scan.next();
+				
+				System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
 			}
+			opcao=scan.nextInt();
+			scan.nextLine();
+			if (opcao<1 || opcao >8)
+			{
+				System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
+				
+			}
+			else
+					{
+						opcao_certa=false;
+					}
+			
+			
+		
 		}
-		opcao=scan.nextInt();
+			
 			
 		
 	}
