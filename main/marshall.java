@@ -13,7 +13,7 @@ public class marshall {
 
 	public static void main(String[] args) {
 		
-		Project report = new Project();
+		Project project = new Project();
 		
 		try{
 		File file = new File("D:\\Filipa\\OneDrive - Universidade de Coimbra\\4ºano\\IS\\Projeto_1\\src\\series.xml");
@@ -23,8 +23,8 @@ public class marshall {
 		// output pretty printed
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
-		jaxbMarshaller.marshal(report, file);
-		jaxbMarshaller.marshal(report, System.out);
+		jaxbMarshaller.marshal(project, file);
+		jaxbMarshaller.marshal(project, System.out);
 
 	      } catch (JAXBException e) {
 		e.printStackTrace();

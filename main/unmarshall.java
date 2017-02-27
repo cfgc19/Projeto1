@@ -19,7 +19,7 @@ public static void main(String[] args) {
 
 		jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 		Project project = (Project) jaxbUnmarshaller.unmarshal(file);
-		//System.out.println(project.getMetricData().get(0).getDirection());
+		System.out.println(project.getSerie().get(0).getFirstEpisode().toString());
 	} catch (JAXBException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
