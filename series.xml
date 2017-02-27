@@ -137,7 +137,7 @@
 		<genre>Romantic comedy</genre>
 		<genre>Comedy drama</genre>
 		<genre>Sex comedy</genre>
-		<Rating></Rating>
+		<Rating>50</Rating>
 		<number_of_seasons>6</number_of_seasons>
 		<cast>Sarah Jessica Parker</cast>
 		<cast>Kim Cattrall</cast>
@@ -203,7 +203,7 @@
 	<serie>
 		<serie_name>Gossip Girl</serie_name>
 		<genre>Teen drama</genre>
-		<Rating></Rating>
+		<Rating>50</Rating>
 		<number_of_seasons>6</number_of_seasons>
 		<cast>Blake Lively</cast>
 		<cast>Leighton Meester</cast>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Project">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="serie"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="serie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="serie_name"/>
+        <xs:element maxOccurs="unbounded" ref="genre"/>
+        <xs:element ref="Rating"/>
+        <xs:element ref="number_of_seasons"/>
+        <xs:element maxOccurs="unbounded" ref="cast"/>
+        <xs:element ref="musical_theme"/>
+        <xs:element maxOccurs="unbounded" ref="authors"/>
+        <xs:element ref="number_of_episodes"/>
+        <xs:element ref="network"/>
+        <xs:element ref="first_episode"/>
+        <xs:element maxOccurs="unbounded" ref="languages"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="serie_name" type="xs:string"/>
+  <xs:element name="genre" type="xs:string"/>
+  <xs:element name="Rating" type="xs:integer"/>
+  <xs:element name="number_of_seasons" type="xs:integer"/>
+  <xs:element name="cast" type="xs:string"/>
+  <xs:element name="musical_theme" type="xs:string"/>
+  <xs:element name="authors" type="xs:string"/>
+  <xs:element name="number_of_episodes" type="xs:integer"/>
+  <xs:element name="network" type="xs:string"/>
+  <xs:element name="first_episode" type="xs:string"/>
+  <xs:element name="languages" type="xs:NCName"/>
+</xs:schema>
