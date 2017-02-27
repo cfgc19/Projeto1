@@ -35,6 +35,7 @@ public class MenuSelector {
 				
 				System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
 			}
+			
 			opcao=scan.nextInt();
 			scan.nextLine();
 			if (opcao<1 || opcao >8)

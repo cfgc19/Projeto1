@@ -4,6 +4,7 @@ public class teste {
 
 	public static void main(String[] args) {
 
+
 		Scanner scan = new Scanner(System.in);
 		System.out.println("ola:  ");
 
@@ -22,7 +23,6 @@ public class teste {
 			System.out.print("Escolha o valor minimo do Rating: ");
 			break;
 		}
-		
 
 	}
 }
