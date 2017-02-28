@@ -37,30 +37,30 @@ public class teste {
 		case 2:
 			System.out.print("Escolha o valor minimo do episódios : ");
 			
-			while (!scan.hasNextInt())
+			while (!scan.hasNextBigInteger())
 			{
 				scan.next();
 				System.out.println("ERRO! Introduza um inteiro: ");
 			}
-			episodes = scan.nextInt();
+			episodes = scan.nextBigInteger();
 
 			// faltam controlos
 			break;
 		case 3:
 			System.out.println("Escolha o valor minimo de temporadas: ");
-			while (!scan.hasNextInt())
+			while (!scan.hasNextBigInteger())
 			{
 				scan.next();
 				System.out.println("ERRO! Introduza um inteiro: ");
 			}
-			seasons = scan.nextInt();
+			seasons = scan.nextBigInteger();
 			// faltam controlos
 			break;
 		case 4:
 			System.out.println("Escolha a linguagem: ");
 			// language = scan.nextLine(); ... creio que isto tem que ser em
 			// baixo (ass dricas)... ou melhor, creio que isto não é preciso
-			ArrayList<String> languages_list;
+			ArrayList<String> languages_list= new ArrayList<String>();;
 			int option_list = 1;
 			for (int i = research.getSerie().size() - 1; i >= 0; i--) {
 				for (int j = research.getSerie().get(i).getLanguages().size(); i >= 0; i--) {
@@ -100,7 +100,7 @@ public class teste {
 			System.out.println("Escolha a Network: ");
 			// network = scan.nextLine(); ... creio que isto tem que ser em
 			// baixo (ass dricas)
-			ArrayList<String> networks_list;
+			ArrayList<String> networks_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = research.getSerie().size() - 1; i >= 0; i--) {
 				network = research.getSerie().get(i).getNetwork();
@@ -135,7 +135,7 @@ public class teste {
 			System.out.println("Escolha o género da série: ");
 			//genre = scan.nextLine();
 				
-			ArrayList<String> genres_list;
+			ArrayList<String> genres_list= new ArrayList<String>();
 			option_list = 1;
 			for (int i = research.getSerie().size() - 1; i >= 0; i--) {
 				for (int j = research.getSerie().get(i).getGenre().size(); i >= 0; i--) {
@@ -172,7 +172,7 @@ public class teste {
 			System.out.println("Escolhe o nome do ator: ");
 			//actor = scan.nextLine();
 						
-			ArrayList<String> actors_list;
+			ArrayList<String> actors_list= new ArrayList<String>();
 			option_list = 1;
 			opcao_certa=true;
 			for (int i = research.getSerie().size() - 1; i >= 0; i--) {
