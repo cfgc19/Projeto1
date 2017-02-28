@@ -95,6 +95,7 @@ public class teste {
 				//System.out.print("Escreveu um numero errado. Volte a tentar: ");
 			//}
 			// if (!research.getSerie().get(i).getLanguages().get(i).ge)
+
 			break;
 		case 5:
 			System.out.println("Escolha a Network: ");
