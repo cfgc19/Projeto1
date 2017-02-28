@@ -42,27 +42,30 @@ public class teste {
 				
 				for (int j = research.getSerie().get(i).getLanguages().size(); i>=0; i--){
 				
-					String lang = research.getSerie().get(i).getLanguages().get(j);
+					language = research.getSerie().get(i).getLanguages().get(j);
 					if (j==0){
-						lista.add(lang);
-						System.out.println(option_list + " " + lang);
+						lista.add(language);
+						System.out.println(option_list + " " + language);
 						option_list ++;
 					}
 					else{
-						if(!lista.contains(lang)){
-							lista.add(lang);
-							System.out.println(option_list + " " + lang);
+						if(!lista.contains(language)){
+							lista.add(language);
+							System.out.println(option_list + " " + language);
 							option_list++;
 						}
 					}
-					
 				}
 			}
 					int option2 =scan.nextInt(); // falta validar se é um numero
 					while(1>option2 || option2>lista.size()){
 						System.out.print("Escreveu um numero errado. Volte a tentar: ");
 					}
-
+					for (int i = research.getSerie().size() - 1; i >= 0; i--) {
+						if (!research.getSerie().get(i).getLanguages().equals(lista.get(option2).toString())){
+							research.getSerie().remove(i);
+						}
+					}
 				//if (!research.getSerie().get(i).getLanguages().get(i).ge)
 			break;
 		case 5: 
