@@ -14,6 +14,7 @@ public class teste {
 			System.out.println("ERRO! Introduza um inteiro: ");
 		}
 	}
+	
 	public static void rules (int opcao){
 
 		Scanner scan = new Scanner(System.in);
