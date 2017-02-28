@@ -20,6 +20,7 @@ public class MenuSelector {
 		System.out.println("Selecione a opção que pretende: ");
 			
 	}
+
 	
 	public static void main(String[] args)
 	{
@@ -33,11 +34,13 @@ public class MenuSelector {
 		boolean opcao_certa=true;
 		while(opcao_certa)
 		{
-			while (!scan.hasNextInt())
-			{
-				scan.next();
-				System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-			}
+
+			teste.validation_int(scan);
+			//while (!scan.hasNextInt())
+			//{
+				//scan.next();
+				//System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
+			//}
 			
 			opcao=scan.nextInt();
 			scan.nextLine();
@@ -50,7 +53,9 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
+		
 		Project project =teste.rules(opcao);
+		
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
@@ -63,6 +68,7 @@ public class MenuSelector {
 			opcao_certa=false;
 			while(!opcao_certa)
 			{
+				
 				while (scan.hasNextInt())
 				{
 					scan.next();
@@ -86,11 +92,13 @@ public class MenuSelector {
 					menu();
 					while(opcao_certa)
 					{
-						while (!scan.hasNextInt())
-						{
-							scan.next();
-							System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-						}
+
+						teste.validation_int(scan);
+						//while (!scan.hasNextInt())
+						//{
+							//scan.next();
+							//System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
+						//}
 						
 						opcao2=scan.nextInt();
 						scan.nextLine();
@@ -110,12 +118,13 @@ public class MenuSelector {
 					opcao_certa=true;
 					while(opcao_certa)
 					{
-						while (!scan.hasNextInt())
-						{
-							scan.next();
-							System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-						}
+						//while (!scan.hasNextInt())
+						//{
+							//scan.next();
+							//System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
+						//}
 						
+						teste.validation_int(scan);
 						opcao2=scan.nextInt();
 						scan.nextLine();
 						if (opcao2<1 || opcao2 >8)
