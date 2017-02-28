@@ -47,6 +47,7 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
+		teste.rules(opcao);
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
