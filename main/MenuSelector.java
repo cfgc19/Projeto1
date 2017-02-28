@@ -1,6 +1,9 @@
 package main;
 
 import java.util.Scanner;
+import java.util.concurrent.RunnableScheduledFuture;
+
+import generated.Project;
 
 public class MenuSelector {
 	public static void menu()
@@ -47,7 +50,7 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
-		teste.rules(opcao);
+		Project project =teste.rules(opcao);
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
@@ -125,9 +128,16 @@ public class MenuSelector {
 						}
 					}
 				}
-			else if (opcao1.equals("c"))
+			else if (opcao1.equals("c")) // criar o XML
 			{
-				System.out.println("xau");
+				Boolean result = marshall.marshalles(project);
+				if (!result) {
+					System.out.println("A pesquisa efetuada nao tem resultados.");
+					//project = unmarshall.unmarshalles();
+				} else {
+					System.out.println("O XML foi criado e apresentado em cima!");
+				}
+				
 			}
 			else if (opcao1.equals("d"))		
 			{
