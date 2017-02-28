@@ -7,7 +7,14 @@ import main.unmarshall;
 
 public class teste {
 
-	public static void main(String[] args) {
+	public static void validation_int (Scanner scan){
+		while (!scan.hasNextBigInteger())
+		{
+			scan.next();
+			System.out.println("ERRO! Introduza um inteiro: ");
+		}
+	}
+	public static void rules (int opcao){
 
 		Scanner scan = new Scanner(System.in);
 		System.out.println("ola:  ");
@@ -16,7 +23,6 @@ public class teste {
 		String language = "", network = "", genre = "", actor = "";
 
 		Project research = unmarshall.unmarshalles();
-		int opcao = 2;
 		int option2=0;
 		boolean opcao_certa=true;
 		
@@ -25,11 +31,8 @@ public class teste {
 			// pesquisa por instituicao
 			System.out.print("Escolha o valor minimo do Rating: ");
 			
-			while (!scan.hasNextBigInteger())
-			{
-				scan.next();
-				System.out.println("ERRO! Introduza um inteiro: ");
-			}
+			validation_int(scan);
+			
 			ranting = scan.nextBigInteger();
 			
 			// faltam controlos
@@ -37,22 +40,17 @@ public class teste {
 		case 2:
 			System.out.print("Escolha o valor minimo do episódios : ");
 			
-			while (!scan.hasNextBigInteger())
-			{
-				scan.next();
-				System.out.println("ERRO! Introduza um inteiro: ");
-			}
+			validation_int(scan);
+			
 			episodes = scan.nextBigInteger();
 
 			// faltam controlos
 			break;
 		case 3:
 			System.out.println("Escolha o valor minimo de temporadas: ");
-			while (!scan.hasNextBigInteger())
-			{
-				scan.next();
-				System.out.println("ERRO! Introduza um inteiro: ");
-			}
+
+			validation_int(scan);
+			
 			seasons = scan.nextBigInteger();
 			// faltam controlos
 			break;
@@ -74,11 +72,9 @@ public class teste {
 			}
 			while(opcao_certa)
 			{
-				while (!scan.hasNextInt())
-				{
-					scan.next();
-					System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-				}
+
+				validation_int(scan);
+				
 				option2=scan.nextInt();
 				scan.nextLine();
 				if (1 < option2 || option2 > languages_list.size())
@@ -114,11 +110,7 @@ public class teste {
 			opcao_certa=true;
 			while(opcao_certa)
 			{
-				while (!scan.hasNextInt())
-				{
-					scan.next();
-					System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-				}
+				validation_int(scan);
 				
 				option2=scan.nextInt();
 				scan.nextLine();
@@ -151,11 +143,7 @@ public class teste {
 			}
 			while(opcao_certa)
 			{
-				while (!scan.hasNextInt())
-				{
-					scan.next();
-					System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-				}
+				validation_int(scan);
 				
 				option2=scan.nextInt();
 				scan.nextLine();
@@ -189,11 +177,7 @@ public class teste {
 			}
 			while(opcao_certa)
 			{
-				while (!scan.hasNextInt())
-				{
-					scan.next();
-					System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-				}
+				validation_int(scan);
 				
 				option2=scan.nextInt();
 				scan.nextLine();
