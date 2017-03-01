@@ -1,5 +1,6 @@
 package main;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.concurrent.RunnableScheduledFuture;
 
@@ -17,14 +18,16 @@ public class MenuSelector {
 		System.out.println("7-Nome de ator;");
 		System.out.println("8-Sair!");
 		System.out.println("");
-		System.out.println("Selecione a opção que pretende: ");
-			
+		System.out.println("Selecione a opção que pretende: ");		
 	}
-	
-	
 	public static void main(String[] args)
-	{
+	{	
 		Scanner scan=new Scanner (System.in);
+		//lista de series que vêm de cada regra 
+		ArrayList<String> series_list = new ArrayList<String>();
+		//project tem a info toda
+		Project project = unmarshall.unmarshalles();
+		
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println("                           Texto bonito a explicar o que estamos a fazer                                ");
 		System.out.println("------------------------------------------------------------------------------------------");
@@ -48,6 +51,7 @@ public class MenuSelector {
 			}
 		}
 		Project project =teste.rules(opcao);
+		
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
@@ -59,8 +63,7 @@ public class MenuSelector {
 			System.out.println("d - Sair!");
 			opcao_certa=false;
 			while(!opcao_certa)
-			{
-				
+			{				
 				while (scan.hasNextInt())
 				{
 					scan.next();
@@ -84,7 +87,6 @@ public class MenuSelector {
 					menu();
 					while(opcao_certa)
 					{
-
 						teste.validation_int(scan);
 						opcao2=scan.nextInt();
 						scan.nextLine();
@@ -124,7 +126,7 @@ public class MenuSelector {
 				Boolean result = marshall.marshalles(project);
 				if (!result) {
 					System.out.println("A pesquisa efetuada nao tem resultados.");
-					//project = unmarshall.unmarshalles();
+					
 				} else {
 					System.out.println("O XML foi criado e apresentado em cima!");
 				}
