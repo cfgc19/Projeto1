@@ -15,9 +15,26 @@ public class teste {
 			System.out.println("ERRO! Introduza um inteiro: ");
 		}
 	}
+	
+	public static ArrayList<String> and (ArrayList<String> series_list){
+		ArrayList<String> result_list = new ArrayList<String>();
+		
+		for (int i = 0; i < series_list.size()-1; i++)
+        {
+            for (int j = i+1; j < series_list.size(); j++)
+            {
+                if( (series_list.get(i).equals(series_list.get(j))) && (i != j) )
+                {
+                	result_list.add(series_list.get(i));
+                }
+            }
+	}
+		return result_list;
+	}
+	public static ArrayList<String> rules(int opcao) {
 
-	public static Project rules(int opcao) {
-
+		ArrayList<String> series_list = new ArrayList<String>();
+		
 		Scanner scan = new Scanner(System.in);
 
 		BigInteger ranting, episodes, seasons;
@@ -39,7 +56,8 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger ranting1 = project.getSerie().get(i).getRating();
 					if (ranting1.compareTo(ranting)==-1) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
 			// faltam controlos
@@ -54,7 +72,9 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger episodes1 = project.getSerie().get(i).getNumberOfEpisodes();
 					if (episodes1.compareTo(episodes)==-1) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
+						
 				}
 			}
 			// faltam controlos
@@ -69,7 +89,8 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger seasons1 = project.getSerie().get(i).getNumberOfSeasons();
 					if (seasons.compareTo(seasons1)==-1) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
 			
@@ -77,6 +98,8 @@ public class teste {
 		case 4:
 			System.out.println("Escolha a linguagem: ");
 			// APRESENTA A LISTA DE LINGUAGENS!!
+			
+			
 			ArrayList<String> languages_list = new ArrayList<String>();
 			int option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
@@ -105,7 +128,9 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getLanguages();
 					if (!(list.contains(languages_list.get(option2 - 1)))) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
+				
 				}
 			}
 			break;
@@ -138,7 +163,8 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				network = project.getSerie().get(i).getNetwork();
 					if (!(network.equals(networks_list.get(option2 - 1)))) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
 			break;
@@ -175,7 +201,8 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getGenre();
 					if (!(list.contains(genres_list.get(option2 - 1)))) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
 			
@@ -212,7 +239,8 @@ public class teste {
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getCast();
 					if (!(list.contains(actors_list.get(option2 - 1)))) {
-						project.getSerie().remove(i);
+						//project.getSerie().remove(i);
+						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
 			break;
@@ -220,6 +248,6 @@ public class teste {
 			System.out.println("Goodbye!!!");
 
 		}
-		return project;
+		return series_list;
 	}
 }

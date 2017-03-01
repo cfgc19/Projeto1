@@ -105,7 +105,7 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
-					project=teste.rules(opcao2);
+					series_list=teste.rules(opcao2);
 				}
 			else if (opcao1.equals("b"))
 				{
@@ -125,7 +125,7 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
-					project=teste.rules(opcao2);
+					series_list=teste.rules(opcao2);
 				}
 			else if (opcao1.equals("c")) // criar o XML
 			{
