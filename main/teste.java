@@ -15,7 +15,26 @@ public class teste {
 			System.out.println("ERRO! Introduza um inteiro: ");
 		}
 	}
-
+	
+	
+	public static ArrayList<String> rule_or(ArrayList<String> series_list)
+	{
+		int size=series_list.size();
+		for (int i=0; i<size;i++)
+		{
+			for (int j=i+1;j<size;j++)
+			{
+				if (series_list.get(i).equals(series_list.get(j)))
+				{
+					series_list.remove(j--);
+					size--;
+				}
+				
+			}
+		}
+		return series_list;
+		
+	}
 	public static Project rules(int opcao) {
 
 		Scanner scan = new Scanner(System.in);
@@ -217,8 +236,9 @@ public class teste {
 			}
 			break;
 		case 8:
+			
 			System.out.println("Goodbye!!!");
-
+			System.exit(0);
 		}
 		return project;
 	}

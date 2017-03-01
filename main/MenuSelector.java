@@ -20,7 +20,7 @@ public class MenuSelector {
 		System.out.println("Selecione a opção que pretende: ");
 			
 	}
-
+	
 	
 	public static void main(String[] args)
 	{
@@ -36,12 +36,6 @@ public class MenuSelector {
 		{
 
 			teste.validation_int(scan);
-			//while (!scan.hasNextInt())
-			//{
-				//scan.next();
-				//System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-			//}
-			
 			opcao=scan.nextInt();
 			scan.nextLine();
 			if (opcao<1 || opcao >8)
@@ -53,9 +47,7 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
-		
 		Project project =teste.rules(opcao);
-		
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
@@ -94,7 +86,7 @@ public class MenuSelector {
 					{
 
 						teste.validation_int(scan);
-												opcao2=scan.nextInt();
+						opcao2=scan.nextInt();
 						scan.nextLine();
 						if (opcao2<1 || opcao2 >8)
 						{
