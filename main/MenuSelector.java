@@ -94,13 +94,7 @@ public class MenuSelector {
 					{
 
 						teste.validation_int(scan);
-						//while (!scan.hasNextInt())
-						//{
-							//scan.next();
-							//System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-						//}
-						
-						opcao2=scan.nextInt();
+												opcao2=scan.nextInt();
 						scan.nextLine();
 						if (opcao2<1 || opcao2 >8)
 						{
@@ -111,6 +105,7 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
+					project=teste.rules(opcao2);
 				}
 			else if (opcao1.equals("b"))
 				{
@@ -118,12 +113,6 @@ public class MenuSelector {
 					opcao_certa=true;
 					while(opcao_certa)
 					{
-						//while (!scan.hasNextInt())
-						//{
-							//scan.next();
-							//System.out.println("ERRO! Introduza um inteiro referente à opção que pretente: ");
-						//}
-						
 						teste.validation_int(scan);
 						opcao2=scan.nextInt();
 						scan.nextLine();
@@ -136,6 +125,7 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
+					project=teste.rules(opcao2);
 				}
 			else if (opcao1.equals("c")) // criar o XML
 			{
