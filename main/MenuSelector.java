@@ -28,9 +28,7 @@ public class MenuSelector {
 		//lista de series que vêm de cada regra 
 		ArrayList<String> series_list = new ArrayList<String>();
 		//project tem a info toda
-		File xmlFile= new File("./src/series.xml");
-		File schemaFile = new File("./src/schema.xsd");
-		Project project = unmarshall.unmarshalles(xmlFile, schemaFile);
+		Project project = unmarshall.unmarshalles_project();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println("                           Texto bonito a explicar o que estamos a fazer                                ");
 		System.out.println("------------------------------------------------------------------------------------------");
@@ -139,7 +137,7 @@ public class MenuSelector {
 				}
 				File xmlFile1 = new File("./src/series_temporario.xml");
 				File schemaFile1 = new File("./src/schema.xsd");
-				Boolean result = marshall.marshalles(project, xmlFile1, schemaFile1);
+				Boolean result = marshall.marshalles_project(project);
 				if (!result) {
 					System.out.println("A pesquisa efetuada nao tem resultados.");
 					

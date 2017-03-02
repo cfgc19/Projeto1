@@ -55,9 +55,7 @@ public class teste {
 
 		BigInteger ranting, episodes, seasons;
 		String language = "", network = "", genre = "", actor = "";
-		File xmlFile= new File("./src/series.xml");
-		File schemaFile = new File("./src/schema.xsd");
-		Project project = unmarshall.unmarshalles(xmlFile, schemaFile);
+		Project project = unmarshall.unmarshalles_project();
 		int option2 = 0;
 		boolean opcao_certa = true;
 
