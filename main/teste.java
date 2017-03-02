@@ -48,9 +48,7 @@ public class teste {
 	}
 		return result_list;
 	}
-	public static ArrayList<String> rules(int opcao) {
-
-		ArrayList<String> series_list = new ArrayList<String>();
+	public static ArrayList<String> rules(int opcao, ArrayList<String> series_list) {
 		
 		Scanner scan = new Scanner(System.in);
 
@@ -72,8 +70,7 @@ public class teste {
 			
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger ranting1 = project.getSerie().get(i).getRating();
-					if (ranting1.compareTo(ranting)==-1) {
-						//project.getSerie().remove(i);
+					if (ranting1.compareTo(ranting)!=-1) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
@@ -88,8 +85,7 @@ public class teste {
 
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger episodes1 = project.getSerie().get(i).getNumberOfEpisodes();
-					if (episodes1.compareTo(episodes)==-1) {
-						//project.getSerie().remove(i);
+					if (episodes1.compareTo(episodes)!=-1) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 						
 				}
@@ -105,8 +101,7 @@ public class teste {
 			// faltam controlos
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger seasons1 = project.getSerie().get(i).getNumberOfSeasons();
-					if (seasons.compareTo(seasons1)==-1) {
-						//project.getSerie().remove(i);
+					if (seasons.compareTo(seasons1)!=-1) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
@@ -144,8 +139,7 @@ public class teste {
 			// ELIMINA NO XML AS SERIES QUE NAO TENHAM A LINGUAGEM ESCOLHIDA
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getLanguages();
-					if (!(list.contains(languages_list.get(option2 - 1)))) {
-						//project.getSerie().remove(i);
+					if (list.contains(languages_list.get(option2 - 1))) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				
 				}
@@ -179,8 +173,7 @@ public class teste {
 			}
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				network = project.getSerie().get(i).getNetwork();
-					if (!(network.equals(networks_list.get(option2 - 1)))) {
-						//project.getSerie().remove(i);
+					if (network.equals(networks_list.get(option2 - 1))) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
@@ -217,8 +210,7 @@ public class teste {
 			// ELIMINA NO XML AS SERIES QUE NAO TENHAM A GENERO ESCOLHIDO
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getGenre();
-					if (!(list.contains(genres_list.get(option2 - 1)))) {
-						//project.getSerie().remove(i);
+					if (list.contains(genres_list.get(option2 - 1))) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
@@ -255,8 +247,7 @@ public class teste {
 			// ELIMINA NO XML AS SERIES QUE NAO TENHAM A GENERO ESCOLHIDO
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getCast();
-					if (!(list.contains(actors_list.get(option2 - 1)))) {
-						//project.getSerie().remove(i);
+					if (list.contains(actors_list.get(option2 - 1))) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}

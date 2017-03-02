@@ -1,6 +1,7 @@
 package main;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.RunnableScheduledFuture;
 
@@ -50,7 +51,7 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
-		Project project =teste.rules(opcao);
+		series_list =teste.rules(opcao,series_list);
 		
 		boolean exit=false;
 		while (!exit){
@@ -99,7 +100,9 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
-					series_list=teste.rules(opcao2);
+					series_list=teste.rules(opcao2,series_list);
+					//ATUALIZAR A NOVA LISTA DE SERIES
+					series_list = teste.rule_and(series_list);
 				}
 			else if (opcao1.equals("b"))
 				{
@@ -119,10 +122,16 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
-					series_list=teste.rules(opcao2);
+					series_list=teste.rules(opcao2,series_list);
+					series_list= teste.rule_or(series_list);
 				}
 			else if (opcao1.equals("c")) // criar o XML
 			{
+				for (int i = project.getSerie().size() - 1; i >= 0; i--) {
+						if (!(series_list.contains(project.getSerie().get(i).getSerieName()))) {
+							project.getSerie().remove(i);
+					}
+				}
 				Boolean result = marshall.marshalles(project);
 				if (!result) {
 					System.out.println("A pesquisa efetuada nao tem resultados.");
