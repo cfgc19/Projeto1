@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Actors>
+	<actor>
+		<actor_name>Adriana</actor_name>
+		<serie>Integraçao de Sistemas</serie>
+		<serie>ADAR</serie>
+		<no_episodes>50</no_episodes>
+	</actor>
+	<actor>
+		<actor_name>Filipa</actor_name>
+		<serie>Integraçao de Sistemas</serie>
+		<serie>ADAR</serie>
+		<no_episodes>60</no_episodes>
+	</actor>
+	<stats>
+		<no_actors>2</no_actors>
+		<podium_actors>Filipa</podium_actors>		
+	</stats>
+</Actors>

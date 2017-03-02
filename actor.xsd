@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Actors">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="actor"/>
+        <xs:element ref="stats"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="actor">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="actor_name"/>
+        <xs:element maxOccurs="unbounded" ref="serie"/>
+        <xs:element ref="no_episodes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="actor_name" type="xs:NCName"/>
+  <xs:element name="serie" type="xs:string"/>
+  <xs:element name="no_episodes" type="xs:integer"/>
+  <xs:element name="stats">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="no_actors"/>
+        <xs:element ref="podium_actors"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="no_actors" type="xs:integer"/>
+  <xs:element name="podium_actors" type="xs:NCName"/>
+</xs:schema>
