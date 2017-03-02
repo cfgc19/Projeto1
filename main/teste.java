@@ -74,7 +74,6 @@ public class teste {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
-			// faltam controlos
 			break;
 		case 2:
 			System.out.print("Escolha o valor minimo do episódios : ");
@@ -90,7 +89,6 @@ public class teste {
 						
 				}
 			}
-			// faltam controlos
 			break;
 		case 3:
 			System.out.println("Escolha o valor minimo de temporadas: ");
@@ -98,7 +96,6 @@ public class teste {
 			validation_int(scan);
 
 			seasons = scan.nextBigInteger();
-			// faltam controlos
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger seasons1 = project.getSerie().get(i).getNumberOfSeasons();
 					if (seasons1.compareTo(seasons)>=0) {
@@ -147,8 +144,6 @@ public class teste {
 			break;
 		case 5:
 			System.out.println("Escolha a Network: ");
-			// network = scan.nextLine(); ... creio que isto tem que ser em
-			// baixo (ass dricas)
 			ArrayList<String> networks_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
@@ -180,12 +175,11 @@ public class teste {
 			break;
 		case 6:
 			System.out.println("Escolha o género da série: ");
-			// genre = scan.nextLine();
 
 			ArrayList<String> genres_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				for (int j = project.getSerie().get(i).getGenre().size(); i >= 0; i--) {
+				for (int j = project.getSerie().get(i).getGenre().size()-1; j >= 0; j--) {
 					genre = project.getSerie().get(i).getGenre().get(j);
 					if (!genres_list.contains(genre)) {
 						genres_list.add(genre);
@@ -224,7 +218,7 @@ public class teste {
 			option_list = 1;
 			opcao_certa = true;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				for (int j = project.getSerie().get(i).getCast().size(); i >= 0; i--) {
+				for (int j = project.getSerie().get(i).getCast().size()-1; j >= 0; j--) {
 					actor = project.getSerie().get(i).getCast().get(j);
 					if (!actors_list.contains(actor)) {
 						actors_list.add(actor);
@@ -235,7 +229,6 @@ public class teste {
 			}
 			while (opcao_certa) {
 				validation_int(scan);
-
 				option2 = scan.nextInt();
 				scan.nextLine();
 				if (1 < option2 || option2 > actors_list.size()) {

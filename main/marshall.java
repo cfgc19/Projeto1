@@ -23,7 +23,6 @@ public class marshall {
 		}
 		
 		try{
-		//File file = new File("D:\\Filipa\\OneDrive - Universidade de Coimbra\\4ºano\\IS\\Projeto_1\\src\\series_temporario.xml");
 		File file = new File("./src/series_temporario.xml");
 
 		JAXBContext jaxbContext = JAXBContext.newInstance(Project.class);

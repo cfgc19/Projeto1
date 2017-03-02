@@ -30,7 +30,6 @@ public class unmarshall {
 			jaxbUnmarshaller.setSchema(schema);
 			Project project = (Project) jaxbUnmarshaller.unmarshal(file);
 			
-			System.out.println(project.getSerie().get(2).getNetwork());
 			return project;
 		} catch (JAXBException | SAXException e) {
 			// TODO Auto-generated catch block
