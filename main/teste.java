@@ -70,7 +70,7 @@ public class teste {
 			
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger ranting1 = project.getSerie().get(i).getRating();
-					if (ranting1.compareTo(ranting)!=-1) {
+					if (ranting1.compareTo(ranting)>=0) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
@@ -85,7 +85,7 @@ public class teste {
 
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger episodes1 = project.getSerie().get(i).getNumberOfEpisodes();
-					if (episodes1.compareTo(episodes)!=-1) {
+					if (episodes1.compareTo(episodes)>=0) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 						
 				}
@@ -101,7 +101,7 @@ public class teste {
 			// faltam controlos
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				BigInteger seasons1 = project.getSerie().get(i).getNumberOfSeasons();
-					if (seasons.compareTo(seasons1)!=-1) {
+					if (seasons1.compareTo(seasons)>=0) {
 						series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
