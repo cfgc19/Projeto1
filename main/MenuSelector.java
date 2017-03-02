@@ -52,7 +52,6 @@ public class MenuSelector {
 			}
 		}
 		series_list =teste.rules(opcao,series_list);
-		
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
@@ -100,10 +99,10 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
-					
 					series_list=teste.rules(opcao2,series_list);
 					//ATUALIZAR A NOVA LISTA DE SERIES
 					series_list = teste.rule_and(series_list);
+
 				}
 			else if (opcao1.equals("b"))
 				{
@@ -123,6 +122,7 @@ public class MenuSelector {
 							opcao_certa=false;
 						}
 					}
+
 					series_list=teste.rules(opcao2,series_list);
 					series_list= teste.rule_or(series_list);
 				}
