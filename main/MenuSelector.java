@@ -50,8 +50,8 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
-		Project project =teste.rules(opcao);
-		
+		series_list =teste.rules(opcao);
+		System.out.println(series_list);
 		boolean exit=false;
 		while (!exit){
 			System.out.println("------------------------------------------------------------------------------------------");
@@ -100,6 +100,7 @@ public class MenuSelector {
 						}
 					}
 					series_list=teste.rules(opcao2);
+					System.out.println(series_list);
 				}
 			else if (opcao1.equals("b"))
 				{
@@ -120,6 +121,7 @@ public class MenuSelector {
 						}
 					}
 					series_list=teste.rules(opcao2);
+					System.out.println(series_list);
 				}
 			else if (opcao1.equals("c")) // criar o XML
 			{
