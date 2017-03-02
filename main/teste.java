@@ -1,5 +1,6 @@
 package main;
 
+import java.io.File;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,8 +55,9 @@ public class teste {
 
 		BigInteger ranting, episodes, seasons;
 		String language = "", network = "", genre = "", actor = "";
-
-		Project project = unmarshall.unmarshalles();
+		File xmlFile= new File("./src/series.xml");
+		File schemaFile = new File("./src/schema.xsd");
+		Project project = unmarshall.unmarshalles(xmlFile, schemaFile);
 		int option2 = 0;
 		boolean opcao_certa = true;
 
