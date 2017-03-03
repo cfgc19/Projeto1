@@ -214,6 +214,7 @@ public class teste {
 			System.out.println("Escolhe o nome do ator: ");
 			// actor = scan.nextLine();
 
+	
 			ArrayList<String> actors_list = new ArrayList<String>();
 			option_list = 1;
 			opcao_certa = true;
