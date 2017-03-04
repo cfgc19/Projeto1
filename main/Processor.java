@@ -22,7 +22,7 @@ public class Processor {
 		for (int i= project.getSerie().size()-1; i>=0;i--)
 		{
 			for (int j = project.getSerie().get(i).getCast().size()-1; j >= 0; j--) {
-				actor = project.getSerie().get(i).getCast().get(j);
+				actor = project.getSerie().get(i).getCast().get(j).getName();
 				if (!actors_list.contains(actor)) {
 					actors_list.add(actor);
 				}
