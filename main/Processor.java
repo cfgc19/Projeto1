@@ -5,7 +5,12 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -14,6 +19,26 @@ import generated.Actors;
 import generated.Project;
 
 public class Processor {
+	
+	public static HashMap ola (Map map){
+		 List list = new LinkedList(map.entrySet());
+	       // Defined Custom Comparator here
+	       Collections.sort(list, new Comparator() {
+	            public int compare(Object o1, Object o2) {
+	               return ((Comparable) ((Map.Entry) (o1)).getValue())
+	                  .compareTo(((Map.Entry) (o2)).getValue());
+	            }
+	       });
+
+	       // Here I am copying the sorted list in HashMap
+	       // using LinkedHashMap to preserve the insertion order
+	       HashMap sortedHashMap = new LinkedHashMap();
+	       for (Iterator it = list.iterator(); it.hasNext();) {
+	              Map.Entry entry = (Map.Entry) it.next();
+	              sortedHashMap.put(entry.getKey(), entry.getValue());
+	       } 
+	       return sortedHashMap;
+	}
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		File xmlFile = new File("./src/series_temporario.xml");
@@ -32,9 +57,11 @@ public class Processor {
 		for (int i= project.getSerie().size()-1; i>=0;i--)
 		{
 			episodes=project.getSerie().get(i).getNumberOfEpisodes();
+			serie =project.getSerie().get(i).getSerieName();	
+			System.out.println(episodes);
 			for (int j = project.getSerie().get(i).getCast().size()-1; j >= 0; j--) {
 				actor = project.getSerie().get(i).getCast().get(j).getName();
-				serie =project.getSerie().get(i).getSerieName();				
+								
 				if(series_by_actors.containsKey(actor)){
 				    series_names = series_by_actors.get(actor);
 				    actors_episodes=episodes_by_actors.get(actor);
@@ -53,6 +80,8 @@ public class Processor {
 				}
 			}
 		}
+		
+		episodes_by_actors= ola(episodes_by_actors);
 		series_names.sort(String::compareToIgnoreCase);
 		System.out.println(episodes_by_actors);
 		System.out.println(series_by_actors);
