@@ -16,7 +16,6 @@ public class teste {
 			System.out.println("ERRO! Introduza um inteiro: ");
 		}
 	}
-	
 	public static ArrayList<String> rule_or(ArrayList<String> series_list)
 	{
 		int size=series_list.size();

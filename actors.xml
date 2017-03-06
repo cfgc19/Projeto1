@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Actors>
 	<actor>
-		<actor_name>Adriana</actor_name>
-		<serie>Integraçao de Sistemas</serie>
-		<serie>ADAR</serie>
+		<actor_name>Emilia Clarke</actor_name>
+		<serie>Sherlock</serie>
+		<serie>Sex and the City</serie>
 		<no_episodes>50</no_episodes>
 	</actor>
 	<actor>
-		<actor_name>Filipa</actor_name>
-		<serie>Integraçao de Sistemas</serie>
-		<serie>ADAR</serie>
+		<actor_name>Sophie Turner</actor_name>
+		<serie>Gossip Girl</serie>
+		<serie>Breaking Bad</serie>
 		<no_episodes>60</no_episodes>
 	</actor>
 	<stats>
-		<no_actors>2</no_actors>
-		<podium_actors>Filipa</podium_actors>		
+		<no_actors>50</no_actors>
+		<podium_actors>Karla Souza</podium_actors>		
+		<podium_actors>Viola Davis</podium_actors>	
+		<podium_actors>Alfred Enoch</podium_actors>	
 	</stats>
 </Actors>
