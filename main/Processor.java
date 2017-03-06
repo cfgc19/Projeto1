@@ -21,40 +21,40 @@ public class Processor {
 		Project project=unmarshall.unmarshalles_project(xmlFile);
 		String actor="";
 		String serie ="";
+		BigInteger episodes;
 		ArrayList<String> actors_list = new ArrayList<String>();
-		Map<String, ArrayList<String>> series_by_actors = new HashMap<String,ArrayList<String>>();
+		Map<String, ArrayList<String> > series_by_actors = new HashMap<String,ArrayList<String>>();
+		Map<String, BigInteger> episodes_by_actors = new HashMap<String,BigInteger>();
 		
-		ArrayList<String> series_names = new ArrayList<String>();
-		
-		if(series_by_actors.containsKey("Joana")){
-		    series_names = series_by_actors.get("Oliver");
-		    series_names.add("ola");
-		} else {
-		    series_names = new ArrayList<String>();
-		    series_names.add("oiii");
-		    series_by_actors.put("Joana", series_names);
-		}
-		
-		
+		ArrayList<String> series_names = new ArrayList<String>();		
 		//todos os atores
+		BigInteger actors_episodes;
 		for (int i= project.getSerie().size()-1; i>=0;i--)
 		{
+			episodes=project.getSerie().get(i).getNumberOfEpisodes();
 			for (int j = project.getSerie().get(i).getCast().size()-1; j >= 0; j--) {
 				actor = project.getSerie().get(i).getCast().get(j).getName();
-				serie =project.getSerie().get(i).getSerieName();
+				serie =project.getSerie().get(i).getSerieName();				
 				if(series_by_actors.containsKey(actor)){
 				    series_names = series_by_actors.get(actor);
+				    actors_episodes=episodes_by_actors.get(actor);
+				    actors_episodes.add(episodes);
+				    
 				    series_names.add(serie);
 				    series_names.sort(String::compareToIgnoreCase);
+				    
 				} else {
 				    series_names = new ArrayList<String>();
 				    series_names.add(serie);
+				    
 				    series_names.sort(String::compareToIgnoreCase);
 				    series_by_actors.put(actor, series_names);
+				    episodes_by_actors.put(actor, episodes);
 				}
 			}
 		}
 		series_names.sort(String::compareToIgnoreCase);
+		System.out.println(episodes_by_actors);
 		System.out.println(series_by_actors);
 
 		
