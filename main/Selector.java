@@ -1,16 +1,25 @@
 package main;
 
+import java.io.File;
 import java.lang.reflect.Array;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Set;
+
+import generated.Actors;
+import generated.Project;
 
 public class Selector {
 
 	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		File xmlFile = new File("./src/series_temporario.xml");
+		Actors actors = unmarshall.unmarshalles_actors();
+		Project project=unmarshall.unmarshalles_project(xmlFile);
 
 		ArrayList<String> result_list = new ArrayList<String>();
 
@@ -52,5 +61,7 @@ public class Selector {
 		    list.add("oiii");
 		}
 		System.out.println(series_by_actors);
+		
+		
 	}
 }
