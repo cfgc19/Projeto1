@@ -96,62 +96,67 @@ public class teste {
 				for (int j=project.getSerie().get(i).getRating().size()-1;j>=0;j--)
 				{
 					String rating_string="";
-					int rating1=0;
-					if (project.getSerie().get(i).getRating().get(j).getSource().equals("IMDb"))
+					float rating1=0;
+					if (project.getSerie().get(i).getRating().get(j).getSource().equals(sources_list.get(option2-1)))
 					{
-						rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-						if (rating_string.contains("."))
+						if (project.getSerie().get(i).getRating().get(j).getSource().equals("IMDb"))
 						{
+							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
+							if (rating_string.contains("."))
+							{
+								rating1 = Float.parseFloat(rating_string.substring(0, 3));
+							}
+							else
+							{
+								rating1=Integer.parseInt(rating_string.substring(0,1));
+							}
+
+						}
+						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("HBO Uk"))
+						{
+							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
+							if (rating_string.contains("."))
+							{
+								rating1 = Float.parseFloat(rating_string.substring(0, 3));
+							}
+							else
+							{
+								rating1=Integer.parseInt(rating_string.substring(0,1));
+							}
+						}
+						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Rotten Tomatoes"))
+						{
+							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
+
 							rating1 = Integer.parseInt(rating_string.substring(0, 2));
+							
 						}
-						else
+						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("TV.com"))
 						{
-							rating1=Integer.parseInt(rating_string.substring(0,0));
+							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
+							if (rating_string.contains("."))
+							{
+								rating1 = Float.parseFloat(rating_string.substring(0, 3));
+							}
+							else
+							{
+								rating1=Integer.parseInt(rating_string.substring(0,1));
+							}
 						}
+						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Metacritic"))
+						{
+							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
+
+							rating1 = Integer.parseInt(rating_string.substring(0, 2));
+							
+						}
+						if ((rating1-rating)>=0) {
+							System.out.println(rating1);
+							series_list.add(project.getSerie().get(i).getSerieName());
+					}
 
 					}
-					else if(project.getSerie().get(i).getRating().get(j).getSource().equals("HBO Uk"))
-					{
-						rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-						if (rating_string.contains("."))
-						{
-							rating1 = Integer.parseInt(rating_string.substring(0, 2));
-						}
-						else
-						{
-							rating1=Integer.parseInt(rating_string.substring(0,0));
-						}
 					}
-					else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Rotten Tomatoes"))
-					{
-						rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-
-						rating1 = Integer.parseInt(rating_string.substring(0, 1));
-						
-					}
-					else if(project.getSerie().get(i).getRating().get(j).getSource().equals("TV.com"))
-					{
-						rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-						if (rating_string.contains("."))
-						{
-							rating1 = Integer.parseInt(rating_string.substring(0, 2));
-						}
-						else
-						{
-							rating1=Integer.parseInt(rating_string.substring(0,0));
-						}
-					}
-					else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Metacritic"))
-					{
-						rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-
-						rating1 = Integer.parseInt(rating_string.substring(0, 1));
-						
-					}
-					if ((rating1-rating)>=0) {
-						series_list.add(project.getSerie().get(i).getSerieName());
-				}
-				}
 
 			}
 			break;
