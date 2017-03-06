@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project>
     <serie>
-        <serie_name>Gossip Girl</serie_name>
-        <genre>Teen drama</genre>
-        <Rating>50</Rating>
-        <number_of_seasons>6</number_of_seasons>
-        <cast>Blake Lively</cast>
-        <cast>Leighton Meester</cast>
-        <cast>Penn Badgley</cast>
-        <cast>Chace Crawford</cast>
-        <cast>Taylor Momsen</cast>
-        <cast>Ed Westwick</cast>
-        <cast>Kelly Rutherford</cast>
-        <cast>Matthew Settle</cast>
-        <cast>Jessica Szohr</cast>
-        <cast>Kaylee DeFer</cast>
-        <musical_theme>"Steps of The Met"</musical_theme>
-        <authors>Josh Schwartz</authors>
-        <authors>Stephanie Savage</authors>
-        <number_of_episodes>121</number_of_episodes>
-        <network>The CW</network>
-        <first_episode>19 September 2007</first_episode>
+        <serie_name>How to Get Away with Murder</serie_name>
+        <type>American drama series</type>
+        <genre>Legal drama</genre>
+        <genre>Mystery</genre>
+        <genre>Thriller</genre>
+        <rating>
+            <value>8.3/10</value>
+            <source>IMDb</source>
+        </rating>
+        <rating>
+            <value>8/10</value>
+            <source>TV.com</source>
+        </rating>
+        <rating>
+            <value>90%</value>
+            <source>Rotten Tomatoes</source>
+        </rating>
+        <description>How to Get Away with Murder is an American drama television series that premiered on ABC on September 25, 2014. The series was created by Peter Nowalk, and produced by Shonda Rhimes and ABC Studios.</description>
+        <number_of_seasons>3</number_of_seasons>
+        <cast>
+            <name>Viola Davis</name>
+            <character>Annalise Keating</character>
+        </cast>
+        <cast>
+            <name>Alfred Enoch</name>
+            <character>Wes Gibbins</character>
+        </cast>
+        <cast>
+            <name>Jack Falahee</name>
+            <character>Connor Walsh</character>
+        </cast>
+        <cast>
+            <name>Charlie Weber</name>
+            <character>Frank Delfino</character>
+        </cast>
+        <cast>
+            <name>Karla Souza</name>
+            <character>Karla Souza</character>
+        </cast>
+        <musical_theme>Photek</musical_theme>
+        <writers>Peter Nowalk</writers>
+        <number_of_episodes>45</number_of_episodes>
+        <network>ABC</network>
+        <first_episode>2014-09-25</first_episode>
+        <episode>
+            <title>Wes</title>
+            <season>3</season>
+            <number>15</number>
+            <date>2017-02-23</date>
+        </episode>
+        <episode>
+            <title>He Made a Terrible Mistake</title>
+            <season>3</season>
+            <number>14</number>
+            <date>2017-02-23</date>
+        </episode>
+        <episode>
+            <title>It's War</title>
+            <season>3</season>
+            <number>13</number>
+            <date>2017-02-16</date>
+        </episode>
         <languages>English</languages>
-    </serie>
-    <serie>
-        <serie_name>House of Cards</serie_name>
-        <genre>Political drama</genre>
-        <Rating>84</Rating>
-        <number_of_seasons>4</number_of_seasons>
-        <cast>Kevin Spacey</cast>
-        <cast>Robin Wright</cast>
-        <cast>Kate Mara</cast>
-        <cast>Corey Stoll</cast>
-        <cast>Michael Kelly</cast>
-        <cast>Sakina Jaffrey</cast>
-        <cast>Kristen Connolly</cast>
-        <cast>Sebastian Arcelus</cast>
-        <cast>Michel Gill</cast>
-        <cast>Nathan Darrow</cast>
-        <cast>Rachel Brosnahan</cast>
-        <cast>Constance Zimmer</cast>
-        <cast>Mahershala Ali</cast>
-        <cast>Elizabeth Norment</cast>
-        <cast>Sandrine Holt</cast>
-        <cast>Jayne Atkinson</cast>
-        <cast>Molly Parker</cast>
-        <cast>Gerald McRaney</cast>
-        <cast>Jimmi Simpson</cast>
-        <cast>Elizabeth Marvel</cast>
-        <cast>Derek Cecil</cast>
-        <cast>Mozhan Marno</cast>
-        <cast>Paul Sparks</cast>
-        <cast>Neve Campbell</cast>
-        <cast>Joel Kinnaman</cast>
-        <musical_theme>House of Cards Theme</musical_theme>
-        <authors>Beau Willimon</authors>
-        <number_of_episodes>52</number_of_episodes>
-        <network>The CW</network>
-        <first_episode>1 February 2013</first_episode>
-        <languages>English</languages>
+        <profiles>Twitter</profiles>
+        <profiles>Facebook</profiles>
+        <profiles>Instagram</profiles>
     </serie>
 </Project>
