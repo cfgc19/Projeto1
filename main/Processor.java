@@ -40,6 +40,10 @@ public class Processor {
 		Scanner scan = new Scanner(System.in);
 		File xmlFile = new File("./src/series_temporario.xml");
 		Actors actors = unmarshall.unmarshalles_actors();
+		
+		System.out.println(actors);
+		
+		
 		Project project = unmarshall.unmarshalles_project(xmlFile);
 		String actor = "";
 		String serie = "";
@@ -84,13 +88,13 @@ public class Processor {
 		System.out.println(episodes_by_actors);
 		System.out.println(series_by_actors);
 		System.out.println(series_by_actors);
+		List<Actor> actors_list1 = actors.getActor();
 		for (Map.Entry<String, List<String>> entry : series_by_actors.entrySet()) {
 			String key = entry.getKey();
 			List<String> value = entry.getValue();
 			Actor actor1 = new Actor();
 			actor1.setActorName(key);
 			List<String> series_list1 = actor1.getSerie();
-			List<Actor> actors_list1 = actors.getActor();
 			for (int i = 0; i < value.size(); i++) {
 				series_list1.add(value.get(i));
 			}
@@ -99,6 +103,12 @@ public class Processor {
 		
 		for (int i = 0; i < actors.getActor().size(); i++) {
 			System.out.println(actors.getActor().get(i).getActorName());
+		}
+		
+		for (int i=actors.getActor().size()-1; i>=0; i--)
+		{
+			
+			actors.getActor().add(actors_list1.get(i));
 		}
 		Boolean result = marshall.marshalles_actors(actors);
 		System.out.println(result);
