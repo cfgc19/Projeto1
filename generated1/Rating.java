@@ -6,8 +6,9 @@
 //
 
 
-package generated;
+package generated1;
 
+import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -25,8 +26,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{}name"/>
- *         &lt;element ref="{}character"/>
+ *         &lt;element ref="{}value"/>
+ *         &lt;element ref="{}source"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -37,63 +38,63 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "name",
-    "character"
+    "value",
+    "source"
 })
-@XmlRootElement(name = "cast")
-public class Cast {
+@XmlRootElement(name = "rating")
+public class Rating {
 
     @XmlElement(required = true)
-    protected String name;
+    protected BigDecimal value;
     @XmlElement(required = true)
-    protected String character;
+    protected String source;
 
     /**
-     * Gets the value of the name property.
+     * Gets the value of the value property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public BigDecimal getValue() {
+        return value;
+    }
+
+    /**
+     * Sets the value of the value property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link BigDecimal }
+     *     
+     */
+    public void setValue(BigDecimal value) {
+        this.value = value;
+    }
+
+    /**
+     * Gets the value of the source property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getName() {
-        return name;
+    public String getSource() {
+        return source;
     }
 
     /**
-     * Sets the value of the name property.
+     * Sets the value of the source property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setName(String value) {
-        this.name = value;
-    }
-
-    /**
-     * Gets the value of the character property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getCharacter() {
-        return character;
-    }
-
-    /**
-     * Sets the value of the character property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setCharacter(String value) {
-        this.character = value;
+    public void setSource(String value) {
+        this.source = value;
     }
 
 }

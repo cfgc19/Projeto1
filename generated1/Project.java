@@ -6,7 +6,7 @@
 //
 
 
-package generated;
+package generated1;
 
 import java.util.ArrayList;
 import java.util.List;

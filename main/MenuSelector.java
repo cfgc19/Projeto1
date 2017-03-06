@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.RunnableScheduledFuture;
 
-import generated.Project;
+import generated1.Project;
 
 public class MenuSelector {
 	public static void menu()

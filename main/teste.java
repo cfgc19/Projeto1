@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-import generated.Project;
+import generated1.Project;
 
 public class teste {
 
@@ -112,6 +112,7 @@ public class teste {
 
 		case 2:
 			System.out.println("Escolha o valor minimo de temporadas: ");
+<<<<<<< HEAD
 			validation_int(scan);
 			seasons = scan.nextBigInteger();
 
@@ -127,6 +128,8 @@ public class teste {
 				if (max_season.compareTo(seasons)>=0) {
 					series_list.add(project.getSerie().get(i).getSerieName());
 				}
+=======
+>>>>>>> Filipa
 
 
 			}
