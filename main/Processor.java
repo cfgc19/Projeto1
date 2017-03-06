@@ -35,6 +35,7 @@ public class Processor {
 	       } 
 	       return sortedHashMap;
 	}
+
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		File xmlFile = new File("./src/series_temporario.xml");
@@ -61,13 +62,16 @@ public class Processor {
 				if(series_by_actors.containsKey(actor)){
 				    series_names = series_by_actors.get(actor);
 				    actors_episodes=episodes_by_actors.get(actor);
+				    System.out.println(actors_episodes);
+				    
 				    actors_episodes.add(episodes);
 				    
 				    series_names.add(serie);
 				    series_names.sort(String::compareToIgnoreCase);
 				    
 				} else {
-				    series_names = new ArrayList<String>();
+					
+					series_names = new ArrayList<String>();
 				    series_names.add(serie);
 				    
 				    series_names.sort(String::compareToIgnoreCase);
@@ -81,7 +85,8 @@ public class Processor {
 		series_names.sort(String::compareToIgnoreCase);
 		System.out.println(episodes_by_actors);
 		System.out.println(series_by_actors);
-
+		System.out.println(series_by_actors);
+		
 		
 		for (int i = actors.getActor().size()- 1; i >= 0; i--) {
 			
