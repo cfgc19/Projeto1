@@ -99,7 +99,7 @@ public class teste {
 					float rating1=0;
 					if (project.getSerie().get(i).getRating().get(j).getSource().equals(sources_list.get(option2-1)))
 					{
-						if (project.getSerie().get(i).getRating().get(j).getSource().equals("IMDb"))
+						if (project.getSerie().get(i).getRating().get(j).getSource().equals("IMDb") || project.getSerie().get(i).getRating().get(j).getSource().equals("HBO Uk")|| project.getSerie().get(i).getRating().get(j).getSource().equals("TV.com"))
 						{
 							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
 							if (rating_string.contains("."))
@@ -112,38 +112,7 @@ public class teste {
 							}
 
 						}
-						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("HBO Uk"))
-						{
-							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-							if (rating_string.contains("."))
-							{
-								rating1 = Float.parseFloat(rating_string.substring(0, 3));
-							}
-							else
-							{
-								rating1=Integer.parseInt(rating_string.substring(0,1));
-							}
-						}
-						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Rotten Tomatoes"))
-						{
-							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-
-							rating1 = Integer.parseInt(rating_string.substring(0, 2));
-							
-						}
-						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("TV.com"))
-						{
-							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-							if (rating_string.contains("."))
-							{
-								rating1 = Float.parseFloat(rating_string.substring(0, 3));
-							}
-							else
-							{
-								rating1=Integer.parseInt(rating_string.substring(0,1));
-							}
-						}
-						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Metacritic"))
+						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Rotten Tomatoes") || project.getSerie().get(i).getRating().get(j).getSource().equals("Metacritic"))
 						{
 							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
 
