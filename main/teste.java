@@ -16,7 +16,6 @@ public class teste {
 			System.out.println("ERRO! Introduza um inteiro: ");
 		}
 	}
-	
 	public static ArrayList<String> rule_or(ArrayList<String> series_list)
 	{
 		int size=series_list.size();
@@ -249,7 +248,7 @@ public class teste {
 
 				option2 = scan.nextInt();
 				scan.nextLine();
-				if (1 < option2 || option2 > genres_list.size()) {
+				if (1 > option2 || option2 > genres_list.size()) {
 					System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 				} else {
 					opcao_certa = false;
@@ -285,7 +284,7 @@ public class teste {
 				validation_int(scan);
 				option2 = scan.nextInt();
 				scan.nextLine();
-				if (1 < option2 || option2 > actors_list.size()) {
+				if (1 > option2 || option2 > actors_list.size()) {
 					System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 				} else {
 					opcao_certa = false;
