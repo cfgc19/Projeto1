@@ -1,5 +1,6 @@
 package main;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -27,8 +28,7 @@ public class MenuSelector {
 		//lista de series que vêm de cada regra 
 		ArrayList<String> series_list = new ArrayList<String>();
 		//project tem a info toda
-		Project project = unmarshall.unmarshalles();
-		
+		Project project = unmarshall.unmarshalles_project();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println("                           Texto bonito a explicar o que estamos a fazer                                ");
 		System.out.println("------------------------------------------------------------------------------------------");
@@ -102,7 +102,7 @@ public class MenuSelector {
 					series_list=teste.rules(opcao2,series_list);
 					//ATUALIZAR A NOVA LISTA DE SERIES
 					series_list = teste.rule_and(series_list);
-
+					//System.out.println(series_list);
 				}
 			else if (opcao1.equals("b"))
 				{
@@ -125,6 +125,8 @@ public class MenuSelector {
 
 					series_list=teste.rules(opcao2,series_list);
 					series_list= teste.rule_or(series_list);
+					//System.out.println(series_list);
+					
 				}
 			else if (opcao1.equals("c")) // criar o XML
 			{
@@ -133,7 +135,9 @@ public class MenuSelector {
 							project.getSerie().remove(i);
 					}
 				}
-				Boolean result = marshall.marshalles(project);
+				File xmlFile1 = new File("./src/series_temporario.xml");
+				File schemaFile1 = new File("./src/schema.xsd");
+				Boolean result = marshall.marshalles_project(project);
 				if (!result) {
 					System.out.println("A pesquisa efetuada nao tem resultados.");
 					

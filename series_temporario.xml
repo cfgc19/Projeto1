@@ -1,27 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project>
     <serie>
-        <serie_name>Game of Thrones</serie_name>
-        <genre>Fantasy</genre>
-        <genre>Serial drama</genre>
-        <Rating>95</Rating>
+        <serie_name>Gossip Girl</serie_name>
+        <genre>Teen drama</genre>
+        <Rating>50</Rating>
         <number_of_seasons>6</number_of_seasons>
-        <cast>Emilia Clarke</cast>
-        <cast>Sophie Turner</cast>
-        <cast>Kit Harington</cast>
-        <cast>Maisie Williams</cast>
-        <cast>Lena Headey</cast>
-        <musical_theme>Tema de Game of Thrones</musical_theme>
-        <authors>George R. R. Martin</authors>
-        <authors>David Benioff</authors>
-        <authors>D. B. Weiss</authors>
-        <authors>Bryan Cogman</authors>
-        <authors>Jane Espenson</authors>
-        <authors>Vanessa Taylor</authors>
-        <authors>Dave Hill</authors>
-        <number_of_episodes>60</number_of_episodes>
-        <network>HBO</network>
-        <first_episode>17 April 2011</first_episode>
+        <cast>Blake Lively</cast>
+        <cast>Leighton Meester</cast>
+        <cast>Penn Badgley</cast>
+        <cast>Chace Crawford</cast>
+        <cast>Taylor Momsen</cast>
+        <cast>Ed Westwick</cast>
+        <cast>Kelly Rutherford</cast>
+        <cast>Matthew Settle</cast>
+        <cast>Jessica Szohr</cast>
+        <cast>Kaylee DeFer</cast>
+        <musical_theme>"Steps of The Met"</musical_theme>
+        <authors>Josh Schwartz</authors>
+        <authors>Stephanie Savage</authors>
+        <number_of_episodes>121</number_of_episodes>
+        <network>The CW</network>
+        <first_episode>19 September 2007</first_episode>
+        <languages>English</languages>
+    </serie>
+    <serie>
+        <serie_name>House of Cards</serie_name>
+        <genre>Political drama</genre>
+        <Rating>84</Rating>
+        <number_of_seasons>4</number_of_seasons>
+        <cast>Kevin Spacey</cast>
+        <cast>Robin Wright</cast>
+        <cast>Kate Mara</cast>
+        <cast>Corey Stoll</cast>
+        <cast>Michael Kelly</cast>
+        <cast>Sakina Jaffrey</cast>
+        <cast>Kristen Connolly</cast>
+        <cast>Sebastian Arcelus</cast>
+        <cast>Michel Gill</cast>
+        <cast>Nathan Darrow</cast>
+        <cast>Rachel Brosnahan</cast>
+        <cast>Constance Zimmer</cast>
+        <cast>Mahershala Ali</cast>
+        <cast>Elizabeth Norment</cast>
+        <cast>Sandrine Holt</cast>
+        <cast>Jayne Atkinson</cast>
+        <cast>Molly Parker</cast>
+        <cast>Gerald McRaney</cast>
+        <cast>Jimmi Simpson</cast>
+        <cast>Elizabeth Marvel</cast>
+        <cast>Derek Cecil</cast>
+        <cast>Mozhan Marno</cast>
+        <cast>Paul Sparks</cast>
+        <cast>Neve Campbell</cast>
+        <cast>Joel Kinnaman</cast>
+        <musical_theme>House of Cards Theme</musical_theme>
+        <authors>Beau Willimon</authors>
+        <number_of_episodes>52</number_of_episodes>
+        <network>The CW</network>
+        <first_episode>1 February 2013</first_episode>
         <languages>English</languages>
     </serie>
 </Project>

@@ -2,262 +2,686 @@
 <Project>
 	<serie>
 		<serie_name>Game of Thrones</serie_name>
+		<type>American drama series</type>
 		<genre>Fantasy</genre>
 		<genre>Serial drama</genre>
-		<Rating>95</Rating>
+		<rating>
+			<value>9.5/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>3/4</value>
+			<source>HBO Uk</source>
+		</rating>
+		<rating>
+			<value>95%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones</description>
 		<number_of_seasons>6</number_of_seasons>
-		<cast>Emilia Clarke</cast>
-		<cast>Sophie Turner</cast>
-		<cast>Kit Harington</cast>
-		<cast>Maisie Williams</cast>
-		<cast>Lena Headey</cast>
-		<musical_theme>Tema de Game of Thrones</musical_theme>
-		<authors>George R. R. Martin</authors>
-		<authors>David Benioff</authors>
-		<authors>D. B. Weiss</authors>
-		<authors>Bryan Cogman</authors>
-		<authors>Jane Espenson</authors>
-		<authors>Vanessa Taylor</authors>
-		<authors>Dave Hill</authors>
+		<cast>
+			<name>Emilia Clarke</name>
+			<character>Daenerys Targaryen</character>
+		</cast>
+		<cast>
+			<name>Sophie Turner</name>
+			<character>Sansa Stark</character>
+		</cast>
+		<cast>
+			<name>Kit Harington</name>
+			<character>Daenerys Targaryen</character>
+		</cast>
+		<cast>
+			<name>Maisie Williams</name>
+			<character>Arya Stark</character>
+		</cast>		
+		<cast>
+			<name>Lena Headey</name>
+			<character>Cersei Lannister</character>
+		</cast>		
+		<musical_theme>Game of Thrones Theme</musical_theme>
+		<writers>George R. R. Martin</writers>
+		<writers>David Benioff</writers>
+		<writers>D. B. Weiss</writers>
+		<writers>Bryan Cogman</writers>
+		<writers>Jane Espenson</writers>
+		<writers>Vanessa Taylor</writers>
+		<writers>Dave Hill</writers>
+		<program_creators>David Benioff</program_creators>
+		<program_creators>D.B.Weiss</program_creators>
+		<awards>Primetime Emmy Award for Outstanding Drama Series</awards>
 		<number_of_episodes>60</number_of_episodes>
 		<network>HBO</network>
 		<first_episode>17 April 2011</first_episode>
+		<episode>
+			<title>The Winds of Winter</title>
+			<season>6</season>
+			<number>10</number>
+			<date>26 Jun 2016</date>
+		</episode>
+		<episode>
+			<title>Battle of the Bastards</title>
+			<season>6</season>
+			<number>9</number>
+			<date>19 Jun 2016</date>
+		</episode>
+		<episode>
+			<title>No One</title>
+			<season>6</season>
+			<number>10</number>
+			<date>12 Jun 2016</date>
+		</episode>
 		<languages>English</languages>
+		<profiles>Facebook</profiles>
+		<profiles>Twitter</profiles>
+		<profiles>Instagram</profiles>
 	</serie>
 	<serie>
 		<serie_name>How to Get Away with Murder</serie_name>
+		<type>American drama series</type>
 		<genre>Legal drama</genre>
 		<genre>Mystery</genre>
 		<genre>Thriller</genre>
-		<Rating>90</Rating>
+		<rating>
+			<value>8.3/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8/10</value>
+			<source>TV.com</source>
+		</rating>
+		<rating>
+			<value>90%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>How to Get Away with Murder is an American drama television series that premiered on ABC on September 25, 2014. The series was created by Peter Nowalk, and produced by Shonda Rhimes and ABC Studios.</description>
 		<number_of_seasons>3</number_of_seasons>
-		<cast>Viola Davis</cast>
-		<cast>Alfred Enoch</cast>
-		<cast>Jack Falahee</cast>
-		<cast>Charlie Weber</cast>
-		<cast>Karla Souza</cast>
-		<cast>Aja Naomi King</cast>
-		<cast>Matt McGorry</cast>
-		<cast>Liza Weil</cast>
+		<cast>
+			<name>Viola Davis</name>
+			<character>Annalise Keating</character>
+		</cast>
+		<cast>
+			<name>Alfred Enoch</name>
+			<character>Wes Gibbins</character>
+		</cast>
+		<cast>
+			<name>Jack Falahee</name>
+			<character>Connor Walsh</character>
+		</cast>
+		<cast>
+			<name>Charlie Weber</name>
+			<character>Frank Delfino</character>
+		</cast>
+		<cast>
+			<name>Karla Souza</name>
+			<character>Karla Souza</character>
+		</cast>
 		<musical_theme>Photek</musical_theme>
-		<authors>Peter Nowalk</authors>
+		<writers>Peter Nowalk</writers>
 		<number_of_episodes>45</number_of_episodes>
 		<network>ABC</network>
 		<first_episode>25 September 2014</first_episode>
+		<episode>
+			<title>Wes</title>
+			<season>3</season>
+			<number>15</number>
+			<date>23 Feb 2017</date>
+		</episode>
+		<episode>
+			<title>He Made a Terrible Mistake</title>
+			<season>3</season>
+			<number>14</number>
+			<date>23 Feb 2017</date>
+		</episode>
+		<episode>
+			<title>It's War</title>
+			<season>3</season>
+			<number>13</number>
+			<date>16 Feb 2017</date>
+		</episode>
 		<languages>English</languages>
+		<profiles>Twitter</profiles>
+		<profiles>Facebook</profiles>
+		<profiles>Instagram</profiles>
 	</serie>
 	<serie>
 		<serie_name>Suits</serie_name>
+		<type>American drama seires</type>
 		<genre>Legal Drama</genre>
-		<Rating>86</Rating>
+		<rating>
+			<value>8.7/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.5/10</value>
+			<source>TV.com</source>
+		</rating>
+		<rating>
+			<value>86%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>Suits is an American legal drama television series created and written by Aaron Korsh. The series premiered on June 23, 2011, on the cable network USA, and is produced by Universal Cable. Suits is set at a fictional law firm in New York City</description>
 		<number_of_seasons>6</number_of_seasons>
-		<cast>Meghan Markle</cast>
-		<cast>Gabriel Macht</cast>
-		<cast>Patrick J. Adams</cast>
-		<cast>Sarah Rafferty</cast>
+		<cast>
+			<name>Meghan Markle</name>
+			<character>Rachel Zane</character>
+		</cast>
+		<cast>
+			<name>Gabriel Macht</name>
+			<character>Harvey Specter</character>
+		</cast>
+		<cast>
+			<name>Patrick J. Adams</name>
+			<character>Michael Ross</character>
+		</cast>
+		<cast>
+			<name>Sarah Rafferty</name>
+			<character>Dona Paulsen</character>
+		</cast>
+		<cast>
+			<name>Gina Torres</name>
+			<character>Jessica Pearson</character>
+		</cast>		
 		<musical_theme>Greenback Boogie</musical_theme>
-		<authors>Aaron Korsh</authors>
+		<writers>Aaron Korsh</writers>
 		<number_of_episodes>91</number_of_episodes>
 		<network>USA Network</network>
 		<first_episode>23 June 2011</first_episode>
+		<episode>
+			<title>Character and Fitness</title>
+			<season>6</season>
+			<number>16</number>
+			<date>1 Mar 2017</date>
+		</episode>
+		<episode>
+			<title>Quid Pro Quo</title>
+			<season>6</season>
+			<number>15</number>
+			<date>22 Feb 2017</date>
+		</episode>
+		<episode>
+			<title>Admission of Guilt</title>
+			<season>6</season>
+			<number>14</number>
+			<date>15 Feb 2017</date>
+		</episode>
 		<languages>English</languages>
+		<profiles>Twitter</profiles>
+		<profiles>Facebook</profiles>
+		<profiles>Instagram</profiles>
 	</serie>
 	<serie>
 		<serie_name>Sherlock</serie_name>
+		<type>Drama series</type>
 		<genre>Crime drama</genre>
-		<Rating>86</Rating>
+		<rating>
+			<value>9.2/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.9/10</value>
+			<source>TV.com</source>
+		</rating>
+		<rating>
+			<value>86%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>Sherlock is a crime drama television series based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Created by Steven Moffat and Mark Gatiss, it stars Benedict Cumberbatch as Sherlock Holmes and Martin Freeman as Doctor John Watson.</description>
 		<number_of_seasons>4</number_of_seasons>
-		<cast>>Mark Gatiss</cast>
-		<cast>Benedict Cumberbatch</cast>
-		<cast>Martin Freeman</cast>
-		<cast>Amanda Abbington</cast>
-		<cast>Louise Brealey</cast>
+		<cast>
+			<name>Benedict  Cumberbatch</name>
+			<character>Sherlock Holmes</character>
+		</cast>
+		<cast>
+			<name>Martin Freeman</name>
+			<character>Dr.Watson</character>
+		</cast>
+		<cast>
+			<name>Mark Gatiss</name>
+			<character>Mycroft Holmes</character>
+		</cast>
+		<cast>
+			<name>Amanda Abbington</name>
+			<character>Mary Morstan</character>
+		</cast>
+		<cast>
+			<name>Louise Brealey</name>
+			<character>Molly Hooper</character>
+		</cast>	
 		<musical_theme>Sherlock Theme Song</musical_theme>
-		<authors>Mark Gatiss</authors>
-		<authors>Steven Moffat</authors>
-		<authors>Stephen Thompson</authors>
+		<writers>Mark Gatiss</writers>
+		<writers>Steven Moffat</writers>
+		<writers>Stephen Thompson</writers>
 		<number_of_episodes>13</number_of_episodes>
 		<network>BBC</network>
 		<first_episode>25 July 2010</first_episode>
+		<episode>
+			<title>The Final Problem</title>
+			<season>4</season>
+			<number>3</number>
+			<date>15 Jan 2017</date>
+		</episode>
+		<episode>
+			<title>The Lying Detective</title>
+			<season>4</season>
+			<number>2</number>
+			<date>8 Jan 2017</date>
+		</episode>
+		<episode>
+			<title>Episode 1</title>
+			<season>4</season>
+			<number>1</number>
+			<date>1 Jan 2017</date>
+		</episode>
 		<languages>English</languages>
+		<profiles>Twitter</profiles>
+		<profiles>Facebook</profiles>
+		<profiles>Youtube</profiles>
 	</serie>
 	<serie>
 		<serie_name>Modern Family</serie_name>
+		<type>American sitcom</type>
 		<genre>Sitcom</genre>
 		<genre>Mockumentary</genre>
-		<Rating>85</Rating>
+		<rating>
+			<value>8.5/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.1/10</value>
+			<source>TV.com</source>
+		</rating>
+		<rating>
+			<value>85%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>Modern Family is an American television mockumentary sitcom that premiered on ABC on September 23, 2009, which follows the lives of Jay Pritchett and his family, all of whom live in suburban Los Angeles.</description>
 		<number_of_seasons>8</number_of_seasons>
-		<cast>Sofía Vergara</cast>
-		<cast>Julie Bowen</cast>
-		<cast>Ariel Winter</cast>
-		<cast>Sarah Hyland</cast>
-		<cast>Ed O'Neill</cast>
-		<cast>>Rico Rodrigues</cast>
-		<cast>Ty Burrel</cast>
+		<cast>
+			<name>Sofia Vergara</name>
+			<character>Gloria Delgado-Pritchett</character>
+		</cast>
+		<cast>
+			<name>Julie Bowen</name>
+			<character>Claire Dunphy</character>
+		</cast>
+		<cast>
+			<name>Ariel Winter</name>
+			<character>Alex Dunphy</character>
+		</cast>
+		<cast>
+			<name>Sarah Hyland</name>
+			<character>Haley Dunphy</character>
+		</cast>
+		<cast>
+			<name>Ty Burrel</name>
+			<character>Phil Dunphy</character>
+		</cast>	
 		<musical_theme>Modern Family Theme Song</musical_theme>
-		<authors> Christopher Lloyd</authors>
-		<authors>Steven Levitan</authors>
-		<authors>Danny Zuker</authors>
+		<writers>Christopher Lloyd</writers>
+		<writers>Steven Levitan</writers>
+		<writers>Danny Zuker</writers>
 		<number_of_episodes>180</number_of_episodes>
 		<network>ABC</network>
 		<first_episode>23 September 2009</first_episode>
+		<episode>
+			<title>Basketball</title>
+			<season>8</season>
+			<number>16</number>
+			<date>8 Mar 2017</date>
+		</episode>
+		<episode>
+			<title>Finding Fizbo</title>
+			<season>8</season>
+			<number>15</number>
+			<date>1 Mar 2017</date>
+		</episode>
+		<episode>
+			<title>Heavy is the Head</title>
+			<season>8</season>
+			<number>14</number>
+			<date>22 Feb 2017</date>
+		</episode>
 		<languages>English</languages>
+		<profiles>Twitter</profiles>
+		<profiles>Facebook</profiles>
+		<profiles>Instagram</profiles>
+		<profiles>Google+</profiles>
+		<profiles>Tumblr</profiles>
 	</serie>
 	<serie>
 		<serie_name>Narcos</serie_name>
+		<type>American web series</type>
 		<genre>Crime thriller</genre>
 		<genre>Biographical</genre>
-		<Rating>84</Rating>
+		<rating>
+			<value>8.9/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>77%</value>
+			<source>Metacritic</source>
+		</rating>
+		<rating>
+			<value>84%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>Narcos is an American crime web television series created and produced by Chris Brancato, Carlo Bernard, and Doug Miro. Season 1, comprising 10 episodes, originally aired on August 28, 2015, as a Netflix exclusive.</description>
 		<number_of_seasons>2</number_of_seasons>
-		<cast>Wagner Moura</cast>
-		<cast>Pedro Pascal</cast>
-		<cast>Boyd Holbrook</cast>
-		<cast>Paulina Gaitán</cast>
-		<cast>Joanna Christie</cast>
-		<cast>>Maurice Compte</cast>
-		<cast>Stephanie Sigman</cast>
-		<cast>Ana de la Reguera</cast>
-		<cast>Diogo Cataño</cast>
-		<cast>Manolo Cardona</cast>
-		<cast>André Mattos</cast>
-		<cast>Roberto Urbina</cast>
-		<cast>Leynar Gomez</cast>
+		<cast>
+			<name>Wagner Moura</name>
+			<character>Pablo Escobar</character>
+		</cast>
+		<cast>
+			<name>Pedro Pascal</name>
+			<character>Javier Pena</character>
+		</cast>
+		<cast>
+			<name>Boyd Holbrook</name>
+			<character>Steve Murphy</character>
+		</cast>
+		<cast>
+			<name>Paulina Gaitán</name>
+			<character>Tata Escobar</character>
+		</cast>
+		<cast>
+			<name>Joanna Christie</name>
+			<character>Connie Murphy</character>
+		</cast>	
 		<musical_theme>"Tuyo"</musical_theme>
-		<authors>Chris Brancato</authors>
-		<authors>Carlo Bernard</authors>
-		<authors>Doug Miro</authors>
+		<writers>Andrew Black</writers>
+		<nominations>Golden Globe Award for Best Performance by an Actor in a Television Series - Drama</nominations>
 		<number_of_episodes>20</number_of_episodes>
 		<network>Netflix</network>
 		<first_episode>28 August 2015</first_episode>
+		<episode>
+			<title>Al Fin Cayo!</title>
+			<season>2</season>
+			<number>10</number>
+			<date>2 Sep 2016</date>
+		</episode>
+		<episode>
+			<title>Nuestra Finca</title>
+			<season>2</season>
+			<number>9</number>
+			<date>2 Sep 2016</date>
+		</episode>
+		<episode>
+			<title>Exit El Patron</title>
+			<season>2</season>
+			<number>8</number>
+			<date>2 Sep 2016</date>
+		</episode>	
 		<languages>English</languages>
 		<languages>Spanish</languages>
+		<profiles>Twitter</profiles>
+		<profiles>Facebook</profiles>
+		<profiles>Instagram</profiles>
 	</serie>
 	<serie>
 		<serie_name>Sex and the City</serie_name>
+		<type>American comedy series</type>
 		<genre>Romantic comedy</genre>
 		<genre>Comedy drama</genre>
 		<genre>Sex comedy</genre>
-		<Rating>50</Rating>
+		<rating>
+			<value>7/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.6/10</value>
+			<source>TV.com</source>
+		</rating>
+		<description>Sex and the City is an American romantic comedy television series created by Darren Star and produced by HBO. Broadcast from 1998 until 2004, the original run of the show had a total of 94 episodes.</description>
 		<number_of_seasons>6</number_of_seasons>
-		<cast>Sarah Jessica Parker</cast>
-		<cast>Kim Cattrall</cast>
-		<cast>Kristin Davis</cast>
-		<cast>Cynthia Nixon</cast>
-		<cast>Chris Noth</cast>
-		<cast>>John Corbett</cast>
-		<cast>Willie Garson</cast>
-		<cast>David Eisenberg</cast>
-		<cast>Jason Lewis</cast>
-		<cast>Evan Handler</cast>
-		<cast>Mario Cantone</cast>
-		<cast>Kyle MacLachlan</cast>
-		<cast>Mikhail Baryshnikov</cast>
-		<cast>James Remar</cast>
-		<cast>Lynn Cohen</cast>
-		<cast>Blair Underwood</cast>
-		<cast>Ron Livingston</cast>
-		<cast>Bridget Moynahan</cast>
-		<cast>Ben Weber</cast>
-		<cast>Frances Sterenhagen</cast>
-		<cast>Sean Palmer</cast>
+		<cast>
+			<name>Sarah Jessica Parker</name>
+			<character>Carie Bradshaw</character>
+		</cast>
+		<cast>
+			<name>Kim Cattrall</name>
+			<character>Samantha Jones</character>
+		</cast>
+		<cast>
+			<name>Kristin Davis</name>
+			<character>Charlotte York Goldenblatt</character>
+		</cast>
+		<cast>
+			<name>Cynthia Nixon</name>
+			<character>Miranda Hobbes</character>
+		</cast>
+		<cast>
+			<name>Chris Noth</name>
+			<character>Mr. Big</character>
+		</cast>	
 		<musical_theme>Sex and the City Theme</musical_theme>
-		<authors>Darren Star</authors>
+		<writers>Darren Star</writers>
+		<writers>Candace Bushnell</writers>
+		<writers>Michael Patrick King</writers>
+		<spin_off>The Carrie Diaries</spin_off>
 		<number_of_episodes>94</number_of_episodes>
 		<network>HBO</network>
 		<first_episode>6 June 1998</first_episode>
+		<episode>
+			<title>An American Girl in Paris (Part Deux)</title>
+			<season>6</season>
+			<number>20</number>
+			<date>22 Feb 2004</date>
+		</episode>
+		<episode>
+			<title>An American Girl in Paris (Part Une)</title>
+			<season>6</season>
+			<number>19</number>
+			<date>15 Feb 2004</date>
+		</episode>
+		<episode>
+			<title>Splat!</title>
+			<season>6</season>
+			<number>18</number>
+			<date>15 Feb 2004</date>
+		</episode>	
 		<languages>English</languages>
+		<profiles>Facebook</profiles>
 	</serie>
 	<serie>
 		<serie_name>Breaking Bad</serie_name>
+		<type>American drama series</type>
 		<genre>Crime drama</genre>
 		<genre>Thriller</genre>
 		<genre>Contemporary Western</genre>
 		<genre>Black Comedy</genre>
-		<Rating>95</Rating>
+		<rating>
+			<value>9.5/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>9/10</value>
+			<source>TV.com</source>
+		</rating>
+		<rating>
+			<value>95%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. The show originally aired on the AMC network for five seasons, from January 20, 2008, to September 29, 2013.</description>
 		<number_of_seasons>5</number_of_seasons>
-		<cast>Bryan Cranston</cast>
-		<cast>Aaron Paul</cast>
-		<cast>Anna Gunn</cast>
-		<cast>RJ Mitte</cast>
-		<cast>Dean Norris</cast>
-		<cast>Betsy Brandt</cast>
-		<cast>Bob Odenkirk</cast>
-		<cast>Jonathan Banks</cast>
-		<cast>Giancarlo Esposito</cast>
-		<cast>Jesse Plemons</cast>
-		<cast>Laura Fraser</cast>
-		<cast>Steven Michael Quezada</cast>
-		<cast>Christopher Cousins</cast>
-		<cast>Raymond Cruz</cast>
-		<cast>Krysten Ritter</cast>
-		<cast>Marius Stan</cast>
-		<cast>Matt L. Jones</cast>
-		<cast>Charles Baker</cast>
+		<cast>
+			<name>Bryan Cranston</name>
+			<character>Walter White</character>
+		</cast>
+		<cast>
+			<name>Aaron Paul</name>
+			<character>Jesse Pinkman</character>
+		</cast>
+		<cast>
+			<name>Anna Gunn</name>
+			<character>Skyler White</character>
+		</cast>
+		<cast>
+			<name>RJ Mitte</name>
+			<character>Walter White Jr.</character>
+		</cast>
+		<cast>
+			<name>Dean Norris</name>
+			<character>Hank Schrader</character>
+		</cast>	
 		<musical_theme>Breaking Bad Theme</musical_theme>
-		<authors>Vince Gilligan</authors>
+		<writers>Vince Gilligan</writers>
+		<spin_off>Better Call Saul</spin_off>
 		<number_of_episodes>62</number_of_episodes>
 		<network>Sony Picture Television</network>
 		<first_episode>20 January 2008</first_episode>
+		<episode>
+			<title>Felina</title>
+			<season>5</season>
+			<number>16</number>
+			<date>29 Sep 2013</date>
+		</episode>
+		<episode>
+			<title>Granite State</title>
+			<season>5</season>
+			<number>15</number>
+			<date>22 Sep 2013</date>
+		</episode>
+		<episode>
+			<title>Ozymandias</title>
+			<season>5</season>
+			<number>14</number>
+			<date>15 Sep 2013</date>
+		</episode>	
 		<languages>English</languages>
+		<profiles>Facebook</profiles>
+		<profiles>Twitter</profiles>
+		<profiles>Google+</profiles>
 	</serie>
 	<serie>
 		<serie_name>Gossip Girl</serie_name>
+		<type>American drama series</type>
 		<genre>Teen drama</genre>
-		<Rating>50</Rating>
-		<number_of_seasons>6</number_of_seasons>
-		<cast>Blake Lively</cast>
-		<cast>Leighton Meester</cast>
-		<cast>Penn Badgley</cast>
-		<cast>Chace Crawford</cast>
-		<cast>Taylor Momsen</cast>
-		<cast>Ed Westwick</cast>
-		<cast>Kelly Rutherford</cast>
-		<cast>Matthew Settle</cast>
-		<cast>Jessica Szohr</cast>
-		<cast>Kaylee DeFer</cast>
+		<rating>
+			<value>7.4/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.5/10</value>
+			<source>TV.com</source>
+		</rating>
+		<description>Gossip Girl is an American teen drama television series based on the book series of the same name written by Cecily von Ziegesar.</description>
+		<narrator>Kristen Bell</narrator>
+		<number_of_seasons>6</number_of_seasons>	
+		<cast>
+			<name>Blake Lively</name>
+			<character>Serena van der Woodsen</character>
+		</cast>
+		<cast>
+			<name>Leighton Meester</name>
+			<character>Blair Waldorf</character>
+		</cast>
+		<cast>
+			<name>Ed Westwick</name>
+			<character>Chuck Bass</character>
+		</cast>
+		<cast>
+			<name>Chace Crawford</name>
+			<character>Nate Archibald</character>
+		</cast>
+		<cast>
+			<name>Penn Badgley</name>
+			<character>Dan Humphrey</character>
+		</cast>	
 		<musical_theme>"Steps of The Met"</musical_theme>
-		<authors>Josh Schwartz</authors>
-		<authors>Stephanie Savage</authors>
+		<writers>Josh Schwartz</writers>
+		<writers>Stephanie Savage</writers>
 		<number_of_episodes>121</number_of_episodes>
 		<network>The CW</network>
 		<first_episode>19 September 2007</first_episode>
+		<episode>
+			<title>New York, I Love You XOXO</title>
+			<season>6</season>
+			<number>10</number>
+			<date>17 Dec 2012</date>
+		</episode>
+		<episode>
+			<title>Save the Last Chance</title>
+			<season>6</season>
+			<number>7</number>
+			<date>26 Nov 2012</date>
+		</episode>
+		<episode>
+			<title>High Infidelity</title>
+			<season>5</season>
+			<number>2</number>
+			<date>15 Oct 2012</date>
+		</episode>	
 		<languages>English</languages>
+		<profiles>Facebook</profiles>
+		<profiles>Twitter</profiles>
+		<profiles>Google+</profiles>
 	</serie>
 	<serie>
 		<serie_name>House of Cards</serie_name>
+		<type>American drama series</type>
 		<genre>Political drama</genre>
-		<Rating>84</Rating>
+		<rating>
+			<value>9/10</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.3/10</value>
+			<source>TV.com</source>
+		</rating>
+		<rating>
+			<value>84%</value>
+			<source>Rotten Tomatoes</source>
+		</rating>
+		<description>House of Cards is an American political drama web television series created by Beau Willimon. It is an adaptation of the BBC's mini-series of the same name and is based on the novel by Michael Dobbs.</description>
 		<number_of_seasons>4</number_of_seasons>
-		<cast>Kevin Spacey</cast>
-		<cast>Robin Wright</cast>
-		<cast>Kate Mara</cast>
-		<cast>Corey Stoll</cast>
-		<cast>Michael Kelly</cast>
-		<cast>Sakina Jaffrey</cast>
-		<cast>Kristen Connolly</cast>
-		<cast>Sebastian Arcelus</cast>
-		<cast>Michel Gill</cast>
-		<cast>Nathan Darrow</cast>
-		<cast>Rachel Brosnahan</cast>
-		<cast>Constance Zimmer</cast>
-		<cast>Mahershala Ali</cast>
-		<cast>Elizabeth Norment</cast>
-		<cast>Sandrine Holt</cast>
-		<cast>Jayne Atkinson</cast>
-		<cast>Molly Parker</cast>
-		<cast>Gerald McRaney</cast>
-		<cast>Jimmi Simpson</cast>
-		<cast>Elizabeth Marvel</cast>
-		<cast>Derek Cecil</cast>
-		<cast>Mozhan Marno</cast>
-		<cast>Paul Sparks</cast>
-		<cast>Neve Campbell</cast>
-		<cast>Joel Kinnaman</cast>
+		<cast>
+			<name>Kevin Spacey</name>
+			<character>Francis Underwood</character>
+		</cast>
+		<cast>
+			<name>Robin Wright</name>
+			<character>Claire Underwood</character>
+		</cast>
+		<cast>
+			<name>Kate Mara</name>
+			<character>Zoe Barnes</character>
+		</cast>
+		<cast>
+			<name>Michael Kelly</name>
+			<character>Doug Stamper</character>
+		</cast>
+		<cast>
+			<name>Rachel Brosnahan</name>
+			<character>Rachel Posner</character>
+		</cast>
 		<musical_theme>House of Cards Theme</musical_theme>
-		<authors>Beau Willimon</authors>
+		<writers>Beau Willimon</writers>
 		<number_of_episodes>52</number_of_episodes>
 		<network>The CW</network>
 		<first_episode>1 February 2013</first_episode>
+		<episode>
+			<title>Episode 1</title>
+			<season>5</season>
+			<number>1</number>
+			<date>30 May 2017</date>
+		</episode>
+		<episode>
+			<title>Chapter 52</title>
+			<season>4</season>
+			<number>13</number>
+			<date>4 Mar 2016</date>
+		</episode>
+		<episode>
+			<title>Chapter 51</title>
+			<season>4</season>
+			<number>12</number>
+			<date>4 Mar 2016</date>
+		</episode>	
 		<languages>English</languages>
+		<profiles>Facebook</profiles>
+		<profiles>Twitter</profiles>
+		<profiles>Instagram</profiles>
+		<profiles>Google+</profiles>
 	</serie>
 </Project>

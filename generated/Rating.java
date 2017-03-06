@@ -8,8 +8,6 @@
 
 package generated;
 
-import java.util.ArrayList;
-import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -27,7 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element ref="{}serie" maxOccurs="unbounded"/>
+ *         &lt;element ref="{}value"/>
+ *         &lt;element ref="{}source"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -38,41 +37,63 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "serie"
+    "value",
+    "source"
 })
-@XmlRootElement(name = "Project")
-public class Project {
+@XmlRootElement(name = "rating")
+public class Rating {
 
     @XmlElement(required = true)
-    protected List<Serie> serie;
+    protected String value;
+    @XmlElement(required = true)
+    protected String source;
 
     /**
-     * Gets the value of the serie property.
+     * Gets the value of the value property.
      * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the serie property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getSerie().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link Serie }
-     * 
-     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public List<Serie> getSerie() {
-        if (serie == null) {
-            serie = new ArrayList<Serie>();
-        }
-        return this.serie;
+    public String getValue() {
+        return value;
+    }
+
+    /**
+     * Sets the value of the value property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    /**
+     * Gets the value of the source property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSource() {
+        return source;
+    }
+
+    /**
+     * Sets the value of the source property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSource(String value) {
+        this.source = value;
     }
 
 }
