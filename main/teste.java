@@ -112,10 +112,8 @@ public class teste {
 
 		case 2:
 			System.out.println("Escolha o valor minimo de temporadas: ");
-<<<<<<< HEAD
 			validation_int(scan);
 			seasons = scan.nextBigInteger();
-
 			BigInteger seasons1;
 			BigInteger max_season;
 			for (int i=project.getSerie().size()-1; i>=0;i--){
@@ -128,10 +126,6 @@ public class teste {
 				if (max_season.compareTo(seasons)>=0) {
 					series_list.add(project.getSerie().get(i).getSerieName());
 				}
-=======
->>>>>>> Filipa
-
-
 			}
 			break;
 		case 3:
