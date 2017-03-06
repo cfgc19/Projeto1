@@ -20,19 +20,21 @@ import generated.Project;
 
 public class Processor {
 
-	public static HashMap ola(Map map) {
-		List list = new LinkedList(map.entrySet());
-		Collections.sort(list, new Comparator() {
-			public int compare(Object o1, Object o2) {
-				return ((Comparable) ((Map.Entry) (o1)).getValue()).compareTo(((Map.Entry) (o2)).getValue());
-			}
-		});
-		HashMap sortedHashMap = new LinkedHashMap();
-		for (Iterator it = list.iterator(); it.hasNext();) {
-			Map.Entry entry = (Map.Entry) it.next();
-			sortedHashMap.put(entry.getKey(), entry.getValue());
-		}
-		return sortedHashMap;
+	
+	public static HashMap sortByValue (Map map){
+		 List list = new LinkedList(map.entrySet());
+		 Collections.sort(list, new Comparator() {
+			 public int compare(Object value1, Object value2) {
+	               return ((Comparable) ((Map.Entry) (value2)).getValue())
+	                  .compareTo(((Map.Entry) (value1)).getValue());
+	            }
+	       });
+		 HashMap sortedHashMap = new LinkedHashMap();
+		 for (Iterator it = list.iterator(); it.hasNext();) {
+	              Map.Entry entry = (Map.Entry) it.next();
+	              sortedHashMap.put(entry.getKey(), entry.getValue());
+	     } 
+	     return sortedHashMap;
 	}
 
 	public static void main(String[] args) {
@@ -57,21 +59,19 @@ public class Processor {
 			serie = project.getSerie().get(i).getSerieName();
 			System.out.println(episodes);
 			for (int j = project.getSerie().get(i).getCast().size() - 1; j >= 0; j--) {
-				actor = project.getSerie().get(i).getCast().get(j).getName();
-
-				if (series_by_actors.containsKey(actor)) {
-					series_names = series_by_actors.get(actor);
-					actors_episodes = episodes_by_actors.get(actor);
-					System.out.println(actors_episodes);
-
-					actors_episodes.add(episodes);
-
-					series_names.add(serie);
-					series_names.sort(String::compareToIgnoreCase);
-
+				actor = project.getSerie().get(i).getCast().get(j).getName();				
+				if(series_by_actors.containsKey(actor)){
+				    series_names = series_by_actors.get(actor);
+				    actors_episodes=episodes_by_actors.get(actor);
+				    
+				    actors_episodes.add(episodes);
+				    
+				    series_names.add(serie);
+				    series_names.sort(String::compareToIgnoreCase);
+			
 					
 				} else {
-					actors.getActor().set(t, new Actor(actor,series_names, BigInteger.valueOf(4)))
+					actors.getActor().set(t, new Actor(actor,series_names, BigInteger.valueOf(4)));
 					series_names = new ArrayList<String>();
 					series_names.add(serie);
 
@@ -83,7 +83,7 @@ public class Processor {
 			}
 		}
 
-		episodes_by_actors = ola(episodes_by_actors);
+		episodes_by_actors = sortByValue(episodes_by_actors);
 		series_names.sort(String::compareToIgnoreCase);
 		System.out.println(episodes_by_actors);
 		System.out.println(series_by_actors);
@@ -96,7 +96,6 @@ public class Processor {
 			series_temporary_list = value;
 			t++;
 		}*/
-		
 		File xmlFile1 = new File("./src/actors.xml");
 		File schemaFile1 = new File("./src/actor.xsd");
 		Boolean result = marshall.marshalles_actors(actors);
