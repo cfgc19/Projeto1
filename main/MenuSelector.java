@@ -28,7 +28,8 @@ public class MenuSelector {
 		//lista de series que vêm de cada regra 
 		ArrayList<String> series_list = new ArrayList<String>();
 		//project tem a info toda
-		Project project = unmarshall.unmarshalles_project();
+		File xmlFile = new File("./src/series.xml");		
+		Project project = unmarshall.unmarshalles_project(xmlFile);
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println("                           Texto bonito a explicar o que estamos a fazer                                ");
 		System.out.println("------------------------------------------------------------------------------------------");

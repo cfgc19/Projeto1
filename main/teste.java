@@ -55,10 +55,10 @@ public class teste {
 		BigInteger episodes, seasons;
 		Integer rating;
 		String language = "", network = "", genre = "", actor = "", rating_source="";
-		Project project = unmarshall.unmarshalles_project();
+		File xmlFile = new File("./src/series.xml");		
+		Project project = unmarshall.unmarshalles_project(xmlFile);
 		int option2 = 0;
 		boolean opcao_certa = true;
-
 		switch (opcao) {
 		case 1:
 			// pesquisa por Ranting
