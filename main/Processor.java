@@ -20,24 +20,20 @@ import generated.Project;
 
 public class Processor {
 	
-	public static HashMap ola (Map map){
+	public static HashMap sortByValue (Map map){
 		 List list = new LinkedList(map.entrySet());
-	       // Defined Custom Comparator here
-	       Collections.sort(list, new Comparator() {
-	            public int compare(Object o1, Object o2) {
-	               return ((Comparable) ((Map.Entry) (o1)).getValue())
-	                  .compareTo(((Map.Entry) (o2)).getValue());
+		 Collections.sort(list, new Comparator() {
+			 public int compare(Object value1, Object value2) {
+	               return ((Comparable) ((Map.Entry) (value2)).getValue())
+	                  .compareTo(((Map.Entry) (value1)).getValue());
 	            }
 	       });
-
-	       // Here I am copying the sorted list in HashMap
-	       // using LinkedHashMap to preserve the insertion order
-	       HashMap sortedHashMap = new LinkedHashMap();
-	       for (Iterator it = list.iterator(); it.hasNext();) {
+		 HashMap sortedHashMap = new LinkedHashMap();
+		 for (Iterator it = list.iterator(); it.hasNext();) {
 	              Map.Entry entry = (Map.Entry) it.next();
 	              sortedHashMap.put(entry.getKey(), entry.getValue());
-	       } 
-	       return sortedHashMap;
+	     } 
+	     return sortedHashMap;
 	}
 
 	public static void main(String[] args) {
@@ -66,7 +62,6 @@ public class Processor {
 				if(series_by_actors.containsKey(actor)){
 				    series_names = series_by_actors.get(actor);
 				    actors_episodes=episodes_by_actors.get(actor);
-				    System.out.println(actors_episodes);
 				    
 				    actors_episodes.add(episodes);
 				    
@@ -85,11 +80,9 @@ public class Processor {
 			}
 		}
 		
-		episodes_by_actors= ola(episodes_by_actors);
 		series_names.sort(String::compareToIgnoreCase);
-		System.out.println(episodes_by_actors);
-		System.out.println(series_by_actors);
-		System.out.println(series_by_actors);
+		//System.out.println(episodes_by_actors);
+		//System.out.println(episodes_by_actors=sortByValue(episodes_by_actors));
 		
 		
 		for (int i = actors.getActor().size()- 1; i >= 0; i--) {
