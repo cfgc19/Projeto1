@@ -95,10 +95,10 @@ public class Processor {
 				series_list1.add(value.get(i));
 			}
 			actors_list1.add(actor1);
-
 		}
+		
 		for (int i = 0; i < actors.getActor().size(); i++) {
-			System.out.println(actors.getActor().get(i));
+			System.out.println(actors.getActor().get(i).getActorName());
 		}
 		Boolean result = marshall.marshalles_actors(actors);
 		System.out.println(result);
