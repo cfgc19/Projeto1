@@ -71,7 +71,7 @@
   <xs:element name="awards" type="xs:string"/>
   <xs:element name="number_of_episodes" type="xs:integer"/>
   <xs:element name="network" type="xs:string"/>
-  <xs:element name="first_episode" type="xs:string"/>
+  <xs:element name="first_episode" type="xs:NMTOKEN"/>
   <xs:element name="episode">
     <xs:complexType>
       <xs:sequence>
@@ -85,7 +85,7 @@
   <xs:element name="title" type="xs:string"/>
   <xs:element name="season" type="xs:integer"/>
   <xs:element name="number" type="xs:integer"/>
-  <xs:element name="date" type="xs:string"/>
+  <xs:element name="date" type="xs:NMTOKEN"/>
   <xs:element name="languages" type="xs:NCName"/>
   <xs:element name="profiles" type="xs:string"/>
 </xs:schema>

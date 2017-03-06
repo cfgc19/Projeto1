@@ -52,24 +52,24 @@
 		<awards>Primetime Emmy Award for Outstanding Drama Series</awards>
 		<number_of_episodes>60</number_of_episodes>
 		<network>HBO</network>
-		<first_episode>17 April 2011</first_episode>
+		<first_episode>2011-04-11</first_episode>
 		<episode>
 			<title>The Winds of Winter</title>
 			<season>6</season>
 			<number>10</number>
-			<date>26 Jun 2016</date>
+			<date>2016-06-26</date>
 		</episode>
 		<episode>
 			<title>Battle of the Bastards</title>
 			<season>6</season>
 			<number>9</number>
-			<date>19 Jun 2016</date>
+			<date>2016-06-19</date>
 		</episode>
 		<episode>
 			<title>No One</title>
 			<season>6</season>
 			<number>10</number>
-			<date>12 Jun 2016</date>
+			<date>2016-06-12</date>
 		</episode>
 		<languages>English</languages>
 		<profiles>Facebook</profiles>
@@ -120,24 +120,24 @@
 		<writers>Peter Nowalk</writers>
 		<number_of_episodes>45</number_of_episodes>
 		<network>ABC</network>
-		<first_episode>25 September 2014</first_episode>
+		<first_episode>2014-09-25</first_episode>
 		<episode>
 			<title>Wes</title>
 			<season>3</season>
 			<number>15</number>
-			<date>23 Feb 2017</date>
+			<date>2017-02-23</date>
 		</episode>
 		<episode>
 			<title>He Made a Terrible Mistake</title>
 			<season>3</season>
 			<number>14</number>
-			<date>23 Feb 2017</date>
+			<date>2017-02-23</date>
 		</episode>
 		<episode>
 			<title>It's War</title>
 			<season>3</season>
 			<number>13</number>
-			<date>16 Feb 2017</date>
+			<date>2017-02-16</date>
 		</episode>
 		<languages>English</languages>
 		<profiles>Twitter</profiles>
@@ -186,24 +186,24 @@
 		<writers>Aaron Korsh</writers>
 		<number_of_episodes>91</number_of_episodes>
 		<network>USA Network</network>
-		<first_episode>23 June 2011</first_episode>
+		<first_episode>2011-06-23</first_episode>
 		<episode>
 			<title>Character and Fitness</title>
 			<season>6</season>
 			<number>16</number>
-			<date>1 Mar 2017</date>
+			<date>2017-03-01</date>
 		</episode>
 		<episode>
 			<title>Quid Pro Quo</title>
 			<season>6</season>
 			<number>15</number>
-			<date>22 Feb 2017</date>
+			<date>2017-02-22</date>
 		</episode>
 		<episode>
 			<title>Admission of Guilt</title>
 			<season>6</season>
 			<number>14</number>
-			<date>15 Feb 2017</date>
+			<date>2017-02-22</date>
 		</episode>
 		<languages>English</languages>
 		<profiles>Twitter</profiles>
@@ -254,24 +254,24 @@
 		<writers>Stephen Thompson</writers>
 		<number_of_episodes>13</number_of_episodes>
 		<network>BBC</network>
-		<first_episode>25 July 2010</first_episode>
+		<first_episode>2010-07-25</first_episode>
 		<episode>
 			<title>The Final Problem</title>
 			<season>4</season>
 			<number>3</number>
-			<date>15 Jan 2017</date>
+			<date>2017-01-15</date>
 		</episode>
 		<episode>
 			<title>The Lying Detective</title>
 			<season>4</season>
 			<number>2</number>
-			<date>8 Jan 2017</date>
+			<date>2017-01-08</date>
 		</episode>
 		<episode>
 			<title>Episode 1</title>
 			<season>4</season>
 			<number>1</number>
-			<date>1 Jan 2017</date>
+			<date>2017-01-01</date>
 		</episode>
 		<languages>English</languages>
 		<profiles>Twitter</profiles>
@@ -323,24 +323,24 @@
 		<writers>Danny Zuker</writers>
 		<number_of_episodes>180</number_of_episodes>
 		<network>ABC</network>
-		<first_episode>23 September 2009</first_episode>
+		<first_episode>2009-09-23</first_episode>
 		<episode>
 			<title>Basketball</title>
 			<season>8</season>
 			<number>16</number>
-			<date>8 Mar 2017</date>
+			<date>2017-03-08</date>
 		</episode>
 		<episode>
 			<title>Finding Fizbo</title>
 			<season>8</season>
 			<number>15</number>
-			<date>1 Mar 2017</date>
+			<date>2017-03-01</date>
 		</episode>
 		<episode>
 			<title>Heavy is the Head</title>
 			<season>8</season>
 			<number>14</number>
-			<date>22 Feb 2017</date>
+			<date>2017-02-22</date>
 		</episode>
 		<languages>English</languages>
 		<profiles>Twitter</profiles>
@@ -393,24 +393,24 @@
 		<nominations>Golden Globe Award for Best Performance by an Actor in a Television Series - Drama</nominations>
 		<number_of_episodes>20</number_of_episodes>
 		<network>Netflix</network>
-		<first_episode>28 August 2015</first_episode>
+		<first_episode>2015-08-28</first_episode>
 		<episode>
 			<title>Al Fin Cayo!</title>
 			<season>2</season>
 			<number>10</number>
-			<date>2 Sep 2016</date>
+			<date>2016-09-02</date>
 		</episode>
 		<episode>
 			<title>Nuestra Finca</title>
 			<season>2</season>
 			<number>9</number>
-			<date>2 Sep 2016</date>
+			<date>2016-09-02</date>
 		</episode>
 		<episode>
 			<title>Exit El Patron</title>
 			<season>2</season>
 			<number>8</number>
-			<date>2 Sep 2016</date>
+			<date>2016-09-02</date>
 		</episode>	
 		<languages>English</languages>
 		<languages>Spanish</languages>
@@ -461,24 +461,24 @@
 		<spin_off>The Carrie Diaries</spin_off>
 		<number_of_episodes>94</number_of_episodes>
 		<network>HBO</network>
-		<first_episode>6 June 1998</first_episode>
+		<first_episode>1998-07-06</first_episode>
 		<episode>
 			<title>An American Girl in Paris (Part Deux)</title>
 			<season>6</season>
 			<number>20</number>
-			<date>22 Feb 2004</date>
+			<date>2004-02-22</date>
 		</episode>
 		<episode>
 			<title>An American Girl in Paris (Part Une)</title>
 			<season>6</season>
 			<number>19</number>
-			<date>15 Feb 2004</date>
+			<date>2004-02-15</date>
 		</episode>
 		<episode>
 			<title>Splat!</title>
 			<season>6</season>
 			<number>18</number>
-			<date>15 Feb 2004</date>
+			<date>2004-02-15</date>
 		</episode>	
 		<languages>English</languages>
 		<profiles>Facebook</profiles>
@@ -529,24 +529,24 @@
 		<spin_off>Better Call Saul</spin_off>
 		<number_of_episodes>62</number_of_episodes>
 		<network>Sony Picture Television</network>
-		<first_episode>20 January 2008</first_episode>
+		<first_episode>2008-01-20</first_episode>
 		<episode>
 			<title>Felina</title>
 			<season>5</season>
 			<number>16</number>
-			<date>29 Sep 2013</date>
+			<date>2013-09-29</date>
 		</episode>
 		<episode>
 			<title>Granite State</title>
 			<season>5</season>
 			<number>15</number>
-			<date>22 Sep 2013</date>
+			<date>2013-09-22</date>
 		</episode>
 		<episode>
 			<title>Ozymandias</title>
 			<season>5</season>
 			<number>14</number>
-			<date>15 Sep 2013</date>
+			<date>2013-09-15</date>
 		</episode>	
 		<languages>English</languages>
 		<profiles>Facebook</profiles>
@@ -593,24 +593,24 @@
 		<writers>Stephanie Savage</writers>
 		<number_of_episodes>121</number_of_episodes>
 		<network>The CW</network>
-		<first_episode>19 September 2007</first_episode>
+		<first_episode>2007-09-19</first_episode>
 		<episode>
 			<title>New York, I Love You XOXO</title>
 			<season>6</season>
 			<number>10</number>
-			<date>17 Dec 2012</date>
+			<date>2012-12-17</date>
 		</episode>
 		<episode>
 			<title>Save the Last Chance</title>
 			<season>6</season>
 			<number>7</number>
-			<date>26 Nov 2012</date>
+			<date>2012-11-26</date>
 		</episode>
 		<episode>
 			<title>High Infidelity</title>
 			<season>5</season>
 			<number>2</number>
-			<date>15 Oct 2012</date>
+			<date>2012-10-15</date>
 		</episode>	
 		<languages>English</languages>
 		<profiles>Facebook</profiles>
@@ -659,24 +659,24 @@
 		<writers>Beau Willimon</writers>
 		<number_of_episodes>52</number_of_episodes>
 		<network>The CW</network>
-		<first_episode>1 February 2013</first_episode>
+		<first_episode>2013-02-01</first_episode>
 		<episode>
 			<title>Episode 1</title>
 			<season>5</season>
 			<number>1</number>
-			<date>30 May 2017</date>
+			<date>2017-03-30</date>
 		</episode>
 		<episode>
 			<title>Chapter 52</title>
 			<season>4</season>
 			<number>13</number>
-			<date>4 Mar 2016</date>
+			<date>2016-03-04</date>
 		</episode>
 		<episode>
 			<title>Chapter 51</title>
 			<season>4</season>
 			<number>12</number>
-			<date>4 Mar 2016</date>
+			<date>2016-03-04</date>
 		</episode>	
 		<languages>English</languages>
 		<profiles>Facebook</profiles>
