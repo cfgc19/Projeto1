@@ -56,9 +56,9 @@ public class marshall {
 		try{
 		File xmlFile = new File("./src/actors_temporario.xml");
 		
-		JAXBContext jaxbContext = JAXBContext.newInstance(Project.class);
+		JAXBContext jaxbContext = JAXBContext.newInstance(Actors.class);
 		
-		File schemaFile = new File("./src/actor.xsd"); //ainda nao percebi para o que é que isto serve - filipa
+		File schemaFile = new File("./src/actor.xsd"); 
 		SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		Schema schema = sf.newSchema(schemaFile);
 		

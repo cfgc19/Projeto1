@@ -16,6 +16,7 @@ import java.util.Scanner;
 
 import generated.Actor;
 import generated.Actors;
+import generated.Stats;
 import generated1.Project;
 import generated1.Serie;
 
@@ -39,11 +40,14 @@ public class Processor {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		File xmlFile = new File("./src/series_temporario.xml");
+<<<<<<< HEAD
 		Actors actors = unmarshall.unmarshalles_actors();
 		
 		System.out.println(actors);
 		
 		
+		//Actors actors = unmarshall.unmarshalles_actors();
+		Actors actors = new Actors();
 		Project project = unmarshall.unmarshalles_project(xmlFile);
 		String actor = "";
 		String serie = "";
@@ -95,12 +99,20 @@ public class Processor {
 			Actor actor1 = new Actor();
 			actor1.setActorName(key);
 			List<String> series_list1 = actor1.getSerie();
+			List<Actor> actors_list1 = actors.getActor();
+			actor1.setNoEpisodes(BigInteger.valueOf(30));
 			for (int i = 0; i < value.size(); i++) {
 				series_list1.add(value.get(i));
 			}
 			actors_list1.add(actor1);
 		}
-		
+		// ISTO FOI SO PARA TESTAR SE ESTAVA A FUNCIONAR. TEMOS DE MUDAAAR - filipa
+		Stats stats = new Stats();
+		stats.setNoActors(BigInteger.valueOf(30));
+		List<String> podios = stats.getPodiumActors();
+		podios.add("ola");
+		podios.add("adeus");
+		actors.setStats(stats);
 		for (int i = 0; i < actors.getActor().size(); i++) {
 			System.out.println(actors.getActor().get(i).getActorName());
 		}
@@ -110,6 +122,7 @@ public class Processor {
 			
 			actors.getActor().add(actors_list1.get(i));
 		}
+
 		Boolean result = marshall.marshalles_actors(actors);
 		System.out.println(result);
 		if (!result) {
