@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import generated.Project;
+import generated1.Project;
 
 public class teste {
 
@@ -131,21 +131,6 @@ public class teste {
 	
 
 		case 2:
-			System.out.print("Escolha o valor minimo do episódios : ");
-
-			validation_int(scan);
-
-			episodes = scan.nextBigInteger();
-
-			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				BigInteger episodes1 = project.getSerie().get(i).getNumberOfEpisodes();
-					if (episodes1.compareTo(episodes)>=0) {
-						series_list.add(project.getSerie().get(i).getSerieName());
-						
-				}
-			}
-			break;
-		case 3:
 			System.out.println("Escolha o valor minimo de temporadas: ");
 
 			validation_int(scan);
