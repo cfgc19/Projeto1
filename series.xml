@@ -3,22 +3,19 @@
 	<serie>
 		<serie_name>Game of Thrones</serie_name>
 		<type>American drama series</type>
-		<genre>Fantasy</genre>
-		<genre>Serial drama</genre>
 		<rating>
-			<value>9.5/10</value>
+			<value>9.5</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>3/4</value>
+			<value>3</value>
 			<source>HBO Uk</source>
 		</rating>
 		<rating>
-			<value>95%</value>
+			<value>95</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones</description>
-		<number_of_seasons>6</number_of_seasons>
 		<cast>
 			<name>Emilia Clarke</name>
 			<character>Daenerys Targaryen</character>
@@ -50,7 +47,6 @@
 		<program_creators>David Benioff</program_creators>
 		<program_creators>D.B.Weiss</program_creators>
 		<awards>Primetime Emmy Award for Outstanding Drama Series</awards>
-		<number_of_episodes>60</number_of_episodes>
 		<network>HBO</network>
 		<first_episode>2011-04-11</first_episode>
 		<episode>
@@ -79,23 +75,19 @@
 	<serie>
 		<serie_name>How to Get Away with Murder</serie_name>
 		<type>American drama series</type>
-		<genre>Legal drama</genre>
-		<genre>Mystery</genre>
-		<genre>Thriller</genre>
 		<rating>
-			<value>8.3/10</value>
+			<value>8.3</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8/10</value>
+			<value>8</value>
 			<source>TV.com</source>
 		</rating>
 		<rating>
-			<value>90%</value>
+			<value>90</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>How to Get Away with Murder is an American drama television series that premiered on ABC on September 25, 2014. The series was created by Peter Nowalk, and produced by Shonda Rhimes and ABC Studios.</description>
-		<number_of_seasons>3</number_of_seasons>
 		<cast>
 			<name>Viola Davis</name>
 			<character>Annalise Keating</character>
@@ -118,7 +110,6 @@
 		</cast>
 		<musical_theme>Photek</musical_theme>
 		<writers>Peter Nowalk</writers>
-		<number_of_episodes>45</number_of_episodes>
 		<network>ABC</network>
 		<first_episode>2014-09-25</first_episode>
 		<episode>
@@ -146,22 +137,20 @@
 	</serie>
 	<serie>
 		<serie_name>Suits</serie_name>
-		<type>American drama seires</type>
-		<genre>Legal Drama</genre>
+		<type>American drama series</type>
 		<rating>
-			<value>8.7/10</value>
+			<value>8.7</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8.5/10</value>
+			<value>8.5</value>
 			<source>TV.com</source>
 		</rating>
 		<rating>
-			<value>86%</value>
+			<value>86</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>Suits is an American legal drama television series created and written by Aaron Korsh. The series premiered on June 23, 2011, on the cable network USA, and is produced by Universal Cable. Suits is set at a fictional law firm in New York City</description>
-		<number_of_seasons>6</number_of_seasons>
 		<cast>
 			<name>Meghan Markle</name>
 			<character>Rachel Zane</character>
@@ -184,7 +173,6 @@
 		</cast>		
 		<musical_theme>Greenback Boogie</musical_theme>
 		<writers>Aaron Korsh</writers>
-		<number_of_episodes>91</number_of_episodes>
 		<network>USA Network</network>
 		<first_episode>2011-06-23</first_episode>
 		<episode>
@@ -213,21 +201,19 @@
 	<serie>
 		<serie_name>Sherlock</serie_name>
 		<type>Drama series</type>
-		<genre>Crime drama</genre>
 		<rating>
-			<value>9.2/10</value>
+			<value>9.2</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8.9/10</value>
+			<value>8.9</value>
 			<source>TV.com</source>
 		</rating>
 		<rating>
-			<value>86%</value>
+			<value>86</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>Sherlock is a crime drama television series based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Created by Steven Moffat and Mark Gatiss, it stars Benedict Cumberbatch as Sherlock Holmes and Martin Freeman as Doctor John Watson.</description>
-		<number_of_seasons>4</number_of_seasons>
 		<cast>
 			<name>Benedict  Cumberbatch</name>
 			<character>Sherlock Holmes</character>
@@ -252,7 +238,6 @@
 		<writers>Mark Gatiss</writers>
 		<writers>Steven Moffat</writers>
 		<writers>Stephen Thompson</writers>
-		<number_of_episodes>13</number_of_episodes>
 		<network>BBC</network>
 		<first_episode>2010-07-25</first_episode>
 		<episode>
@@ -281,22 +266,19 @@
 	<serie>
 		<serie_name>Modern Family</serie_name>
 		<type>American sitcom</type>
-		<genre>Sitcom</genre>
-		<genre>Mockumentary</genre>
 		<rating>
-			<value>8.5/10</value>
+			<value>8.5</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8.1/10</value>
+			<value>8.1</value>
 			<source>TV.com</source>
 		</rating>
 		<rating>
-			<value>85%</value>
+			<value>85</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>Modern Family is an American television mockumentary sitcom that premiered on ABC on September 23, 2009, which follows the lives of Jay Pritchett and his family, all of whom live in suburban Los Angeles.</description>
-		<number_of_seasons>8</number_of_seasons>
 		<cast>
 			<name>Sofia Vergara</name>
 			<character>Gloria Delgado-Pritchett</character>
@@ -321,7 +303,6 @@
 		<writers>Christopher Lloyd</writers>
 		<writers>Steven Levitan</writers>
 		<writers>Danny Zuker</writers>
-		<number_of_episodes>180</number_of_episodes>
 		<network>ABC</network>
 		<first_episode>2009-09-23</first_episode>
 		<episode>
@@ -352,22 +333,19 @@
 	<serie>
 		<serie_name>Narcos</serie_name>
 		<type>American web series</type>
-		<genre>Crime thriller</genre>
-		<genre>Biographical</genre>
 		<rating>
-			<value>8.9/10</value>
+			<value>8.9</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>77%</value>
+			<value>77</value>
 			<source>Metacritic</source>
 		</rating>
 		<rating>
-			<value>84%</value>
+			<value>84</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>Narcos is an American crime web television series created and produced by Chris Brancato, Carlo Bernard, and Doug Miro. Season 1, comprising 10 episodes, originally aired on August 28, 2015, as a Netflix exclusive.</description>
-		<number_of_seasons>2</number_of_seasons>
 		<cast>
 			<name>Wagner Moura</name>
 			<character>Pablo Escobar</character>
@@ -391,7 +369,6 @@
 		<musical_theme>"Tuyo"</musical_theme>
 		<writers>Andrew Black</writers>
 		<nominations>Golden Globe Award for Best Performance by an Actor in a Television Series - Drama</nominations>
-		<number_of_episodes>20</number_of_episodes>
 		<network>Netflix</network>
 		<first_episode>2015-08-28</first_episode>
 		<episode>
@@ -421,19 +398,15 @@
 	<serie>
 		<serie_name>Sex and the City</serie_name>
 		<type>American comedy series</type>
-		<genre>Romantic comedy</genre>
-		<genre>Comedy drama</genre>
-		<genre>Sex comedy</genre>
 		<rating>
-			<value>7/10</value>
+			<value>7</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8.6/10</value>
+			<value>8.6</value>
 			<source>TV.com</source>
 		</rating>
 		<description>Sex and the City is an American romantic comedy television series created by Darren Star and produced by HBO. Broadcast from 1998 until 2004, the original run of the show had a total of 94 episodes.</description>
-		<number_of_seasons>6</number_of_seasons>
 		<cast>
 			<name>Sarah Jessica Parker</name>
 			<character>Carie Bradshaw</character>
@@ -459,7 +432,6 @@
 		<writers>Candace Bushnell</writers>
 		<writers>Michael Patrick King</writers>
 		<spin_off>The Carrie Diaries</spin_off>
-		<number_of_episodes>94</number_of_episodes>
 		<network>HBO</network>
 		<first_episode>1998-07-06</first_episode>
 		<episode>
@@ -486,24 +458,19 @@
 	<serie>
 		<serie_name>Breaking Bad</serie_name>
 		<type>American drama series</type>
-		<genre>Crime drama</genre>
-		<genre>Thriller</genre>
-		<genre>Contemporary Western</genre>
-		<genre>Black Comedy</genre>
 		<rating>
-			<value>9.5/10</value>
+			<value>9.5</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>9/10</value>
+			<value>9</value>
 			<source>TV.com</source>
 		</rating>
 		<rating>
-			<value>95%</value>
+			<value>95</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. The show originally aired on the AMC network for five seasons, from January 20, 2008, to September 29, 2013.</description>
-		<number_of_seasons>5</number_of_seasons>
 		<cast>
 			<name>Bryan Cranston</name>
 			<character>Walter White</character>
@@ -527,7 +494,6 @@
 		<musical_theme>Breaking Bad Theme</musical_theme>
 		<writers>Vince Gilligan</writers>
 		<spin_off>Better Call Saul</spin_off>
-		<number_of_episodes>62</number_of_episodes>
 		<network>Sony Picture Television</network>
 		<first_episode>2008-01-20</first_episode>
 		<episode>
@@ -556,18 +522,16 @@
 	<serie>
 		<serie_name>Gossip Girl</serie_name>
 		<type>American drama series</type>
-		<genre>Teen drama</genre>
 		<rating>
-			<value>7.4/10</value>
+			<value>7.4</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8.5/10</value>
+			<value>8.5</value>
 			<source>TV.com</source>
 		</rating>
 		<description>Gossip Girl is an American teen drama television series based on the book series of the same name written by Cecily von Ziegesar.</description>
 		<narrator>Kristen Bell</narrator>
-		<number_of_seasons>6</number_of_seasons>	
 		<cast>
 			<name>Blake Lively</name>
 			<character>Serena van der Woodsen</character>
@@ -591,7 +555,6 @@
 		<musical_theme>"Steps of The Met"</musical_theme>
 		<writers>Josh Schwartz</writers>
 		<writers>Stephanie Savage</writers>
-		<number_of_episodes>121</number_of_episodes>
 		<network>The CW</network>
 		<first_episode>2007-09-19</first_episode>
 		<episode>
@@ -620,21 +583,19 @@
 	<serie>
 		<serie_name>House of Cards</serie_name>
 		<type>American drama series</type>
-		<genre>Political drama</genre>
 		<rating>
-			<value>9/10</value>
+			<value>9</value>
 			<source>IMDb</source>
 		</rating>
 		<rating>
-			<value>8.3/10</value>
+			<value>8.3</value>
 			<source>TV.com</source>
 		</rating>
 		<rating>
-			<value>84%</value>
+			<value>84</value>
 			<source>Rotten Tomatoes</source>
 		</rating>
 		<description>House of Cards is an American political drama web television series created by Beau Willimon. It is an adaptation of the BBC's mini-series of the same name and is based on the novel by Michael Dobbs.</description>
-		<number_of_seasons>4</number_of_seasons>
 		<cast>
 			<name>Kevin Spacey</name>
 			<character>Francis Underwood</character>
@@ -657,7 +618,6 @@
 		</cast>
 		<musical_theme>House of Cards Theme</musical_theme>
 		<writers>Beau Willimon</writers>
-		<number_of_episodes>52</number_of_episodes>
 		<network>The CW</network>
 		<first_episode>2013-02-01</first_episode>
 		<episode>

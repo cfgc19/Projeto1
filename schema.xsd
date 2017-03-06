@@ -12,11 +12,9 @@
       <xs:sequence>
         <xs:element ref="serie_name"/>
         <xs:element ref="type"/>
-        <xs:element maxOccurs="unbounded" ref="genre"/>
         <xs:element maxOccurs="unbounded" ref="rating"/>
         <xs:element ref="description"/>
         <xs:element minOccurs="0" ref="narrator"/>
-        <xs:element ref="number_of_seasons"/>
         <xs:element maxOccurs="unbounded" ref="cast"/>
         <xs:element ref="musical_theme"/>
         <xs:element maxOccurs="unbounded" ref="writers"/>
@@ -28,7 +26,6 @@
             <xs:element ref="awards"/>
           </xs:sequence>
         </xs:choice>
-        <xs:element ref="number_of_episodes"/>
         <xs:element ref="network"/>
         <xs:element ref="first_episode"/>
         <xs:element maxOccurs="unbounded" ref="episode"/>
@@ -39,7 +36,6 @@
   </xs:element>
   <xs:element name="serie_name" type="xs:string"/>
   <xs:element name="type" type="xs:string"/>
-  <xs:element name="genre" type="xs:string"/>
   <xs:element name="rating">
     <xs:complexType>
       <xs:sequence>
@@ -48,11 +44,10 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="value" type="xs:string"/>
+  <xs:element name="value" type="xs:decimal"/>
   <xs:element name="source" type="xs:string"/>
   <xs:element name="description" type="xs:string"/>
   <xs:element name="narrator" type="xs:string"/>
-  <xs:element name="number_of_seasons" type="xs:integer"/>
   <xs:element name="cast">
     <xs:complexType>
       <xs:sequence>
@@ -69,7 +64,6 @@
   <xs:element name="spin_off" type="xs:string"/>
   <xs:element name="program_creators" type="xs:string"/>
   <xs:element name="awards" type="xs:string"/>
-  <xs:element name="number_of_episodes" type="xs:integer"/>
   <xs:element name="network" type="xs:string"/>
   <xs:element name="first_episode" type="xs:NMTOKEN"/>
   <xs:element name="episode">

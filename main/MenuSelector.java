@@ -12,13 +12,12 @@ public class MenuSelector {
 	public static void menu()
 	{
 		System.out.println("1-Valor minimo de rating;");
-		System.out.println("2-Número mínimo de episódios;");
-		System.out.println("3-Número mínimo de temporadas;");
-		System.out.println("4-Linguagem;");
-		System.out.println("5-Network;");
-		System.out.println("6-Género;");
-		System.out.println("7-Nome de ator;");
-		System.out.println("8-Sair!");
+		System.out.println("2-Número mínimo de temporadas;");
+		System.out.println("3-Linguagem;");
+		System.out.println("4-Network;");
+		System.out.println("5-Tipo;");
+		System.out.println("6-Nome de ator;");
+		System.out.println("7-Sair!");
 		System.out.println("");
 		System.out.println("Selecione a opção que pretende: ");		
 	}
@@ -43,7 +42,7 @@ public class MenuSelector {
 			teste.validation_int(scan);
 			opcao=scan.nextInt();
 			scan.nextLine();
-			if (opcao<1 || opcao >8)
+			if (opcao<1 || opcao >7)
 			{
 				System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 			}
@@ -91,7 +90,7 @@ public class MenuSelector {
 						teste.validation_int(scan);
 						opcao2=scan.nextInt();
 						scan.nextLine();
-						if (opcao2<1 || opcao2 >8)
+						if (opcao2<1 || opcao2 >7)
 						{
 							System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 						}
@@ -114,7 +113,7 @@ public class MenuSelector {
 						teste.validation_int(scan);
 						opcao2=scan.nextInt();
 						scan.nextLine();
-						if (opcao2<1 || opcao2 >8)
+						if (opcao2<1 || opcao2 >7)
 						{
 							System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 						}
@@ -126,8 +125,6 @@ public class MenuSelector {
 
 					series_list=teste.rules(opcao2,series_list);
 					series_list= teste.rule_or(series_list);
-					//System.out.println(series_list);
-					
 				}
 			else if (opcao1.equals("c")) // criar o XML
 			{

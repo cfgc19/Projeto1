@@ -19,7 +19,11 @@ import generated.Actors;
 import generated.Project;
 
 public class Processor {
-
+	
+	public static void main (String[] args){
+		
+	}
+/*
 	
 	public static HashMap sortByValue (Map map){
 		 List list = new LinkedList(map.entrySet());
@@ -55,16 +59,16 @@ public class Processor {
 		// todos os atores
 		BigInteger actors_episodes;
 		for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-			episodes = project.getSerie().get(i).getNumberOfEpisodes();
+			//episodes = project.getSerie().get(i).getNumberOfEpisodes();
 			serie = project.getSerie().get(i).getSerieName();
-			System.out.println(episodes);
+			//System.out.println(episodes);
 			for (int j = project.getSerie().get(i).getCast().size() - 1; j >= 0; j--) {
 				actor = project.getSerie().get(i).getCast().get(j).getName();				
 				if(series_by_actors.containsKey(actor)){
 				    series_names = series_by_actors.get(actor);
 				    actors_episodes=episodes_by_actors.get(actor);
 				    
-				    actors_episodes.add(episodes);
+				//    actors_episodes.add(episodes);
 				    
 				    series_names.add(serie);
 				    series_names.sort(String::compareToIgnoreCase);
@@ -77,7 +81,7 @@ public class Processor {
 
 					series_names.sort(String::compareToIgnoreCase);
 					series_by_actors.put(actor, series_names);
-					episodes_by_actors.put(actor, episodes);
+					//episodes_by_actors.put(actor, episodes);
 					t++;
 				}
 			}
@@ -95,7 +99,7 @@ public class Processor {
 			List<String> series_temporary_list = actors.getActor().get(t).getSerie();
 			series_temporary_list = value;
 			t++;
-		}*/
+		}
 		File xmlFile1 = new File("./src/actors.xml");
 		File schemaFile1 = new File("./src/actor.xsd");
 		Boolean result = marshall.marshalles_actors(actors);
@@ -118,4 +122,8 @@ public class Processor {
 
 	}
 
+
+}
+
+	*/
 }

@@ -1,8 +1,10 @@
 package main;
 
 import java.io.File;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -31,30 +33,30 @@ public class teste {
 			}
 		}
 		return series_list;
-		
+
 	}
 	public static ArrayList<String> rule_and (ArrayList<String> series_list){
 		ArrayList<String> result_list = new ArrayList<String>();
-		
+
 		for (int i = 0; i < series_list.size()-1; i++)
-        {
-            for (int j = i+1; j < series_list.size(); j++)
-            {
-                if( (series_list.get(i).equals(series_list.get(j))) && (i != j) )
-                {
-                	result_list.add(series_list.get(i));
-                }
-            }
-	}
+		{
+			for (int j = i+1; j < series_list.size(); j++)
+			{
+				if( (series_list.get(i).equals(series_list.get(j))) && (i != j) )
+				{
+					result_list.add(series_list.get(i));
+				}
+			}
+		}
 		return result_list;
 	}
 	public static ArrayList<String> rules(int opcao, ArrayList<String> series_list) {
-		
-		Scanner scan = new Scanner(System.in);
 
+		Scanner scan = new Scanner(System.in);
 		BigInteger episodes, seasons;
-		Integer rating;
-		String language = "", network = "", genre = "", actor = "", rating_source="";
+		BigDecimal rating;
+		String language = "", network = "", type = "", actor = "", rating_source="";
+
 		File xmlFile = new File("./src/series.xml");		
 		Project project = unmarshall.unmarshalles_project(xmlFile);
 		int option2 = 0;
@@ -62,7 +64,6 @@ public class teste {
 		switch (opcao) {
 		case 1:
 			// pesquisa por Ranting
-			//System.out.print("Escolha o valor minimo do Rating: ");
 			System.out.println("Escolha a fonte: ");
 			ArrayList<String> sources_list = new ArrayList<String>();
 			int option_list = 1;
@@ -90,79 +91,50 @@ public class teste {
 			}
 			System.out.println("Escolha o valor minimo do Rating: ");
 			validation_int(scan);
-			rating = scan.nextInt();
+			rating = scan.nextBigDecimal();
+			BigDecimal rating1;
+
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				for (int j=project.getSerie().get(i).getRating().size()-1;j>=0;j--)
 				{
-					String rating_string="";
-					float rating1=0;
+					rating1=project.getSerie().get(i).getRating().get(j).getValue();
 					if (project.getSerie().get(i).getRating().get(j).getSource().equals(sources_list.get(option2-1)))
 					{
-						if (project.getSerie().get(i).getRating().get(j).getSource().equals("IMDb") || project.getSerie().get(i).getRating().get(j).getSource().equals("HBO Uk")|| project.getSerie().get(i).getRating().get(j).getSource().equals("TV.com"))
-						{
-							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-							if (rating_string.contains("."))
-							{
-								rating1 = Float.parseFloat(rating_string.substring(0, 3));
-							}
-							else
-							{
-								rating1=Integer.parseInt(rating_string.substring(0,1));
-							}
-
-						}
-						else if(project.getSerie().get(i).getRating().get(j).getSource().equals("Rotten Tomatoes") || project.getSerie().get(i).getRating().get(j).getSource().equals("Metacritic"))
-						{
-							rating_string=project.getSerie().get(i).getRating().get(j).getValue();
-
-							rating1 = Integer.parseInt(rating_string.substring(0, 2));
-							
-						}
-						if ((rating1-rating)>=0) {
-							System.out.println(rating1);
+						if (rating1.compareTo(rating)>=0) {
 							series_list.add(project.getSerie().get(i).getSerieName());
-					}
+						}
 
 					}
-					}
+				}
 
 			}
 			break;
-	
 
 		case 2:
-			System.out.print("Escolha o valor minimo do episódios : ");
-
+			System.out.println("Escolha o valor minimo de temporadas: ");
 			validation_int(scan);
+			seasons = scan.nextBigInteger();
 
-			episodes = scan.nextBigInteger();
-
-			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				BigInteger episodes1 = project.getSerie().get(i).getNumberOfEpisodes();
-					if (episodes1.compareTo(episodes)>=0) {
-						series_list.add(project.getSerie().get(i).getSerieName());
-						
+			BigInteger seasons1;
+			BigInteger max_season;
+			for (int i=project.getSerie().size()-1; i>=0;i--){
+				ArrayList<BigInteger> all_seasons = new ArrayList<BigInteger>();
+				for (int j=project.getSerie().get(i).getEpisode().size()-1;j>=0;j--){
+					seasons1=project.getSerie().get(i).getEpisode().get(j).getSeason();
+					all_seasons.add(seasons1);
 				}
+				max_season=Collections.max(all_seasons);
+				if (max_season.compareTo(seasons)>=0) {
+					series_list.add(project.getSerie().get(i).getSerieName());
+				}
+
+
 			}
 			break;
 		case 3:
-			System.out.println("Escolha o valor minimo de temporadas: ");
-
-			validation_int(scan);
-
-			seasons = scan.nextBigInteger();
-			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				BigInteger seasons1 = project.getSerie().get(i).getNumberOfSeasons();
-					if (seasons1.compareTo(seasons)>=0) {
-						series_list.add(project.getSerie().get(i).getSerieName());
-				}
-			}
-			
-			break;
-		case 4:
 			System.out.println("Escolha a linguagem: ");
 			// APRESENTA A LISTA DE LINGUAGENS!!
-			
+
 			ArrayList<String> languages_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
@@ -190,13 +162,13 @@ public class teste {
 			// ELIMINA NO XML AS SERIES QUE NAO TENHAM A LINGUAGEM ESCOLHIDA
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				List<String> list = project.getSerie().get(i).getLanguages();
-					if (list.contains(languages_list.get(option2 - 1))) {
-						series_list.add(project.getSerie().get(i).getSerieName());
-				
+				if (list.contains(languages_list.get(option2 - 1))) {
+					series_list.add(project.getSerie().get(i).getSerieName());
+
 				}
 			}
 			break;
-		case 5:
+		case 4:
 			System.out.println("Escolha a Network: ");
 			ArrayList<String> networks_list = new ArrayList<String>();
 			option_list = 1;
@@ -222,49 +194,42 @@ public class teste {
 			}
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				network = project.getSerie().get(i).getNetwork();
-					if (network.equals(networks_list.get(option2 - 1))) {
-						series_list.add(project.getSerie().get(i).getSerieName());
+				if (network.equals(networks_list.get(option2 - 1))) {
+					series_list.add(project.getSerie().get(i).getSerieName());
 				}
 			}
 			break;
-		case 6:
-			System.out.println("Escolha o género da série: ");
-
-			ArrayList<String> genres_list = new ArrayList<String>();
+		case 5:
+			System.out.println("Escolha o tipo da série: ");
+			ArrayList<String> types_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				for (int j = project.getSerie().get(i).getGenre().size()-1; j >= 0; j--) {
-					genre = project.getSerie().get(i).getGenre().get(j);
-					if (!genres_list.contains(genre)) {
-						genres_list.add(genre);
-						System.out.println(option_list + " " + genre);
-						option_list++;
-					}
+				type = project.getSerie().get(i).getType();
+				if (!types_list.contains(type)) {
+					types_list.add(type);
+					System.out.println(option_list + " " + type);
+					option_list++;
 				}
-
-			}
+			}			
 			while (opcao_certa) {
 				validation_int(scan);
-
 				option2 = scan.nextInt();
 				scan.nextLine();
-				if (1 > option2 || option2 > genres_list.size()) {
+				if (1 > option2 || option2 > types_list.size()) {
 					System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 				} else {
 					opcao_certa = false;
 				}
-			}
-			
-			// ELIMINA NO XML AS SERIES QUE NAO TENHAM A GENERO ESCOLHIDO
+			}			
+
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-				List<String> list = project.getSerie().get(i).getGenre();
-					if (list.contains(genres_list.get(option2 - 1))) {
-						series_list.add(project.getSerie().get(i).getSerieName());
+				type = project.getSerie().get(i).getType();
+				if (type.equals(types_list.get(option2 - 1))) {
+					series_list.add(project.getSerie().get(i).getSerieName());
 				}
-			}
-			
+			}					
 			break;
-		case 7:
+		case 6:
 			System.out.println("Escolhe o nome do ator: ");
 			// actor = scan.nextLine();	
 			ArrayList<String> actors_list = new ArrayList<String>();
@@ -298,13 +263,13 @@ public class teste {
 					list.add(project.getSerie().get(i).getCast().get(j).getName());
 					if (list.contains(actors_list.get(option2 - 1))) {
 						series_list.add(project.getSerie().get(i).getSerieName());
-				}
+					}
 				}
 
 			}
 			break;
-		case 8:
-			
+		case 7:
+
 			System.out.println("Goodbye!!!");
 			System.exit(0);
 		}
