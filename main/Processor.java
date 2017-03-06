@@ -1,6 +1,5 @@
 package main;
 
-import java.awt.List;
 import java.io.File;
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -8,15 +7,12 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
-
-import javax.swing.text.html.HTMLDocument.Iterator;
 
 import generated.Actor;
 import generated.Actors;
@@ -93,7 +89,6 @@ public class Processor {
 		series_names.sort(String::compareToIgnoreCase);
 		System.out.println(episodes_by_actors);
 		System.out.println(series_by_actors);
-		episodes_by_actors.sort(BigInteger::compareTo);
 		System.out.println(series_by_actors);
 		
 		
