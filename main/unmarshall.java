@@ -16,10 +16,10 @@ import generated.Project;
 
 public class unmarshall {
 
-	public static Project unmarshalles_project() {
+	public static Project unmarshalles_project(File xmlFile) {
 		Unmarshaller jaxbUnmarshaller;
 		try {
-			File xmlFile = new File("./src/series.xml");
+			
 			File schemaFile = new File("./src/schema.xsd");
 			
 			JAXBContext jaxbContext = JAXBContext.newInstance(Project.class);

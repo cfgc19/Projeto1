@@ -12,9 +12,9 @@ import generated.Project;
 public class Processor {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
-
+		File xmlFile = new File("./src/series_temporario.xml");
 		Actors actors = unmarshall.unmarshalles_actors();
-		Project project=unmarshall.unmarshalles_project();
+		Project project=unmarshall.unmarshalles_project(xmlFile);
 		String actor="";
 		ArrayList<String> actors_list = new ArrayList<String>();
 		
