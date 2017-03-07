@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Actors>
     <actor>
-        <actor_name>Justin Berfield</actor_name>
-        <serie>Malcom in the Middle</serie>
+        <actor_name>Chris Noth</actor_name>
+        <serie>Sex and the City</serie>
         <no_episodes>3</no_episodes>
     </actor>
     <actor>
-        <actor_name>Jane Kaczmarek</actor_name>
-        <serie>Malcom in the Middle</serie>
+        <actor_name>Sarah Jessica Parker</actor_name>
+        <serie>Sex and the City</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Meghan Markle</actor_name>
+        <serie>Suits</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Gina Torres</actor_name>
+        <serie>Suits</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Leighton Meester</actor_name>
+        <serie>Gossip Girl</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Chace Crawford</actor_name>
+        <serie>Gossip Girl</serie>
         <no_episodes>3</no_episodes>
     </actor>
     <actor>
@@ -16,19 +36,28 @@
         <no_episodes>3</no_episodes>
     </actor>
     <actor>
-        <actor_name>RJ Mitte</actor_name>
-        <serie>Breaking Bad</serie>
-        <no_episodes>3</no_episodes>
-    </actor>
-    <actor>
-        <actor_name>Erik Per Sullian</actor_name>
-        <serie>Malcom in the Middle</serie>
-        <no_episodes>3</no_episodes>
-    </actor>
-    <actor>
         <actor_name>Bryan Cranston</actor_name>
         <serie>Breaking Bad</serie>
-        <serie>Malcom in the Middle</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Cynthia Nixon</actor_name>
+        <serie>Sex and the City</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Blake Lively</actor_name>
+        <serie>Gossip Girl</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Patrick J. Adams</actor_name>
+        <serie>Suits</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>RJ Mitte</actor_name>
+        <serie>Breaking Bad</serie>
         <no_episodes>3</no_episodes>
     </actor>
     <actor>
@@ -37,8 +66,18 @@
         <no_episodes>3</no_episodes>
     </actor>
     <actor>
-        <actor_name>Frankie Muniz</actor_name>
-        <serie>Malcom in the Middle</serie>
+        <actor_name>Kristin Davis</actor_name>
+        <serie>Sex and the City</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Gabriel Macht</actor_name>
+        <serie>Suits</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Sarah Rafferty</actor_name>
+        <serie>Suits</serie>
         <no_episodes>3</no_episodes>
     </actor>
     <actor>
@@ -46,10 +85,25 @@
         <serie>Breaking Bad</serie>
         <no_episodes>3</no_episodes>
     </actor>
+    <actor>
+        <actor_name>Penn Badgley</actor_name>
+        <serie>Gossip Girl</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Ed Westwick</actor_name>
+        <serie>Gossip Girl</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
+    <actor>
+        <actor_name>Kim Cattrall</actor_name>
+        <serie>Sex and the City</serie>
+        <no_episodes>3</no_episodes>
+    </actor>
     <stats>
-        <no_actors>9</no_actors>
-        <podium_actors>Justin Berfield</podium_actors>
-        <podium_actors>Jane Kaczmarek</podium_actors>
-        <podium_actors>Dean Norris</podium_actors>
+        <no_actors>20</no_actors>
+        <podium_actors>Chris Noth</podium_actors>
+        <podium_actors>Sarah Jessica Parker</podium_actors>
+        <podium_actors>Meghan Markle</podium_actors>
     </stats>
 </Actors>

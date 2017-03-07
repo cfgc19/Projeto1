@@ -68,11 +68,11 @@ public class Processor {
 									
 					series_names = series_by_actors.get(actor);
 					actors_episodes = episodes_by_actors.get(actor).intValue()+episodes;
-					System.out.println(actor);
-					System.out.println(actors_episodes);
 
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
+					episodes_by_actors.put(actor, actors_episodes);
+					series_by_actors.put(actor, series_names);
 					
 				} else {
 
@@ -94,8 +94,8 @@ public class Processor {
 		
 		
 		//controlos e cenas
-		System.out.println(episodes_by_actors);
-		System.out.println(series_by_actors);
+		//System.out.println(episodes_by_actors);
+		//System.out.println(series_by_actors);
 		
 		List<Actor> actors_list = obj_actors.getActor();
 		//for (Map.Entry<String, List<String>> entry : series_by_actors.entrySet()) {			
@@ -121,15 +121,14 @@ public class Processor {
 			for (int i = 0; i < series_of_an_actor.size(); i++) {
 				actor_series_list.add(series_of_an_actor.get(i));
 			}
-			System.out.println(series_of_an_actor);
+			//System.out.println(series_of_an_actor);
 			
 			//actor_series_list.add(series_of_an_actor);
 			
 			actors_list.add(an_actor);
 			
 		}
-		
-		
+	
 		// ISTO FOI SO PARA TESTAR SE ESTAVA A FUNCIONAR. TEMOS DE MUDAAAR - filipa-JÁ MUDEI, DRICAS
 		Stats stats = new Stats();
 		stats.setNoActors(BigInteger.valueOf(episodes_by_actors.size()));
