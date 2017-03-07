@@ -1,6 +1,129 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project>
     <serie>
+        <serie_name>Suits</serie_name>
+        <type>American drama series</type>
+        <rating>
+            <value>8.7</value>
+            <source>IMDb</source>
+        </rating>
+        <rating>
+            <value>8.5</value>
+            <source>TV.com</source>
+        </rating>
+        <rating>
+            <value>86</value>
+            <source>Rotten Tomatoes</source>
+        </rating>
+        <description>Suits is an American legal drama television series created and written by Aaron Korsh. The series premiered on June 23, 2011, on the cable network USA, and is produced by Universal Cable. Suits is set at a fictional law firm in New York City</description>
+        <cast>
+            <name>Meghan Markle</name>
+            <character>Rachel Zane</character>
+        </cast>
+        <cast>
+            <name>Gabriel Macht</name>
+            <character>Harvey Specter</character>
+        </cast>
+        <cast>
+            <name>Patrick J. Adams</name>
+            <character>Michael Ross</character>
+        </cast>
+        <cast>
+            <name>Sarah Rafferty</name>
+            <character>Dona Paulsen</character>
+        </cast>
+        <cast>
+            <name>Gina Torres</name>
+            <character>Jessica Pearson</character>
+        </cast>
+        <musical_theme>Greenback Boogie</musical_theme>
+        <writers>Aaron Korsh</writers>
+        <network>USA Network</network>
+        <first_episode>2011-06-23</first_episode>
+        <episode>
+            <title>Character and Fitness</title>
+            <season>6</season>
+            <number>16</number>
+            <date>2017-03-01</date>
+        </episode>
+        <episode>
+            <title>Quid Pro Quo</title>
+            <season>6</season>
+            <number>15</number>
+            <date>2017-02-22</date>
+        </episode>
+        <episode>
+            <title>Admission of Guilt</title>
+            <season>6</season>
+            <number>14</number>
+            <date>2017-02-22</date>
+        </episode>
+        <languages>English</languages>
+        <profiles>Twitter</profiles>
+        <profiles>Facebook</profiles>
+        <profiles>Instagram</profiles>
+    </serie>
+    <serie>
+        <serie_name>Sex and the City</serie_name>
+        <type>American comedy series</type>
+        <rating>
+            <value>7</value>
+            <source>IMDb</source>
+        </rating>
+        <rating>
+            <value>8.6</value>
+            <source>TV.com</source>
+        </rating>
+        <description>Sex and the City is an American romantic comedy television series created by Darren Star and produced by HBO. Broadcast from 1998 until 2004, the original run of the show had a total of 94 episodes.</description>
+        <cast>
+            <name>Sarah Jessica Parker</name>
+            <character>Carie Bradshaw</character>
+        </cast>
+        <cast>
+            <name>Kim Cattrall</name>
+            <character>Samantha Jones</character>
+        </cast>
+        <cast>
+            <name>Kristin Davis</name>
+            <character>Charlotte York Goldenblatt</character>
+        </cast>
+        <cast>
+            <name>Cynthia Nixon</name>
+            <character>Miranda Hobbes</character>
+        </cast>
+        <cast>
+            <name>Chris Noth</name>
+            <character>Mr. Big</character>
+        </cast>
+        <musical_theme>Sex and the City Theme</musical_theme>
+        <writers>Darren Star</writers>
+        <writers>Candace Bushnell</writers>
+        <writers>Michael Patrick King</writers>
+        <spin_off>The Carrie Diaries</spin_off>
+        <network>HBO</network>
+        <first_episode>1998-07-06</first_episode>
+        <episode>
+            <title>An American Girl in Paris (Part Deux)</title>
+            <season>6</season>
+            <number>20</number>
+            <date>2004-02-22</date>
+        </episode>
+        <episode>
+            <title>An American Girl in Paris (Part Une)</title>
+            <season>6</season>
+            <number>19</number>
+            <date>2004-02-15</date>
+        </episode>
+        <episode>
+            <title>Splat!</title>
+            <season>6</season>
+            <number>18</number>
+            <date>2004-02-15</date>
+        </episode>
+        <languages>English</languages>
+        <profiles>Facebook</profiles>
+    </serie>
+    <serie>
         <serie_name>Breaking Bad</serie_name>
         <type>American drama series</type>
         <rating>
@@ -65,61 +188,64 @@
         <profiles>Google+</profiles>
     </serie>
     <serie>
-        <serie_name>Malcom in the Middle</serie_name>
-        <type>American sitcom</type>
+        <serie_name>Gossip Girl</serie_name>
+        <type>American drama series</type>
         <rating>
-            <value>8</value>
+            <value>7.4</value>
             <source>IMDb</source>
         </rating>
         <rating>
-            <value>8.9</value>
+            <value>8.5</value>
             <source>TV.com</source>
         </rating>
-        <description>Malcolm in the Middle is an American television sitcom created by Linwood Boomer for the Fox Broadcasting Company. The series was first broadcast on January 9, 2000, and ended its six-year run on May 14, 2006, after seven seasons and 151 episodes.</description>
+        <description>Gossip Girl is an American teen drama television series based on the book series of the same name written by Cecily von Ziegesar.</description>
+        <narrator>Kristen Bell</narrator>
         <cast>
-            <name>Frankie Muniz</name>
-            <character>Malcom</character>
+            <name>Blake Lively</name>
+            <character>Serena van der Woodsen</character>
         </cast>
         <cast>
-            <name>Bryan Cranston</name>
-            <character>Hal</character>
+            <name>Leighton Meester</name>
+            <character>Blair Waldorf</character>
         </cast>
         <cast>
-            <name>Erik Per Sullian</name>
-            <character>Dewey Wilkerson</character>
+            <name>Ed Westwick</name>
+            <character>Chuck Bass</character>
         </cast>
         <cast>
-            <name>Jane Kaczmarek</name>
-            <character>Lois</character>
+            <name>Chace Crawford</name>
+            <character>Nate Archibald</character>
         </cast>
         <cast>
-            <name>Justin Berfield</name>
-            <character>Reese</character>
+            <name>Penn Badgley</name>
+            <character>Dan Humphrey</character>
         </cast>
-        <musical_theme>Boss of Me</musical_theme>
-        <writers>Linwood Boomer</writers>
-        <writers>Michael Glouberman</writers>
-        <writers>Andy Bobrow</writers>
-        <network>FOX</network>
-        <first_episode>2000-01-09</first_episode>
+        <musical_theme>"Steps of The Met"</musical_theme>
+        <writers>Josh Schwartz</writers>
+        <writers>Stephanie Savage</writers>
+        <network>The CW</network>
+        <first_episode>2007-09-19</first_episode>
         <episode>
-            <title>Graduation</title>
-            <season>7</season>
-            <number>22</number>
-            <date>2006-05-14</date>
+            <title>New York, I Love You XOXO</title>
+            <season>6</season>
+            <number>10</number>
+            <date>2012-12-17</date>
         </episode>
         <episode>
-            <title>Morp</title>
-            <season>7</season>
-            <number>21</number>
-            <date>2006-04-23</date>
+            <title>Save the Last Chance</title>
+            <season>6</season>
+            <number>7</number>
+            <date>2012-11-26</date>
         </episode>
         <episode>
-            <title>Cattle Court</title>
-            <season>7</season>
-            <number>20</number>
-            <date>2006-04-16</date>
+            <title>High Infidelity</title>
+            <season>5</season>
+            <number>2</number>
+            <date>2012-10-15</date>
         </episode>
         <languages>English</languages>
+        <profiles>Facebook</profiles>
+        <profiles>Twitter</profiles>
+        <profiles>Google+</profiles>
     </serie>
 </Project>

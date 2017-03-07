@@ -57,7 +57,6 @@ public class Processor {
 		
 		// todos os atores
 		int actors_episodes;
-		
 		for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 			episodes = project.getSerie().get(i).getEpisode().size();
 			serie = project.getSerie().get(i).getSerieName();
@@ -68,14 +67,17 @@ public class Processor {
 				if (series_by_actors.containsKey(actor)) {
 									
 					series_names = series_by_actors.get(actor);
-					actors_episodes = episodes_by_actors.get(actor)+episodes;
+					actors_episodes = episodes_by_actors.get(actor).intValue()+episodes;
+
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
 					episodes_by_actors.put(actor, actors_episodes);
 					series_by_actors.put(actor, series_names);
 					
 				} else {
+
 					actors_episodes=episodes;
+
 					series_names = new ArrayList<String>();
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
@@ -108,7 +110,7 @@ public class Processor {
 			series_of_an_actor=series_by_actors.get(key);
 			an_actor.setActorName(key);
 			List<String> actor_series_list = an_actor.getSerie();			
-			
+
 			an_actor.setNoEpisodes(BigInteger.valueOf(episodes_by_actors.get(key)));
 			
 			

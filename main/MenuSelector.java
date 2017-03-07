@@ -11,7 +11,7 @@ import generated1.Project;
 public class MenuSelector {
 	public static void menu()
 	{
-		System.out.println("1-Valor minimo de rating;");
+		System.out.println("\n1-Valor minimo de rating;");
 		System.out.println("2-Número mínimo de temporadas;");
 		System.out.println("3-Linguagem;");
 		System.out.println("4-Network;");
@@ -54,13 +54,14 @@ public class MenuSelector {
 		series_list =teste.rules(opcao,series_list);
 		boolean exit=false;
 		while (!exit){
-			System.out.println("------------------------------------------------------------------------------------------");
+			System.out.println("\n------------------------------------------------------------------------------------------");
 			System.out.println("                           Selecione o próximo passo                                      ");
 			System.out.println("------------------------------------------------------------------------------------------");
 			System.out.println("a - AND (escolha de uma nova regra);");
 			System.out.println("b - OR (escolha de uma nova regra);");
 			System.out.println("c - Criar XML;");
 			System.out.println("d - Sair!");
+			System.out.print("Escolha a opção: ");
 			opcao_certa=false;
 			while(!opcao_certa)
 			{				
