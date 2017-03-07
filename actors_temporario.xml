@@ -3,131 +3,132 @@
     <actor>
         <actor_name>Meghan Markle</actor_name>
         <serie>Suits</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Dean Norris</actor_name>
         <serie>Breaking Bad</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Sophie Turner</actor_name>
         <serie>Game of Thrones</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Benedict  Cumberbatch</actor_name>
         <serie>Sherlock</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Emilia Clarke</actor_name>
         <serie>Game of Thrones</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Kit Harington</actor_name>
         <serie>Game of Thrones</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Mark Gatiss</actor_name>
         <serie>Sherlock</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Louise Brealey</actor_name>
         <serie>Sherlock</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Patrick J. Adams</actor_name>
         <serie>Suits</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Jack Falahee</actor_name>
         <serie>How to Get Away with Murder</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Viola Davis</actor_name>
         <serie>How to Get Away with Murder</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Anna Gunn</actor_name>
         <serie>Breaking Bad</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Gabriel Macht</actor_name>
         <serie>Suits</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Karla Souza</actor_name>
         <serie>How to Get Away with Murder</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Aaron Paul</actor_name>
         <serie>Breaking Bad</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Maisie Williams</actor_name>
         <serie>Game of Thrones</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Gina Torres</actor_name>
         <serie>Suits</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Charlie Weber</actor_name>
         <serie>How to Get Away with Murder</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Bryan Cranston</actor_name>
         <serie>Breaking Bad</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Amanda Abbington</actor_name>
         <serie>Sherlock</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Lena Headey</actor_name>
         <serie>Game of Thrones</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Alfred Enoch</actor_name>
         <serie>How to Get Away with Murder</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>RJ Mitte</actor_name>
         <serie>Breaking Bad</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Martin Freeman</actor_name>
         <serie>Sherlock</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <actor>
         <actor_name>Sarah Rafferty</actor_name>
         <serie>Suits</serie>
-        <no_episodes>30</no_episodes>
+        <no_episodes>3</no_episodes>
     </actor>
     <stats>
-        <no_actors>30</no_actors>
-        <podium_actors>ola</podium_actors>
-        <podium_actors>adeus</podium_actors>
+        <no_actors>25</no_actors>
+        <podium_actors>Meghan Markle</podium_actors>
+        <podium_actors>Dean Norris</podium_actors>
+        <podium_actors>Sophie Turner</podium_actors>
     </stats>
 </Actors>
