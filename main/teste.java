@@ -15,13 +15,13 @@ public class teste {
 	public static void validation_int(Scanner scan) {
 		while (!scan.hasNextBigInteger()) {
 			scan.next();
-			System.out.println("ERRO! Introduza um inteiro: ");
+			System.out.print("ERRO! Introduza um inteiro: ");
 		}
 	}
 	public static void validation_double(Scanner scan){
 		while(!scan.hasNextBigDecimal()){
 			scan.next();
-			System.out.println("ERRO! Introduza um decimal: ");
+			System.out.print("ERRO! Introduza um decimal (ex: 8,9): ");
 		}
 	}
 	public static ArrayList<String> rule_or(ArrayList<String> series_list)

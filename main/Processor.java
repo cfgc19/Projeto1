@@ -48,30 +48,31 @@ public class Processor {
 		Actors obj_actors = new Actors();
 		Project project = unmarshall.unmarshalles_project(xmlFile);
 		String actor = "", serie="";
-		int episodes;
+		BigInteger episodes;
 		Map<String, List<String>> series_by_actors = new HashMap<String, List<String>>();
-		Map<String, Integer> episodes_by_actors = new HashMap<String, Integer>();
+		Map<String, BigInteger> episodes_by_actors = new HashMap<String, BigInteger>();
 		int t = 0;
 		List<String> series_names = new ArrayList<String>();
 		List<String> series_of_an_actor=new ArrayList<String>();
 		
 		// todos os atores
-		int actors_episodes;
+		BigInteger actors_episodes;
 		for (int i = project.getSerie().size() - 1; i >= 0; i--) {
-			episodes = project.getSerie().get(i).getEpisode().size();
+			episodes = BigInteger.valueOf(project.getSerie().get(i).getEpisode().size());
 			serie = project.getSerie().get(i).getSerieName();
 			
 			for (int j = project.getSerie().get(i).getCast().size() - 1; j >= 0; j--) {
 				actor = project.getSerie().get(i).getCast().get(j).getName();
 				if (series_by_actors.containsKey(actor)) {
 					series_names = series_by_actors.get(actor);
-					actors_episodes = episodes_by_actors.get(actor).intValue();
-					actors_episodes=+episodes;					
+					actors_episodes = episodes_by_actors.get(actor);
+					actors_episodes.add(episodes);
+					//actors_episodes=+episodes;					
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
 
 				} else {
-
+					
 					series_names = new ArrayList<String>();
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
@@ -103,7 +104,7 @@ public class Processor {
 			series_of_an_actor=series_by_actors.get(key);
 			an_actor.setActorName(key);
 			List<String> actor_series_list = an_actor.getSerie();			
-			an_actor.setNoEpisodes(BigInteger.valueOf(episodes_by_actors.get(key)));
+			//an_actor.setNoEpisodes(BigInteger.valueOf(episodes_by_actors.get(key)));
 			System.out.println("series of an actor");
 			System.out.println(series_of_an_actor);
 			
