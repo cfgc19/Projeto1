@@ -29,7 +29,7 @@
         <actor_name>Bryan Cranston</actor_name>
         <serie>Breaking Bad</serie>
         <serie>Malcom in the Middle</serie>
-        <no_episodes>3</no_episodes>
+        <no_episodes>6</no_episodes>
     </actor>
     <actor>
         <actor_name>Anna Gunn</actor_name>
@@ -48,8 +48,8 @@
     </actor>
     <stats>
         <no_actors>9</no_actors>
+        <podium_actors>Bryan Cranston</podium_actors>
         <podium_actors>Justin Berfield</podium_actors>
         <podium_actors>Jane Kaczmarek</podium_actors>
-        <podium_actors>Dean Norris</podium_actors>
     </stats>
 </Actors>
