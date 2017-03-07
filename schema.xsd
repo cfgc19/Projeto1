@@ -30,7 +30,7 @@
         <xs:element ref="first_episode"/>
         <xs:element maxOccurs="unbounded" ref="episode"/>
         <xs:element maxOccurs="unbounded" ref="languages"/>
-        <xs:element maxOccurs="unbounded" ref="profiles"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="profiles"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -1,269 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Project>
     <serie>
-        <serie_name>Game of Thrones</serie_name>
-        <type>American drama series</type>
-        <rating>
-            <value>9.5</value>
-            <source>IMDb</source>
-        </rating>
-        <rating>
-            <value>3</value>
-            <source>HBO Uk</source>
-        </rating>
-        <rating>
-            <value>95</value>
-            <source>Rotten Tomatoes</source>
-        </rating>
-        <description>Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss. It is an adaptation of A Song of Ice and Fire, George R. R. Martin's series of fantasy novels, the first of which is A Game of Thrones</description>
-        <cast>
-            <name>Emilia Clarke</name>
-            <character>Daenerys Targaryen</character>
-        </cast>
-        <cast>
-            <name>Sophie Turner</name>
-            <character>Sansa Stark</character>
-        </cast>
-        <cast>
-            <name>Kit Harington</name>
-            <character>Daenerys Targaryen</character>
-        </cast>
-        <cast>
-            <name>Maisie Williams</name>
-            <character>Arya Stark</character>
-        </cast>
-        <cast>
-            <name>Lena Headey</name>
-            <character>Cersei Lannister</character>
-        </cast>
-        <musical_theme>Game of Thrones Theme</musical_theme>
-        <writers>George R. R. Martin</writers>
-        <writers>David Benioff</writers>
-        <writers>D. B. Weiss</writers>
-        <writers>Bryan Cogman</writers>
-        <writers>Jane Espenson</writers>
-        <writers>Vanessa Taylor</writers>
-        <writers>Dave Hill</writers>
-        <program_creators>David Benioff</program_creators>
-        <program_creators>D.B.Weiss</program_creators>
-        <awards>Primetime Emmy Award for Outstanding Drama Series</awards>
-        <network>HBO</network>
-        <first_episode>2011-04-11</first_episode>
-        <episode>
-            <title>The Winds of Winter</title>
-            <season>6</season>
-            <number>10</number>
-            <date>2016-06-26</date>
-        </episode>
-        <episode>
-            <title>Battle of the Bastards</title>
-            <season>6</season>
-            <number>9</number>
-            <date>2016-06-19</date>
-        </episode>
-        <episode>
-            <title>No One</title>
-            <season>6</season>
-            <number>10</number>
-            <date>2016-06-12</date>
-        </episode>
-        <languages>English</languages>
-        <profiles>Facebook</profiles>
-        <profiles>Twitter</profiles>
-        <profiles>Instagram</profiles>
-    </serie>
-    <serie>
-        <serie_name>How to Get Away with Murder</serie_name>
-        <type>American drama series</type>
-        <rating>
-            <value>8.3</value>
-            <source>IMDb</source>
-        </rating>
-        <rating>
-            <value>8</value>
-            <source>TV.com</source>
-        </rating>
-        <rating>
-            <value>90</value>
-            <source>Rotten Tomatoes</source>
-        </rating>
-        <description>How to Get Away with Murder is an American drama television series that premiered on ABC on September 25, 2014. The series was created by Peter Nowalk, and produced by Shonda Rhimes and ABC Studios.</description>
-        <cast>
-            <name>Viola Davis</name>
-            <character>Annalise Keating</character>
-        </cast>
-        <cast>
-            <name>Alfred Enoch</name>
-            <character>Wes Gibbins</character>
-        </cast>
-        <cast>
-            <name>Jack Falahee</name>
-            <character>Connor Walsh</character>
-        </cast>
-        <cast>
-            <name>Charlie Weber</name>
-            <character>Frank Delfino</character>
-        </cast>
-        <cast>
-            <name>Karla Souza</name>
-            <character>Karla Souza</character>
-        </cast>
-        <musical_theme>Photek</musical_theme>
-        <writers>Peter Nowalk</writers>
-        <network>ABC</network>
-        <first_episode>2014-09-25</first_episode>
-        <episode>
-            <title>Wes</title>
-            <season>3</season>
-            <number>15</number>
-            <date>2017-02-23</date>
-        </episode>
-        <episode>
-            <title>He Made a Terrible Mistake</title>
-            <season>3</season>
-            <number>14</number>
-            <date>2017-02-23</date>
-        </episode>
-        <episode>
-            <title>It's War</title>
-            <season>3</season>
-            <number>13</number>
-            <date>2017-02-16</date>
-        </episode>
-        <languages>English</languages>
-        <profiles>Twitter</profiles>
-        <profiles>Facebook</profiles>
-        <profiles>Instagram</profiles>
-    </serie>
-    <serie>
-        <serie_name>Suits</serie_name>
-        <type>American drama series</type>
-        <rating>
-            <value>8.7</value>
-            <source>IMDb</source>
-        </rating>
-        <rating>
-            <value>8.5</value>
-            <source>TV.com</source>
-        </rating>
-        <rating>
-            <value>86</value>
-            <source>Rotten Tomatoes</source>
-        </rating>
-        <description>Suits is an American legal drama television series created and written by Aaron Korsh. The series premiered on June 23, 2011, on the cable network USA, and is produced by Universal Cable. Suits is set at a fictional law firm in New York City</description>
-        <cast>
-            <name>Meghan Markle</name>
-            <character>Rachel Zane</character>
-        </cast>
-        <cast>
-            <name>Gabriel Macht</name>
-            <character>Harvey Specter</character>
-        </cast>
-        <cast>
-            <name>Patrick J. Adams</name>
-            <character>Michael Ross</character>
-        </cast>
-        <cast>
-            <name>Sarah Rafferty</name>
-            <character>Dona Paulsen</character>
-        </cast>
-        <cast>
-            <name>Gina Torres</name>
-            <character>Jessica Pearson</character>
-        </cast>
-        <musical_theme>Greenback Boogie</musical_theme>
-        <writers>Aaron Korsh</writers>
-        <network>USA Network</network>
-        <first_episode>2011-06-23</first_episode>
-        <episode>
-            <title>Character and Fitness</title>
-            <season>6</season>
-            <number>16</number>
-            <date>2017-03-01</date>
-        </episode>
-        <episode>
-            <title>Quid Pro Quo</title>
-            <season>6</season>
-            <number>15</number>
-            <date>2017-02-22</date>
-        </episode>
-        <episode>
-            <title>Admission of Guilt</title>
-            <season>6</season>
-            <number>14</number>
-            <date>2017-02-22</date>
-        </episode>
-        <languages>English</languages>
-        <profiles>Twitter</profiles>
-        <profiles>Facebook</profiles>
-        <profiles>Instagram</profiles>
-    </serie>
-    <serie>
-        <serie_name>Sherlock</serie_name>
-        <type>Drama series</type>
-        <rating>
-            <value>9.2</value>
-            <source>IMDb</source>
-        </rating>
-        <rating>
-            <value>8.9</value>
-            <source>TV.com</source>
-        </rating>
-        <rating>
-            <value>86</value>
-            <source>Rotten Tomatoes</source>
-        </rating>
-        <description>Sherlock is a crime drama television series based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Created by Steven Moffat and Mark Gatiss, it stars Benedict Cumberbatch as Sherlock Holmes and Martin Freeman as Doctor John Watson.</description>
-        <cast>
-            <name>Benedict  Cumberbatch</name>
-            <character>Sherlock Holmes</character>
-        </cast>
-        <cast>
-            <name>Martin Freeman</name>
-            <character>Dr.Watson</character>
-        </cast>
-        <cast>
-            <name>Mark Gatiss</name>
-            <character>Mycroft Holmes</character>
-        </cast>
-        <cast>
-            <name>Amanda Abbington</name>
-            <character>Mary Morstan</character>
-        </cast>
-        <cast>
-            <name>Louise Brealey</name>
-            <character>Molly Hooper</character>
-        </cast>
-        <musical_theme>Sherlock Theme Song</musical_theme>
-        <writers>Mark Gatiss</writers>
-        <writers>Steven Moffat</writers>
-        <writers>Stephen Thompson</writers>
-        <network>BBC</network>
-        <first_episode>2010-07-25</first_episode>
-        <episode>
-            <title>The Final Problem</title>
-            <season>4</season>
-            <number>3</number>
-            <date>2017-01-15</date>
-        </episode>
-        <episode>
-            <title>The Lying Detective</title>
-            <season>4</season>
-            <number>2</number>
-            <date>2017-01-08</date>
-        </episode>
-        <episode>
-            <title>Episode 1</title>
-            <season>4</season>
-            <number>1</number>
-            <date>2017-01-01</date>
-        </episode>
-        <languages>English</languages>
-        <profiles>Twitter</profiles>
-        <profiles>Facebook</profiles>
-        <profiles>Youtube</profiles>
-    </serie>
-    <serie>
         <serie_name>Breaking Bad</serie_name>
         <type>American drama series</type>
         <rating>
@@ -326,5 +63,63 @@
         <profiles>Facebook</profiles>
         <profiles>Twitter</profiles>
         <profiles>Google+</profiles>
+    </serie>
+    <serie>
+        <serie_name>Malcom in the Middle</serie_name>
+        <type>American sitcom</type>
+        <rating>
+            <value>8</value>
+            <source>IMDb</source>
+        </rating>
+        <rating>
+            <value>8.9</value>
+            <source>TV.com</source>
+        </rating>
+        <description>Malcolm in the Middle is an American television sitcom created by Linwood Boomer for the Fox Broadcasting Company. The series was first broadcast on January 9, 2000, and ended its six-year run on May 14, 2006, after seven seasons and 151 episodes.</description>
+        <cast>
+            <name>Frankie Muniz</name>
+            <character>Malcom</character>
+        </cast>
+        <cast>
+            <name>Bryan Cranston</name>
+            <character>Hal</character>
+        </cast>
+        <cast>
+            <name>Erik Per Sullian</name>
+            <character>Dewey Wilkerson</character>
+        </cast>
+        <cast>
+            <name>Jane Kaczmarek</name>
+            <character>Lois</character>
+        </cast>
+        <cast>
+            <name>Justin Berfield</name>
+            <character>Reese</character>
+        </cast>
+        <musical_theme>Boss of Me</musical_theme>
+        <writers>Linwood Boomer</writers>
+        <writers>Michael Glouberman</writers>
+        <writers>Andy Bobrow</writers>
+        <network>FOX</network>
+        <first_episode>2000-01-09</first_episode>
+        <episode>
+            <title>Graduation</title>
+            <season>7</season>
+            <number>22</number>
+            <date>2006-05-14</date>
+        </episode>
+        <episode>
+            <title>Morp</title>
+            <season>7</season>
+            <number>21</number>
+            <date>2006-04-23</date>
+        </episode>
+        <episode>
+            <title>Cattle Court</title>
+            <season>7</season>
+            <number>20</number>
+            <date>2006-04-16</date>
+        </episode>
+        <languages>English</languages>
     </serie>
 </Project>
