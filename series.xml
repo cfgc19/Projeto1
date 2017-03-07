@@ -644,4 +644,63 @@
 		<profiles>Instagram</profiles>
 		<profiles>Google+</profiles>
 	</serie>
+	<serie>
+		<serie_name>Malcom in the Middle</serie_name>
+		<type>American sitcom</type>
+		<rating>
+			<value>8</value>
+			<source>IMDb</source>
+		</rating>
+		<rating>
+			<value>8.9</value>
+			<source>TV.com</source>
+		</rating>
+		<description>Malcolm in the Middle is an American television sitcom created by Linwood Boomer for the Fox Broadcasting Company. The series was first broadcast on January 9, 2000, and ended its six-year run on May 14, 2006, after seven seasons and 151 episodes.</description>
+		<cast>
+			<name>Frankie Muniz</name>
+			<character>Malcom</character>
+		</cast>
+		<cast>
+			<name>Bryan Cranston</name>
+			<character>Hal</character>
+		</cast>
+		<cast>
+			<name>Erik Per Sullian</name>
+			<character>Dewey Wilkerson</character>
+		</cast>
+		<cast>
+			<name>Jane Kaczmarek</name>
+			<character>Lois</character>
+		</cast>
+		<cast>
+			<name>Justin Berfield</name>
+			<character>Reese</character>
+		</cast>
+		<musical_theme>Boss of Me</musical_theme>
+		<writers>Linwood Boomer</writers>
+		<writers>Michael Glouberman</writers>
+		<writers>Andy Bobrow</writers>
+		<network>FOX</network>
+		<first_episode>2000-01-09</first_episode>
+		<episode>
+			<title>Graduation</title>
+			<season>7</season>
+			<number>22</number>
+			<date>2006-05-14</date>
+		</episode>
+		<episode>
+			<title>Morp</title>
+			<season>7</season>
+			<number>21</number>
+			<date>2006-04-23</date>
+		</episode>
+		<episode>
+			<title>Cattle Court</title>
+			<season>7</season>
+			<number>20</number>
+			<date>2006-04-16</date>
+		</episode>	
+		<languages>English</languages>
+	</serie>
+
 </Project>
