@@ -19,7 +19,7 @@ public class MenuSelector {
 		System.out.println("6-Nome de ator;");
 		System.out.println("7-Sair!");
 		System.out.println("");
-		System.out.println("Selecione a opção que pretende: ");		
+		System.out.print("Selecione a opção que pretende: ");		
 	}
 	public static void main(String[] args)
 	{	
@@ -81,7 +81,6 @@ public class MenuSelector {
 					System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 				}
 			}
-			System.out.println(opcao1);
 			int opcao2=0;
 			if (opcao1.equals("a"))
 				{
@@ -147,9 +146,8 @@ public class MenuSelector {
 			}
 			else if (opcao1.equals("d"))		
 			{
-				
-					System.out.println("byebye");
-					exit=true;
+					System.out.println("Byebye");
+					System.exit(0);
 			}
 		}
 		

@@ -70,7 +70,7 @@ public class teste {
 		switch (opcao) {
 		case 1:
 			// pesquisa por Ranting
-			System.out.println("Escolha a fonte: ");
+			
 			ArrayList<String> sources_list = new ArrayList<String>();
 			int option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
@@ -83,6 +83,7 @@ public class teste {
 					}
 				}
 			}
+			System.out.print("Escolha a fonte: ");
 			while (opcao_certa) {
 
 				validation_int(scan);
@@ -95,7 +96,7 @@ public class teste {
 					opcao_certa = false;
 				}
 			}
-			System.out.println("Escolha o valor minimo do Rating: ");
+			System.out.print("\nEscolha o valor minimo do Rating: ");
 			validation_double(scan);
 			rating = scan.nextBigDecimal();
 			BigDecimal rating1;
@@ -117,7 +118,7 @@ public class teste {
 			break;
 
 		case 2:
-			System.out.println("Escolha o valor minimo de temporadas: ");
+			System.out.print("Escolha o valor minimo de temporadas: ");
 			validation_int(scan);
 			seasons = scan.nextBigInteger();
 			BigInteger seasons1;
@@ -135,7 +136,7 @@ public class teste {
 			}
 			break;
 		case 3:
-			System.out.println("Escolha a linguagem: ");
+			
 			// APRESENTA A LISTA DE LINGUAGENS!!
 
 			ArrayList<String> languages_list = new ArrayList<String>();
@@ -150,6 +151,7 @@ public class teste {
 					}
 				}
 			}
+			System.out.print("Escolha a linguagem: ");
 			while (opcao_certa) {
 
 				validation_int(scan);
@@ -172,7 +174,7 @@ public class teste {
 			}
 			break;
 		case 4:
-			System.out.println("Escolha a Network: ");
+			
 			ArrayList<String> networks_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
@@ -183,6 +185,7 @@ public class teste {
 					option_list++;
 				}
 			}
+			System.out.print("Escolha a Network: ");
 			opcao_certa = true;
 			while (opcao_certa) {
 				validation_int(scan);
@@ -203,7 +206,6 @@ public class teste {
 			}
 			break;
 		case 5:
-			System.out.println("Escolha o tipo da série: ");
 			ArrayList<String> types_list = new ArrayList<String>();
 			option_list = 1;
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
@@ -213,7 +215,8 @@ public class teste {
 					System.out.println(option_list + " " + type);
 					option_list++;
 				}
-			}			
+			}
+			System.out.print("Escolha o tipo da série: ");
 			while (opcao_certa) {
 				validation_int(scan);
 				option2 = scan.nextInt();
@@ -233,7 +236,6 @@ public class teste {
 			}					
 			break;
 		case 6:
-			System.out.println("Escolhe o nome do ator: ");
 			// actor = scan.nextLine();	
 			ArrayList<String> actors_list = new ArrayList<String>();
 			option_list = 1;
@@ -248,6 +250,7 @@ public class teste {
 					}
 				}
 			}
+			System.out.print("Escolhe o nome do ator: ");
 			while (opcao_certa) {
 				validation_int(scan);
 				option2 = scan.nextInt();
