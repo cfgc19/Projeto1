@@ -18,6 +18,12 @@ public class teste {
 			System.out.println("ERRO! Introduza um inteiro: ");
 		}
 	}
+	public static void validation_double(Scanner scan){
+		while(!scan.hasNextBigDecimal()){
+			scan.next();
+			System.out.println("ERRO! Introduza um decimal: ");
+		}
+	}
 	public static ArrayList<String> rule_or(ArrayList<String> series_list)
 	{
 		int size=series_list.size();
@@ -90,7 +96,7 @@ public class teste {
 				}
 			}
 			System.out.println("Escolha o valor minimo do Rating: ");
-			validation_int(scan);
+			validation_double(scan);
 			rating = scan.nextBigDecimal();
 			BigDecimal rating1;
 
