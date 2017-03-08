@@ -65,11 +65,6 @@ public class MenuSelector {
 			opcao_certa=false;
 			while(!opcao_certa)
 			{				
-				while (scan.hasNextInt())
-				{
-					scan.next();
-					System.out.println("ERRO! Introduza uma letra referente à opção que pretente: ");
-				}
 				opcao1=scan.next();
 				if (opcao1.equals("a") || opcao1.equals("b") || opcao1.equals("c") || opcao1.equals("d")) 
 				{			
@@ -142,7 +137,7 @@ public class MenuSelector {
 				} else {
 					System.out.println("O XML foi criado e apresentado em cima!");
 				}
-				
+				System.exit(0);
 			}
 			else if (opcao1.equals("d"))		
 			{
