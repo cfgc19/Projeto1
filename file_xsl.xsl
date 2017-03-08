@@ -4,14 +4,14 @@
 		<title> Actors </title>
 	</head>
 	<body style="font-family:Courier">
-		<h1> List of Actors</h1>
-		<table border="1">
+		<h1>List of Actors</h1>
+		<table style="width:100%" border="1">
 			<tr>
-				<th style="color:#7D9DDB"> Names
+				<th style="color:#404040"><strong>Names</strong>
 				</th>
-				<th style="color:#7D9DDB"> Serie's List
+				<th style="color:#404040"><strong>Serie's List</strong>
 				</th>
-				<th style="color:#7D9DDB">Number of Episodes
+				<th style="color:#404040"><strong>Number of Episodes</strong>
 				</th>
 			</tr>
 			<xsl:for-each select="//actor">
@@ -33,7 +33,7 @@
 				</tr>
 			</xsl:for-each>
 			<tr>
-				<td align="center" colspan="3" style="color:#7D9DDB">Ranking</td>
+				<td align="center" colspan="3" style="color:#404040"><strong>Ranking</strong></td>
 			</tr>
 			<xsl:for-each select="//stats">
 				<xsl:for-each select="podium_actors">
@@ -57,7 +57,7 @@
 					</tr>
 				</xsl:for-each>
 				<tr>
-					<td align="center" colspan="3" style="color:#7D9DDB">Number of actors</td>
+					<td align="center" colspan="3" style="color:#404040"><strong>Number of actors</strong></td>
 				</tr>
 				<tr>
 					<td align="center" colspan="3">
