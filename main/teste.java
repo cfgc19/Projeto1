@@ -60,7 +60,7 @@ public class teste {
 
 		Scanner scan = new Scanner(System.in);
 		BigInteger episodes, seasons;
-		BigDecimal rating;
+		BigDecimal rating=BigDecimal.valueOf(0);
 		String language = "", network = "", type = "", actor = "", rating_source="";
 
 		File xmlFile = new File("./src/series.xml");		
@@ -96,11 +96,49 @@ public class teste {
 					opcao_certa = false;
 				}
 			}
-			System.out.print("\nEscolha o valor minimo do Rating: ");
-			validation_double(scan);
-			rating = scan.nextBigDecimal();
+			System.out.print("\nEscolha o valor minimo do Rating: ");		
+			boolean validacao=true;
+			while(validacao)
+			{
+				validation_double(scan);
+				rating = scan.nextBigDecimal();		
+				scan.nextLine();
+				if (sources_list.get(option2-1).equals("Rotten Tomatoes") || sources_list.get(option2-1).equals("Metacritic"))
+				{
+					if(rating.compareTo(BigDecimal.valueOf(0))>=0 && rating.compareTo(BigDecimal.valueOf(100))<=0)
+					{
+						validacao=false;
+					}
+					else
+					{
+						System.out.print("Deve introduzir um valor entre 0 e 100. Tente novamente: ");
+					}
+				}
+				else if (sources_list.get(option2-1).equals("IMDb") || sources_list.get(option2-1).equals("TV.com"))
+				{
+					if(rating.compareTo(BigDecimal.valueOf(0))>=0 && rating.compareTo(BigDecimal.valueOf(10))<=0)
+					{
+						validacao=false;
+					}
+					else
+					{
+						System.out.print("Deve introduzir um valor entre 0 e 10. Tente novamente: ");
+					}
+					
+				}
+				else if (sources_list.get(option2-1).equals("HBO Uk"))
+				{
+					if(rating.compareTo(BigDecimal.valueOf(0))>=0 && rating.compareTo(BigDecimal.valueOf(4))<=0)
+					{
+						validacao=false;
+					}
+					else
+					{
+						System.out.print("Deve introduzir um valor entre 0 e 4. Tente novamente: ");
+					}
+				}
+			}			
 			BigDecimal rating1;
-
 			for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 				for (int j=project.getSerie().get(i).getRating().size()-1;j>=0;j--)
 				{
