@@ -14,6 +14,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
+import javax.xml.transform.TransformerException;
+
 import generated.Actor;
 import generated.Actors;
 import generated.Stats;
@@ -38,7 +40,7 @@ public class Processor {
 	}
 	
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws TransformerException {
 		Scanner scan = new Scanner(System.in);
 		File xmlFile = new File("./src/series_temporario.xml");
 		Actors actors = unmarshall.unmarshalles_actors();

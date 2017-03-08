@@ -3,7 +3,7 @@
 	<head>
 		<title> Actors </title>
 	</head>
-	<body style="font-family:Helvetica">
+	<body style="font-family:Courier">
 		<h1> List of Actors</h1>
 		<table border="1">
 			<tr>

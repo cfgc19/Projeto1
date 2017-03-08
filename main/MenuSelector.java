@@ -51,7 +51,8 @@ public class MenuSelector {
 				opcao_certa=false;
 			}
 		}
-		series_list =teste.rules(opcao,series_list);
+
+
 		boolean exit=false;
 		while (!exit){
 			System.out.println("\n------------------------------------------------------------------------------------------");

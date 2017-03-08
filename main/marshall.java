@@ -6,6 +6,13 @@ import javax.xml.XMLConstants;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
+import javax.xml.bind.util.JAXBSource;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.stream.StreamResult;
+import javax.xml.transform.stream.StreamSource;
 import javax.xml.validation.Schema;
 import javax.xml.validation.SchemaFactory;
 
@@ -47,7 +54,7 @@ public class marshall {
 		return false;
 	}
 		
-		public static Boolean marshalles_actors(Actors actors) {
+		public static Boolean marshalles_actors(Actors actors) throws TransformerException {
 			
 		if (actors.getActor().size() == 0) {
 				return false;
@@ -70,6 +77,23 @@ public class marshall {
 
 		jaxbMarshaller.marshal(actors, xmlFile);
 		jaxbMarshaller.marshal(actors, System.out);
+			
+		//Transform XML to HTML
+		TransformerFactory tf = TransformerFactory.newInstance();
+		StreamSource xslt = new StreamSource("./src/file_xsl.xsl");
+		Transformer transformer = tf.newTransformer(xslt);
+
+		// Source
+		JAXBSource source = new JAXBSource(jaxbContext, actors);
+
+		// Result
+		File fHTML = new File("./src/file_xsl.html");
+		StreamResult result = new StreamResult(fHTML);
+
+		// Transform
+		transformer.transform(source, result);	
+
+		
 		return true;
 	      } catch (JAXBException | SAXException e) {
 		e.printStackTrace();
