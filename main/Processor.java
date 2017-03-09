@@ -16,14 +16,15 @@ import java.util.Scanner;
 
 import javax.xml.transform.TransformerException;
 
-import generated.Actor;
-import generated.Actors;
-import generated.Stats;
-import generated1.Project;
-import generated1.Serie;
+import generated_Actors.Actor;
+import generated_Actors.Actors;
+import generated_Actors.Stats;
+import generated_Series.Project;
+import generated_Series.Serie;
 
 public class Processor {
-
+	
+	//método que ordena um HashMap pelos seus valores
 	public static HashMap sortByValue(Map map) {
 		List list = new LinkedList(map.entrySet());
 		Collections.sort(list, new Comparator() {
@@ -42,10 +43,9 @@ public class Processor {
 
 	public static void main(String[] args) throws TransformerException {
 		Scanner scan = new Scanner(System.in);
-		File xmlFile = new File("./src/series_temporario.xml");
+		File xmlFile = new File("./src/temporary_series.xml");
+		//Objeto actors contém toda a informação referente a um ator
 		Actors actors = unmarshall.unmarshalles_actors();
-		
-		//System.out.println(actors);
 		
 		Actors obj_actors = new Actors();
 		Project project = unmarshall.unmarshalles_project(xmlFile);
@@ -53,12 +53,12 @@ public class Processor {
 		int episodes;
 		Map<String, List<String>> series_by_actors = new HashMap<String, List<String>>();
 		Map<String, Integer> episodes_by_actors = new HashMap<String, Integer>();
-		int t = 0;
 		List<String> series_names = new ArrayList<String>();
 		List<String> series_of_an_actor=new ArrayList<String>();
 		
-		// todos os atores
+
 		int actors_episodes;
+		// criação de dois HashMaps: um deles tem como chave o nome dos actores e como valores as suas séries, o outro tem também como chave o nome dos atores mas como valor o número de episodios nos quais participa
 		for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 			episodes = project.getSerie().get(i).getEpisode().size();
 			serie = project.getSerie().get(i).getSerieName();
@@ -73,6 +73,7 @@ public class Processor {
 
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
+					
 					episodes_by_actors.put(actor, actors_episodes);
 					series_by_actors.put(actor, series_names);
 					
@@ -81,8 +82,10 @@ public class Processor {
 					actors_episodes=episodes;
 
 					series_names = new ArrayList<String>();
+					
 					series_names.add(serie);
 					series_names.sort(String::compareToIgnoreCase);
+					
 					series_by_actors.put(actor, series_names);
 					episodes_by_actors.put(actor, actors_episodes);
 					
@@ -94,49 +97,30 @@ public class Processor {
 		episodes_by_actors = sortByValue(episodes_by_actors);
 		series_names.sort(String::compareToIgnoreCase);
 		
-		
-		//controlos e cenas
-		//System.out.println(episodes_by_actors);
-		//System.out.println(series_by_actors);
-		
 		List<Actor> actors_list = obj_actors.getActor();
-		//for (Map.Entry<String, List<String>> entry : series_by_actors.entrySet()) {			
-		
 		for (String key : series_by_actors.keySet()){	
 			Actor an_actor = new Actor();
-
-			//String key = entry.getKey();
-			//List<String> series_of_an_actor = entry.getValue();
-			
 			
 			series_of_an_actor=series_by_actors.get(key);
 			an_actor.setActorName(key);
+			
 			List<String> actor_series_list = an_actor.getSerie();			
 
 			an_actor.setNoEpisodes(BigInteger.valueOf(episodes_by_actors.get(key)));
-			
-			
-			
-			//System.out.println("series of an actor");
-			//System.out.println(series_of_an_actor);
-			
+
 			for (int i = 0; i < series_of_an_actor.size(); i++) {
 				actor_series_list.add(series_of_an_actor.get(i));
-			}
-			//System.out.println(series_of_an_actor);
-			
-			//actor_series_list.add(series_of_an_actor);
-			
+			}		
 			actors_list.add(an_actor);
 			
 		}
 	
-		// ISTO FOI SO PARA TESTAR SE ESTAVA A FUNCIONAR. TEMOS DE MUDAAAR - filipa-JÁ MUDEI, DRICAS
 		Stats stats = new Stats();
 		stats.setNoActors(BigInteger.valueOf(episodes_by_actors.size()));
 		
 		List<String> actors_on_podium = stats.getPodiumActors();
 		String name_actor;
+		
 		for (int k=0; k<3; k++)
 		{
 			name_actor=(String) episodes_by_actors.keySet().toArray()[k];
@@ -154,15 +138,6 @@ public class Processor {
 			System.out.println("O XML foi criado e apresentado em cima!");
 		}
 
-//		for (int i = actors.getActor().size() - 1; i >= 0; i--) {
-
-			// BigInteger ranting1 = project.getSerie().get(i).getRating();
-			// if (ranting1.compareTo(ranting)>=0) {
-			// series_list.add(project.getSerie().get(i).getSerieName());
-
-			// o objetivo é ir ao project buscar todos os autores, po los no
-			// outro xml
-	//	}
 
 	}
 }

@@ -6,7 +6,7 @@
 //
 
 
-package generated1;
+package generated_Series;
 
 import java.util.ArrayList;
 import java.util.List;

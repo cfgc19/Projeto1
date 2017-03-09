@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.RunnableScheduledFuture;
 
-import generated1.Project;
+import generated_Series.Project;
 
 public class MenuSelector {
 	public static void menu()
@@ -24,35 +24,35 @@ public class MenuSelector {
 	public static void main(String[] args)
 	{	
 		Scanner scan=new Scanner (System.in);
-		//lista de series que vêm de cada regra 
+		//Lista de series que provêm de cada regra 
 		ArrayList<String> series_list = new ArrayList<String>();
-		//project tem a info toda
 		File xmlFile = new File("./src/series.xml");		
+		//Objeto projeto representa cada série
 		Project project = unmarshall.unmarshalles_project(xmlFile);
 		System.out.println("------------------------------------------------------------------------------------------");
-		System.out.println("                           Texto bonito a explicar o que estamos a fazer                                ");
+		System.out.println("                                       Series Selector                                    ");
+		System.out.println("Esta aplicação permite a geração de um ficheiro XML que contém apenas as séries que \n respeitam todas as regras que selecionar! Comece por selecionar uma das regras abaixo: ");
 		System.out.println("------------------------------------------------------------------------------------------");
 		menu();
-		int opcao=0;
-		String opcao1="";
-		boolean opcao_certa=true;
-		while(opcao_certa)
+		int option=0;
+		String option1="";
+		boolean option_while=true;
+		while(option_while)
 		{
 
-			teste.validation_int(scan);
-			opcao=scan.nextInt();
+			Selector.validation_int(scan);
+			option=scan.nextInt();
 			scan.nextLine();
-			if (opcao<1 || opcao >7)
+			if (option<1 || option >7)
 			{
 				System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 			}
 			else
 			{
-				opcao_certa=false;
+				option_while=false;
 			}
 		}
-
-
+		series_list=Selector.rules(option,series_list);
 		boolean exit=false;
 		while (!exit){
 			System.out.println("\n------------------------------------------------------------------------------------------");
@@ -63,13 +63,13 @@ public class MenuSelector {
 			System.out.println("c - Criar XML;");
 			System.out.println("d - Sair!");
 			System.out.print("Escolha a opção: ");
-			opcao_certa=false;
-			while(!opcao_certa)
+			option_while=false;
+			while(!option_while)
 			{				
-				opcao1=scan.next();
-				if (opcao1.equals("a") || opcao1.equals("b") || opcao1.equals("c") || opcao1.equals("d")) 
+				option1=scan.next();
+				if (option1.equals("a") || option1.equals("b") || option1.equals("c") || option1.equals("d")) 
 				{			
-					opcao_certa=true;
+					option_while=true;
 					break;
 				}
 				else
@@ -77,52 +77,52 @@ public class MenuSelector {
 					System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 				}
 			}
-			int opcao2=0;
-			if (opcao1.equals("a"))
+			int option2=0;
+			if (option1.equals("a"))
 				{
 					menu();
-					while(opcao_certa)
+					while(option_while)
 					{
-						teste.validation_int(scan);
-						opcao2=scan.nextInt();
+						Selector.validation_int(scan);
+						option2=scan.nextInt();
 						scan.nextLine();
-						if (opcao2<1 || opcao2 >7)
+						if (option2<1 || option2 >7)
 						{
 							System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 						}
 						else
 						{
-							opcao_certa=false;
+							option_while=false;
 						}
 					}
-					series_list=teste.rules(opcao2,series_list);
-					//ATUALIZAR A NOVA LISTA DE SERIES
-					series_list = teste.rule_and(series_list);
-					//System.out.println(series_list);
+					series_list=Selector.rules(option2,series_list);
+					//atualizar a lista de series
+					series_list = Selector.rule_and(series_list);
 				}
-			else if (opcao1.equals("b"))
+			else if (option1.equals("b"))
 				{
 					menu();
-					opcao_certa=true;
-					while(opcao_certa)
+					option_while=true;
+					while(option_while)
 					{
-						teste.validation_int(scan);
-						opcao2=scan.nextInt();
+						Selector.validation_int(scan);
+						option2=scan.nextInt();
 						scan.nextLine();
-						if (opcao2<1 || opcao2 >7)
+						if (option2<1 || option2 >7)
 						{
 							System.out.println("O valor introduzido não se encontra no menu. Tente novamente: ");
 						}
 						else
 						{
-							opcao_certa=false;
+							option_while=false;
 						}
 					}
 
-					series_list=teste.rules(opcao2,series_list);
-					series_list= teste.rule_or(series_list);
+					series_list=Selector.rules(option2,series_list);
+					//atualizar a lista de series
+					series_list= Selector.rule_or(series_list);
 				}
-			else if (opcao1.equals("c")) // criar o XML
+			else if (option1.equals("c")) // geração do XML
 			{
 				for (int i = project.getSerie().size() - 1; i >= 0; i--) {
 						if (!(series_list.contains(project.getSerie().get(i).getSerieName()))) {
@@ -140,9 +140,9 @@ public class MenuSelector {
 				}
 				System.exit(0);
 			}
-			else if (opcao1.equals("d"))		
+			else if (option1.equals("d"))		
 			{
-					System.out.println("Byebye");
+					System.out.println("Bye!");
 					System.exit(0);
 			}
 		}

@@ -6,7 +6,7 @@
 //
 
 
-package generated1;
+package generated_Series;
 
 import java.math.BigInteger;
 import javax.xml.bind.annotation.XmlAccessType;

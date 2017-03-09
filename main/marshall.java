@@ -18,8 +18,8 @@ import javax.xml.validation.SchemaFactory;
 
 import org.xml.sax.SAXException;
 
-import generated.Actors;
-import generated1.Project;
+import generated_Actors.Actors;
+import generated_Series.Project;
 
 
 public class marshall {
@@ -31,17 +31,17 @@ public class marshall {
 		}
 		
 		try{
-		File xmlFile = new File("./src/series_temporario.xml");
+		File xmlFile = new File("./src/temporary_series.xml");
 		
 		JAXBContext jaxbContext = JAXBContext.newInstance(Project.class);
 		
-		File schemaFile = new File("./src/schema.xsd"); //ainda nao percebi para o que é que isto serve - filipa
+		File schemaFile = new File("./src/series_schema.xsd");
 		SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		Schema schema = sf.newSchema(schemaFile);
 		
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
-		// output pretty printed
+		//Fazer o output
 		jaxbMarshaller.setSchema(schema);
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
@@ -61,17 +61,17 @@ public class marshall {
 		}
 		
 		try{
-		File xmlFile = new File("./src/actors_temporario.xml");
+		File xmlFile = new File("./src/temporary_actors.xml");
 		
 		JAXBContext jaxbContext = JAXBContext.newInstance(Actors.class);
 		
-		File schemaFile = new File("./src/actor.xsd"); 
+		File schemaFile = new File("./src/actors_schema.xsd"); 
 		SchemaFactory sf = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
 		Schema schema = sf.newSchema(schemaFile);
 		
 		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 
-		// output pretty printed
+		//Fazer o output
 		jaxbMarshaller.setSchema(schema);
 		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 
@@ -80,17 +80,17 @@ public class marshall {
 			
 		//Transform XML to HTML
 		TransformerFactory tf = TransformerFactory.newInstance();
-		StreamSource xslt = new StreamSource("./src/file_xsl.xsl");
+		StreamSource xslt = new StreamSource("./src/xsl_Actors.xsl");
 		Transformer transformer = tf.newTransformer(xslt);
 
 		// Source
 		JAXBSource source = new JAXBSource(jaxbContext, actors);
 
-		// Result
-		File fHTML = new File("./src/file_xsl.html");
+		//Resultado
+		File fHTML = new File("./src/xsl_Actors.html");
 		StreamResult result = new StreamResult(fHTML);
 
-		// Transform
+		//Transformação
 		transformer.transform(source, result);	
 
 		

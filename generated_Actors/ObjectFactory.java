@@ -6,7 +6,7 @@
 //
 
 
-package generated;
+package generated_Actors;
 
 import java.math.BigInteger;
 import javax.xml.bind.JAXBElement;

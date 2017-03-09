@@ -11,8 +11,8 @@ import javax.xml.validation.SchemaFactory;
 
 import org.xml.sax.SAXException;
 
-import generated.Actors;
-import generated1.Project;
+import generated_Actors.Actors;
+import generated_Series.Project;
 
 public class unmarshall {
 
@@ -20,7 +20,7 @@ public class unmarshall {
 		Unmarshaller jaxbUnmarshaller;
 		try {
 			
-			File schemaFile = new File("./src/schema.xsd");
+			File schemaFile = new File("./src/series_schema.xsd");
 			
 			JAXBContext jaxbContext = JAXBContext.newInstance(Project.class);
 			
@@ -45,7 +45,7 @@ public class unmarshall {
 		Unmarshaller jaxbUnmarshaller;
 		try {
 			File xmlFile = new File("./src/actors.xml");
-			File schemaFile = new File("./src/actor.xsd");
+			File schemaFile = new File("./src/actors_schema.xsd");
 			
 			JAXBContext jaxbContext = JAXBContext.newInstance(Actors.class);
 			
