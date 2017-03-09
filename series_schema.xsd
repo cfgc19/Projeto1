@@ -44,7 +44,13 @@
       </xs:sequence>
     </xs:complexType> 
   </xs:element>
-  <xs:element name="value" type="xs:decimal"/>
+  <xs:element name="value">
+    	<xs:simpleType>
+    		<xs:restriction base="xs:decimal">
+   				 <xs:minInclusive value="0"/>
+    		</xs:restriction>
+  		</xs:simpleType>
+  </xs:element>
   <xs:element name="source" type="xs:string"/>
   <xs:element name="description" type="xs:string"/>
   <xs:element name="narrator" type="xs:string"/>
@@ -77,8 +83,20 @@
     </xs:complexType>
   </xs:element>
   <xs:element name="title" type="xs:string"/>
-  <xs:element name="season" type="xs:integer"/>
-  <xs:element name="number" type="xs:integer"/>
+  <xs:element name="season">
+      	<xs:simpleType>
+    		<xs:restriction base="xs:integer">
+   				 <xs:minInclusive value="0"/>
+    		</xs:restriction>
+  		</xs:simpleType>
+  </xs:element>
+    <xs:element name="number">
+      	<xs:simpleType>
+    		<xs:restriction base="xs:integer">
+   				 <xs:minInclusive value="0"/>
+    		</xs:restriction>
+  		</xs:simpleType>
+  </xs:element>
   <xs:element name="date" type="xs:NMTOKEN"/>
   <xs:element name="languages" type="xs:NCName"/>
   <xs:element name="profiles" type="xs:string"/>

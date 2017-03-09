@@ -19,7 +19,13 @@
   </xs:element>
   <xs:element name="actor_name" type="xs:string"/>
   <xs:element name="serie" type="xs:string"/>
-  <xs:element name="no_episodes" type="xs:integer"/>
+  <xs:element name="no_episodes">
+    <xs:simpleType>
+    	<xs:restriction base="xs:integer">
+   			 <xs:minInclusive value="0"/>
+    	</xs:restriction>
+  	</xs:simpleType>
+  </xs:element>
   <xs:element name="stats">
     <xs:complexType>
       <xs:sequence>
@@ -28,6 +34,12 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="no_actors" type="xs:integer"/>
+  <xs:element name="no_actors">
+    <xs:simpleType>
+    	<xs:restriction base="xs:integer">
+   			 <xs:minInclusive value="0"/>
+    	</xs:restriction>
+  	</xs:simpleType>
+  </xs:element>
   <xs:element name="podium_actors" type="xs:string"/>
 </xs:schema>
